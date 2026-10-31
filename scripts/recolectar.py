@@ -66,6 +66,7 @@ class Corrida:
         self.en_puerto = {}                        # puerto -> {mmsi: (sog, nav, lat, lon)}
         self.tipos = lee_json(DATOS / "tipos_cache.json", {})
         self.mensajes = {"A": 0, "B": 0, "C": 0}
+        self.cobertura = {}                        # celda 10°x10° -> mensajes estáticos
         self.errores = []
 
     def identifica(self, mmsi, nombre, imo=None):
@@ -98,7 +99,16 @@ class Corrida:
         if tipo == "ShipStaticData":
             imo = cuerpo.get("ImoNumber") or None
             self.tipos[mmsi] = cuerpo.get("Type")
+            mlat, mlon = meta.get("latitude"), meta.get("longitude")
+            if isinstance(mlat, (int, float)) and isinstance(mlon, (int, float)) and (mlat or mlon):
+                celda = f"{int(mlat // 10) * 10},{int(mlon // 10) * 10}"
+                self.cobertura[celda] = self.cobertura.get(celda, 0) + 1
             n = self.identifica(mmsi, cuerpo.get("Name") or nombre, imo)
+            if n and isinstance(mlat, (int, float)) and (mlat or mlon) and mmsi not in self.posiciones:
+                # Los datos estáticos también traen la posición del barco: sirve si no hubo PositionReport
+                self.posiciones[mmsi] = {"buque": n, "mmsi": mmsi, "lat": round(mlat, 4), "lon": round(mlon, 4),
+                                         "sog": None, "cog": None, "nav": None,
+                                         "hora": parse_hora(meta.get("time_utc")), "fuente": conexion}
             if n:
                 self.estaticos[mmsi] = {
                     "destino": (cuerpo.get("Destination") or "").strip(),
@@ -298,7 +308,8 @@ def guarda(corrida, inicio):
     resumen = {"inicio": inicio, "fin": marca, "duracion_s": DURACION, "mensajes": corrida.mensajes,
                "buques_objetivo": len(corrida.objetivos),
                "con_mmsi": sum(1 for n in corrida.objetivos if corrida.mapa.get(n, {}).get("mmsi")),
-               "posiciones_nuevas": len(corrida.posiciones), "errores": corrida.errores[:20]}
+               "posiciones_nuevas": len(corrida.posiciones), "errores": corrida.errores[:20],
+               "cobertura": dict(sorted(corrida.cobertura.items(), key=lambda x: -x[1])[:40])}
     escribe_json(DATOS / "ultima_corrida.json", resumen)
     print(json.dumps(resumen, ensure_ascii=False, indent=1))
 
