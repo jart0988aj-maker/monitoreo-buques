@@ -2,34 +2,34 @@
  "TS MUMBAI": {
   "buque": "TS MUMBAI",
   "mmsi": "538011207",
-  "lat": -27.36,
-  "lon": 153.1788,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-10-31T14:17:44+00:00",
-  "fuente": "A"
+  "lat": -27.3599,
+  "lon": 153.1789,
+  "sog": 0,
+  "cog": 188,
+  "nav": 5,
+  "hora": "2026-10-31T16:10:19+00:00",
+  "fuente": "B"
  },
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.8122,
-  "lon": -8.2682,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-10-31T15:10:05+00:00",
-  "fuente": "A"
+  "lat": 51.8354,
+  "lon": -8.3302,
+  "sog": 0,
+  "cog": 151.8,
+  "nav": 5,
+  "hora": "2026-10-31T16:10:33+00:00",
+  "fuente": "B"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
   "mmsi": "538011294",
-  "lat": 52.2624,
-  "lon": 2.6876,
-  "sog": 12.2,
-  "cog": 206.8,
-  "nav": 0,
-  "hora": "2026-10-31T14:16:21+00:00",
+  "lat": 51.9171,
+  "lon": 2.6067,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-10-31T16:09:33+00:00",
   "fuente": "B"
  },
  "WAN HAI A06": {
@@ -46,23 +46,23 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": -25.1633,
-  "lon": 10.2873,
-  "sog": 19.3,
-  "cog": 324.1,
+  "lat": -24.7078,
+  "lon": 9.9193,
+  "sog": 16.6,
+  "cog": 323.2,
   "nav": 0,
-  "hora": "2026-10-31T14:14:20+00:00",
+  "hora": "2026-10-31T16:10:02+00:00",
   "fuente": "B"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
   "mmsi": "215726000",
-  "lat": -26.856,
-  "lon": 14.4456,
-  "sog": 11.5,
-  "cog": 162.6,
+  "lat": -27.0525,
+  "lon": 14.5158,
+  "sog": 11.9,
+  "cog": 162.2,
   "nav": 0,
-  "hora": "2026-10-31T15:08:35+00:00",
+  "hora": "2026-10-31T16:11:15+00:00",
   "fuente": "B"
  }
 }
