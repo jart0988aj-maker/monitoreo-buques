@@ -30,5 +30,12 @@
   "nombre_ais": "MSC ALTAMIRA",
   "metodo": "aproximado",
   "desde": "2026-10-31T13:28:51.628429+00:00"
+ },
+ "SPYROS V": {
+  "mmsi": "215726000",
+  "imo": 9877171,
+  "nombre_ais": "SPYROS",
+  "metodo": "exacto",
+  "desde": "2026-10-31T14:15:26.265214+00:00"
  }
 }

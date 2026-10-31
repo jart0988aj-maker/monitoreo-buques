@@ -7,7 +7,7 @@
   "destino": "AUBNE",
   "imo": 9937543,
   "calado": 11,
-  "ultimo_visto": "2026-10-31T07:55:58+00:00"
+  "ultimo_visto": "2026-10-31T14:18:20+00:00"
  },
  "WAN HAI A06": {
   "primer_eta_ais": "2026-10-31",
@@ -18,5 +18,15 @@
   "imo": 9935129,
   "calado": 12.2,
   "ultimo_visto": "2026-10-31T10:41:11+00:00"
+ },
+ "SPYROS V": {
+  "primer_eta_ais": "2026-11-19",
+  "primer_destino": "SG SIN",
+  "primer_visto": "2026-10-31T14:18:20+00:00",
+  "eta_ais": "2026-11-19",
+  "destino": "SG SIN",
+  "imo": 9877171,
+  "calado": 15.5,
+  "ultimo_visto": "2026-10-31T14:18:20+00:00"
  }
 }
