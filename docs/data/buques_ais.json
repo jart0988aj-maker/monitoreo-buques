@@ -11,5 +11,11 @@
   "nombre_ais": "CELEBRITY",
   "metodo": "aproximado",
   "desde": "2026-10-31T04:46:37.875618+00:00"
+ },
+ "HUA HANG": {
+  "mmsi": "538011294",
+  "nombre_ais": "HUAN HANG 17",
+  "metodo": "aproximado",
+  "desde": "2026-10-31T06:53:22.907979+00:00"
  }
 }
