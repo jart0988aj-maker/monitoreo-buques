@@ -17,5 +17,12 @@
   "nombre_ais": "HUAN HANG 17",
   "metodo": "aproximado",
   "desde": "2026-10-31T06:53:22.907979+00:00"
+ },
+ "WAN HAI A06": {
+  "mmsi": "563210600",
+  "imo": null,
+  "nombre_ais": "WAN HAI A06",
+  "metodo": "exacto",
+  "desde": "2026-10-31T10:37:35.494907+00:00"
  }
 }

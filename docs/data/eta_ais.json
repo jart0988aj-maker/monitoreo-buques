@@ -8,5 +8,15 @@
   "imo": 9937543,
   "calado": 11,
   "ultimo_visto": "2026-10-31T07:55:58+00:00"
+ },
+ "WAN HAI A06": {
+  "primer_eta_ais": "2026-10-31",
+  "primer_destino": "HK HKG",
+  "primer_visto": "2026-10-31T10:41:11+00:00",
+  "eta_ais": "2026-10-31",
+  "destino": "HK HKG",
+  "imo": 9935129,
+  "calado": 12.2,
+  "ultimo_visto": "2026-10-31T10:41:11+00:00"
  }
 }
