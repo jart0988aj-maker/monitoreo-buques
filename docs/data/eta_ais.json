@@ -27,6 +27,16 @@
   "destino": "SG SIN",
   "imo": 9877171,
   "calado": 15.5,
-  "ultimo_visto": "2026-10-31T14:18:20+00:00"
+  "ultimo_visto": "2026-10-31T15:12:30+00:00"
+ },
+ "YM CELEBRITY": {
+  "primer_eta_ais": "2026-10-31",
+  "primer_destino": "NLRTM",
+  "primer_visto": "2026-10-31T15:12:30+00:00",
+  "eta_ais": "2026-10-31",
+  "destino": "NLRTM",
+  "imo": 9368405,
+  "calado": 5.6,
+  "ultimo_visto": "2026-10-31T15:12:30+00:00"
  }
 }

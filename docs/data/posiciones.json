@@ -13,13 +13,13 @@
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.4843,
-  "lon": -7.8383,
-  "sog": 9,
-  "cog": 313,
-  "nav": 0,
-  "hora": "2026-10-31T12:13:53+00:00",
-  "fuente": "B"
+  "lat": 51.8122,
+  "lon": -8.2682,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-10-31T15:10:05+00:00",
+  "fuente": "A"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
@@ -57,12 +57,12 @@
  "SPYROS V": {
   "buque": "SPYROS V",
   "mmsi": "215726000",
-  "lat": -26.6957,
-  "lon": 14.3887,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-10-31T14:15:23+00:00",
-  "fuente": "A"
+  "lat": -26.856,
+  "lon": 14.4456,
+  "sog": 11.5,
+  "cog": 162.6,
+  "nav": 0,
+  "hora": "2026-10-31T15:08:35+00:00",
+  "fuente": "B"
  }
 }
