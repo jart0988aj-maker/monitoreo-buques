@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitoreo de buques</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#121417; --panel:#1a1d21; --panel-2:#22262b; --line:#2e3238; --line-2:#3a3f46;
+  --ink:#eef0f2; --ink-2:#b9bec5; --ink-3:#868c94;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b; --none:#6b7078;
+  --accent:#3987e5;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1400px;margin:0 auto;padding:20px 16px 40px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}
+h1{font-size:26px;margin:0;letter-spacing:-.01em}
+.live{display:flex;align-items:center;gap:8px;color:var(--ink-2);font-size:13px;margin-top:4px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--good);box-shadow:0 0 0 3px rgba(12,163,12,.2)}
+.dot.viejo{background:var(--warn);box-shadow:0 0 0 3px rgba(250,178,25,.2)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 14px}
+.chip{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:6px;padding:6px 10px;font:inherit;font-weight:600;cursor:pointer}
+.chip span{color:var(--ink-3);font-family:var(--mono);font-weight:400;margin-left:6px}
+.chip[aria-pressed=true]{background:var(--ink);color:#111;border-color:var(--ink)}
+.chip[aria-pressed=true] span{color:#555}
+.sep{width:1px;background:var(--line);margin:0 4px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.kpi b{display:block;font-family:var(--mono);font-size:28px;font-weight:500;line-height:1.1}
+.kpi small{color:var(--ink-2)}
+.kpi.alerta b{color:var(--serious)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:14px}
+@media (max-width:980px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.panel h2{font-size:15px;margin:0;padding:12px 14px 2px}
+.panel .sub{color:var(--ink-3);font-size:12px;padding:0 14px 10px}
+#mapa{height:560px;background:#0e1013}
+@media (max-width:600px){#mapa{height:380px}}
+.leyenda{display:flex;flex-wrap:wrap;gap:14px;padding:10px 14px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-2)}
+.leyenda i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:2px solid var(--panel)}
+.lista{max-height:560px;overflow:auto;border-top:1px solid var(--line)}
+.item{display:grid;grid-template-columns:62px 1fr auto;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.item:hover{background:var(--panel-2)}
+.badge{font-family:var(--mono);font-weight:500;border-radius:5px;padding:3px 0;text-align:center;font-size:13px;align-self:start}
+.b-rojo{background:rgba(208,59,59,.18);color:#ff8a8a;border:1px solid rgba(208,59,59,.6)}
+.b-amarillo{background:rgba(250,178,25,.14);color:var(--warn);border:1px solid rgba(250,178,25,.5)}
+.b-verde{background:rgba(12,163,12,.14);color:#4fd14f;border:1px solid rgba(12,163,12,.5)}
+.b-riesgo{background:transparent;color:var(--serious);border:1px dashed rgba(236,131,90,.7)}
+.item .t{font-weight:600}
+.item .d{color:var(--ink-3);font-size:12px}
+.item .f{text-align:right;font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+.tabs{display:flex;gap:4px;padding:0 14px 10px}
+.tabs button{font:inherit;font-size:12px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);border-radius:5px;padding:3px 8px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--panel-2);color:var(--ink);border-color:var(--ink-3)}
+section{margin-top:14px}
+.puertos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:0 14px 14px}
+.puerto{background:var(--panel-2);border-radius:6px;padding:10px 12px}
+.puerto .n{font-weight:600;font-size:13px}
+.puerto b{font-family:var(--mono);font-size:22px;font-weight:500}
+.puerto small{color:var(--ink-3);display:block}
+.up{color:var(--serious)} .down{color:#4fd14f}
+.tabla-w{overflow:auto;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{position:sticky;top:0;background:var(--panel);color:var(--ink-2);font-weight:500;cursor:pointer;user-select:none}
+td.num,th.num{text-align:right;font-family:var(--mono)}
+tr:hover td{background:var(--panel-2)}
+.buscar{margin:0 14px 10px;padding:7px 10px;width:calc(100% - 28px);max-width:320px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:6px;color:var(--ink);font:inherit}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:980px){.dos{grid-template-columns:1fr}}
+.rango{padding:0 14px 14px}
+.fila{display:grid;grid-template-columns:120px 1fr 54px;align-items:center;gap:10px;height:30px;position:relative}
+.fila .et{font-size:12px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fila .v{font-family:var(--mono);font-size:12px;text-align:right;color:var(--ink)}
+.pista{position:relative;height:100%}
+.pista .r{position:absolute;top:11px;height:8px;border-radius:4px;background:rgba(57,135,229,.35)}
+.pista .m{position:absolute;top:7px;width:4px;height:16px;border-radius:2px;background:var(--accent)}
+.pista .g{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+.eje{display:grid;grid-template-columns:120px 1fr 54px;gap:10px;font-size:11px;color:var(--ink-3)}
+.eje .p{position:relative;height:14px}
+.eje .p span{position:absolute;transform:translateX(-50%)}
+#tip{position:fixed;pointer-events:none;background:#000;color:#fff;border:1px solid var(--line-2);border-radius:6px;padding:7px 9px;font-size:12px;display:none;z-index:2000;max-width:260px}
+footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#0b0c0e;color:var(--ink);border:1px solid var(--line-2)}
+.leaflet-popup-content{margin:10px 12px;font:13px/1.45 "IBM Plex Sans",sans-serif}
+.pop h3{margin:0 0 4px;font-size:14px}
+.pop dl{display:grid;grid-template-columns:auto auto;gap:2px 12px;margin:6px 0 0}
+.pop dt{color:var(--ink-3)} .pop dd{margin:0;font-family:var(--mono)}
+.leaflet-container a.leaflet-popup-close-button{color:var(--ink-2)}
+.leaflet-control-attribution{background:rgba(0,0,0,.5)!important;color:#888!important}
+.leaflet-control-attribution a{color:#aaa!important}
+.portico{width:9px;height:9px;background:#c9ced5;border:2px solid #121417;transform:rotate(45deg)}
+.vacio{padding:24px 14px;color:var(--ink-3);text-align:center}
+.aviso{background:rgba(250,178,25,.08);border:1px solid rgba(250,178,25,.35);color:var(--ink-2);border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Monitoreo de buques</h1>
+      <div class="live"><span class="dot" id="dot"></span><span id="estadoVivo">Cargando…</span></div>
+    </div>
+    <div style="font-size:12px;color:var(--ink-3)">Asia → México · datos AIS de aisstream.io</div>
+  </header>
+
+  <div id="aviso"></div>
+  <div class="chips" id="chips"></div>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div class="panel">
+      <div id="mapa"></div>
+      <div class="leyenda">
+        <span><i style="background:var(--good)"></i>A tiempo (≤1 día)</span>
+        <span><i style="background:var(--warn)"></i>Retraso 2–4 días</span>
+        <span><i style="background:var(--crit)"></i>Retraso 5+ días</span>
+        <span><span class="portico" style="display:inline-block;margin-right:6px"></span>Puerto</span>
+        <span>- - - ruta estimada al destino</span>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Alertas de llegada</h2>
+      <div class="sub" id="subAlertas"></div>
+      <div class="tabs" id="tabsAlertas">
+        <button data-t="retraso" aria-pressed="true">Retraso (AIS)</button>
+        <button data-t="riesgo" aria-pressed="false">Riesgo histórico</button>
+        <button data-t="proximas" aria-pressed="false">Próximas llegadas</button>
+      </div>
+      <div class="lista" id="alertas"></div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Congestión en puertos</h2>
+    <div class="sub">Buques de carga fondeados (esperando muelle) en la última lectura, comparado con el promedio de 7 días.</div>
+    <div class="puertos" id="puertos"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Embarques activos</h2>
+    <div class="sub">En tránsito, por zarpar (14 días) o recién llegados. Fecha a planta = llegada + 7 días.</div>
+    <input class="buscar" id="buscar" placeholder="Buscar buque, naviera o puerto…">
+    <div class="tabla-w"><table id="tabla"></table></div>
+  </section>
+
+  <div class="dos">
+    <section class="panel">
+      <h2>Tiempo de tránsito real por origen</h2>
+      <div class="sub">Días de ETD a llegada a Manzanillo, embarques ya llegados. Barra = rango normal (10%–90%), marca = mediana.</div>
+      <div class="rango" id="rangoOrigen"></div>
+    </section>
+    <section class="panel">
+      <h2>Tránsito por naviera</h2>
+      <div class="sub">Misma lectura, por naviera y origen (mín. 8 embarques).</div>
+      <div class="tabs" id="tabsNav"></div>
+      <div class="rango" id="rangoNav"></div>
+    </section>
+  </div>
+
+  <footer id="pie"></footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const MESES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const fd=s=>{if(!s)return"–";const d=new Date(s+"T12:00:00");return d.getDate()+" "+MESES[d.getMonth()]};
+const color={verde:"#0ca30c",amarillo:"#fab219",rojo:"#d03b3b"};
+const signo=n=>n>0?"+"+n:String(n);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const og=a=>a.origenes&&a.origenes.length>1?a.pol+" +"+(a.origenes.length-1):a.pol;
+const lonP=l=>l<0?l+360:l;   // centra el Pacífico
+let D, filtroNav="TODAS", filtroEstado="activos", tabAlerta="retraso", orden={k:"retraso_dias",d:-1}, mapa, capa;
+
+const tip=document.getElementById("tip");
+function muestraTip(e,html){tip.innerHTML=html;tip.style.display="block";
+  const x=Math.min(e.clientX+12,innerWidth-270);tip.style.left=x+"px";tip.style.top=(e.clientY+12)+"px"}
+function ocultaTip(){tip.style.display="none"}
+
+fetch("data/estado.json?"+Date.now()).then(r=>r.json()).then(d=>{D=d;inicia()}).catch(e=>{
+  document.getElementById("estadoVivo").textContent="No se pudieron cargar los datos ("+e.message+")"});
+
+function filtrados(){
+  return D.activos.filter(a=>(filtroNav==="TODAS"||a.naviera===filtroNav)&&
+    (filtroEstado==="activos"||a.estado===filtroEstado))
+}
+
+function inicia(){
+  const gen=new Date(D.generado), horas=(Date.now()-gen)/36e5;
+  const sinPos=D.kpis.buques_activos-D.kpis.buques_en_mapa;
+  document.getElementById("estadoVivo").textContent=
+    `Actualizado ${gen.toLocaleString("es-MX",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})} · ${sinPos} buques sin posición AIS`;
+  if(horas>2)document.getElementById("dot").classList.add("viejo");
+  const uc=D.ultima_corrida;
+  if(!uc)document.getElementById("aviso").innerHTML='<div class="aviso">Todavía no corre el recolector AIS. Lo que ves sale solo del reporte de embarques y del histórico; el mapa se llena con la primera corrida.</div>';
+  else if(uc.errores&&uc.errores.length&&!Object.values(uc.mensajes).some(n=>n>0))
+    document.getElementById("aviso").innerHTML=`<div class="aviso">La última corrida no recibió datos AIS: ${esc(uc.errores[0])}</div>`;
+  chips(); mapaInicia(); pinta();
+  document.getElementById("buscar").addEventListener("input",tabla);
+  document.querySelectorAll("#tabsAlertas button").forEach(b=>b.onclick=()=>{tabAlerta=b.dataset.t;
+    document.querySelectorAll("#tabsAlertas button").forEach(x=>x.setAttribute("aria-pressed",x===b));alertas()});
+  congestion(); estadisticas(); pie();
+}
+
+function chips(){
+  const c={}; D.activos.forEach(a=>{const n=a.naviera||"SIN NAVIERA";c[n]=(c[n]||0)+1});
+  const navs=Object.entries(c).sort((a,b)=>b[1]-a[1]);
+  const est=[["activos","Todos"],["en tránsito","En tránsito"],["por zarpar","Por zarpar"],["en puerto","En puerto"]];
+  const el=document.getElementById("chips");
+  el.innerHTML=est.map(([k,t])=>`<button class="chip" data-e="${k}" aria-pressed="${k===filtroEstado}">${t}<span>${k==="activos"?D.activos.length:D.activos.filter(a=>a.estado===k).length}</span></button>`).join("")+
+    '<div class="sep"></div>'+
+    `<button class="chip" data-n="TODAS" aria-pressed="true">Todas las navieras</button>`+
+    navs.map(([n,k])=>`<button class="chip" data-n="${esc(n)}" aria-pressed="false">${esc(n)}<span>${k}</span></button>`).join("");
+  el.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{filtroNav=b.dataset.n;
+    el.querySelectorAll("[data-n]").forEach(x=>x.setAttribute("aria-pressed",x===b));pinta()});
+  el.querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>{filtroEstado=b.dataset.e;
+    el.querySelectorAll("[data-e]").forEach(x=>x.setAttribute("aria-pressed",x===b));pinta()});
+}
+
+function pinta(){kpis();marcadores();alertas();tabla()}
+
+function kpis(){
+  const A=filtrados(), bu=new Set(A.map(a=>a.buque));
+  const ret=A.filter(a=>a.estado!=="por zarpar"&&a.retraso_dias>=2);
+  const med=ret.length?ret.map(a=>a.retraso_dias).sort((a,b)=>a-b)[Math.floor(ret.length/2)]:0;
+  const k=[
+    [bu.size,"buques activos"],
+    [new Set(A.filter(a=>a.posicion).map(a=>a.buque)).size,"en el mapa (con AIS)"],
+    [new Set(ret.map(a=>a.buque)).size,"con retraso (AIS)",ret.length>0],
+    [ret.length?signo(med)+" d":"–","retraso mediano"],
+    [new Set(A.filter(a=>a.riesgo_dias>=5).map(a=>a.buque)).size,"con riesgo histórico"],
+    [A.filter(a=>a.estado!=="por zarpar").reduce((s,a)=>s+a.contenedores,0),"contenedores en tránsito"],
+  ];
+  document.getElementById("kpis").innerHTML=k.map(([v,t,al])=>`<div class="kpi${al?" alerta":""}"><b>${v}</b><small>${t}</small></div>`).join("");
+}
+
+function mapaInicia(){
+  if(!window.L){document.getElementById("mapa").innerHTML='<div class="vacio">No se pudo cargar el mapa.</div>';return}
+  mapa=L.map("mapa",{worldCopyJump:false,zoomControl:true,attributionControl:true}).fitBounds([[-5,100],[45,262]]);
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{subdomains:"abcd",maxZoom:12,
+    attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(mapa);
+  Object.entries(D.puertos).forEach(([n,p])=>L.marker([p.lat,lonP(p.lon)],{icon:L.divIcon({className:"",html:'<div class="portico"></div>',iconSize:[9,9]})})
+    .bindTooltip(n,{direction:"top"}).addTo(mapa));
+  capa=L.layerGroup().addTo(mapa);
+}
+
+function popup(a){
+  const p=a.posicion;
+  return `<div class="pop"><h3>${esc(a.buque)}</h3><div style="color:var(--ink-3)">${esc(a.naviera)} · ${esc(og(a))} → ${esc(a.pod)}</div>
+  <dl><dt>ETD</dt><dd>${fd(a.etd)}</dd><dt>ETA reporte</dt><dd>${fd(a.eta)}</dd>
+  <dt>Pronóstico</dt><dd>${fd(a.pronostico)} (${signo(a.retraso_dias)} d)</dd><dt>A planta</dt><dd>${fd(a.fecha_planta)}</dd>
+  <dt>Velocidad</dt><dd>${p&&p.sog!=null?p.sog.toFixed(1)+" nudos":"–"}</dd>
+  <dt>Posición</dt><dd>${p?new Date(p.hora).toLocaleString("es-MX",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):"–"}</dd>
+  <dt>Embarques</dt><dd>${a.embarques} (${a.contenedores} ctr)</dd></dl>
+  <div style="margin-top:6px;color:var(--ink-3);font-size:12px">${esc(a.metodo)}</div></div>`
+}
+
+function marcadores(){
+  if(!capa)return;
+  capa.clearLayers();
+  const vistos=new Set();
+  filtrados().filter(a=>a.posicion).forEach(a=>{
+    if(vistos.has(a.buque))return; vistos.add(a.buque);
+    const p=a.posicion, ll=[p.lat,lonP(p.lon)], dest=D.puertos[a.pod];
+    if(dest&&a.estado==="en tránsito")L.polyline([ll,[dest.lat,lonP(dest.lon)]],{color:"#6b7078",weight:1,dashArray:"4 5",opacity:.7}).addTo(capa);
+    L.circleMarker(ll,{radius:6,color:"#121417",weight:2,fillColor:color[a.nivel],fillOpacity:1})
+      .bindPopup(popup(a)).bindTooltip(`${a.buque} · ${signo(a.retraso_dias)} d`,{direction:"top"}).addTo(capa);
+  });
+}
+
+function irA(a){
+  if(!a.posicion||!mapa)return;
+  mapa.setView([a.posicion.lat,lonP(a.posicion.lon)],5);
+  capa.eachLayer(l=>{if(l.getPopup&&l.getPopup()&&l.getLatLng&&l.getLatLng().lat===a.posicion.lat)l.openPopup()});
+  document.getElementById("mapa").scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+function alertas(){
+  let A=filtrados().filter(a=>a.estado!=="en puerto"||tabAlerta==="proximas"), sub;
+  if(tabAlerta==="retraso"){A=A.filter(a=>a.retraso_dias>=2).sort((a,b)=>b.retraso_dias-a.retraso_dias);
+    sub="Pronóstico con señal AIS vs. ETA del reporte."}
+  else if(tabAlerta==="riesgo"){A=A.filter(a=>a.riesgo_dias>=3).sort((a,b)=>b.riesgo_dias-a.riesgo_dias);
+    sub="La ETA del reporte es más corta de lo que esa ruta y naviera suelen tardar."}
+  else{A=A.filter(a=>a.estado!=="por zarpar").sort((a,b)=>a.pronostico.localeCompare(b.pronostico));
+    sub="Ordenadas por fecha pronosticada de llegada."}
+  document.getElementById("subAlertas").textContent=sub;
+  const el=document.getElementById("alertas");
+  if(!A.length){el.innerHTML=`<div class="vacio">${tabAlerta==="retraso"?"Sin retrasos detectados por AIS por ahora.":"Nada que mostrar."}</div>`;return}
+  el.innerHTML=A.slice(0,80).map((a,i)=>{
+    const badge=tabAlerta==="riesgo"?`<div class="badge b-riesgo" title="Riesgo histórico">+${a.riesgo_dias}</div>`:
+      `<div class="badge b-${a.nivel}" title="${a.nivel==="verde"?"A tiempo":"Retraso"}">${signo(a.retraso_dias)}</div>`;
+    const det=tabAlerta==="riesgo"?`Normal ${Math.round(a.transito_normal)} d · reporte ${daysBetween(a.etd,a.eta)} d`:esc(a.metodo);
+    return `<div class="item" data-i="${i}">${badge}<div><div class="t">${esc(a.buque)}</div>
+      <div class="d">${esc(a.naviera)} · ${esc(og(a))} → ${esc(a.pod)}</div><div class="d">${det}</div></div>
+      <div class="f">${tabAlerta==="riesgo"?fd(a.esperado_historico):fd(a.pronostico)}<br><span style="color:var(--ink-3)">ETA ${fd(a.eta)}</span></div></div>`}).join("");
+  el.querySelectorAll(".item").forEach(n=>n.onclick=()=>irA(A[+n.dataset.i]));
+}
+const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
+
+function tabla(){
+  const q=document.getElementById("buscar").value.trim().toUpperCase();
+  const cols=[["buque","Buque"],["naviera","Naviera"],["pol","Origen"],["pod","Destino"],["estado","Estado"],
+    ["etd","ETD",1],["eta","ETA reporte",1],["pronostico","Pronóstico",1],["retraso_dias","Retraso",1],
+    ["riesgo_dias","Riesgo hist.",1],["fecha_planta","A planta",1],["contenedores","Ctr",1],["metodo","Fuente del pronóstico"]];
+  let A=filtrados().filter(a=>!q||[a.buque,a.naviera,...(a.origenes||[a.pol]),a.pod].join(" ").includes(q));
+  A.sort((x,y)=>{const a=x[orden.k],b=y[orden.k];return (a>b?1:a<b?-1:0)*orden.d});
+  const t=document.getElementById("tabla");
+  t.innerHTML=`<thead><tr>${cols.map(([k,n,num])=>`<th data-k="${k}" class="${num?"num":""}">${n}${orden.k===k?(orden.d>0?" ▲":" ▼"):""}</th>`).join("")}</tr></thead><tbody>${
+    A.map(a=>`<tr><td><b>${esc(a.buque)}</b></td><td>${esc(a.naviera)}</td><td title="${esc((a.origenes||[]).join(", "))}">${esc(og(a))}</td><td>${esc(a.pod)}</td><td>${esc(a.estado)}</td>
+    <td class="num">${fd(a.etd)}</td><td class="num">${fd(a.eta)}</td><td class="num">${fd(a.pronostico)}</td>
+    <td class="num"><span class="badge b-${a.nivel}" style="padding:1px 6px">${signo(a.retraso_dias)}</span></td>
+    <td class="num">${a.riesgo_dias?"+"+a.riesgo_dias:"–"}</td><td class="num">${fd(a.fecha_planta)}</td>
+    <td class="num">${a.contenedores}</td><td style="color:var(--ink-3)">${esc(a.metodo)}</td></tr>`).join("")}</tbody>`;
+  t.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;orden={k,d:orden.k===k?-orden.d:(k==="retraso_dias"||k==="riesgo_dias"?-1:1)};tabla()});
+}
+
+function congestion(){
+  const el=document.getElementById("puertos");
+  if(!D.congestion.length){el.innerHTML='<div class="vacio">Aparece con la primera corrida del recolector AIS.</div>';return}
+  el.innerHTML=D.congestion.map(c=>{
+    const dif=c.promedio_7d!=null&&c.lecturas>3?c.fondeados-c.promedio_7d:null;
+    const tend=dif==null?"<small>juntando histórico…</small>":`<small class="${dif>1?"up":dif<-1?"down":""}">${dif>1?"▲":dif<-1?"▼":"="} prom. 7 días: ${c.promedio_7d}</small>`;
+    return `<div class="puerto"><div class="n">${esc(c.puerto)}</div><b>${c.fondeados}</b> <span style="color:var(--ink-3)">fondeados</span>
+      <small>${c.atracados} atracados</small>${tend}</div>`}).join("");
+}
+
+function rangos(el,filas){
+  if(!filas.length){el.innerHTML='<div class="vacio">Sin datos suficientes.</div>';return}
+  const max=Math.ceil(Math.max(...filas.map(f=>f.p90))/10)*10, x=v=>(v/max*100)+"%";
+  const ticks=[];for(let t=0;t<=max;t+=10)ticks.push(t);
+  el.innerHTML=filas.map((f,i)=>`<div class="fila" data-i="${i}"><div class="et" title="${esc(f.et)}">${esc(f.et)}</div>
+    <div class="pista">${ticks.map(t=>`<div class="g" style="left:${x(t)}"></div>`).join("")}
+    <div class="r" style="left:${x(f.p10)};width:calc(${x(f.p90-f.p10)})"></div><div class="m" style="left:calc(${x(f.mediana)} - 2px)"></div></div>
+    <div class="v">${Math.round(f.mediana)} d</div></div>`).join("")+
+    `<div class="eje"><div></div><div class="p">${ticks.map(t=>`<span style="left:${x(t)}">${t}</span>`).join("")}</div><div>días</div></div>`;
+  el.querySelectorAll(".fila").forEach(n=>{const f=filas[+n.dataset.i];
+    n.onmousemove=e=>muestraTip(e,`<b>${esc(f.et)}</b><br>Mediana: ${f.mediana} días<br>Normal: ${f.p10}–${f.p90} días<br>${f.n} embarques`);
+    n.onmouseleave=ocultaTip});
+}
+
+function estadisticas(){
+  const o=Object.entries(D.estadisticas.origen).filter(([k,s])=>k.endsWith(">MANZANILLO")&&s.n>=15)
+    .map(([k,s])=>({et:k.split(">")[0],...s})).sort((a,b)=>a.mediana-b.mediana);
+  rangos(document.getElementById("rangoOrigen"),o);
+  const rn=Object.entries(D.estadisticas.ruta_naviera).filter(([k,s])=>k.includes(">MANZANILLO>")&&s.n>=8)
+    .map(([k,s])=>{const [pol,,nav]=k.split(">");return{pol,et:nav||"SIN NAVIERA",...s}});
+  const pols=[...new Set(rn.map(r=>r.pol))].sort((a,b)=>rn.filter(r=>r.pol===b).length-rn.filter(r=>r.pol===a).length).slice(0,5);
+  let sel=pols[0];
+  const tabs=document.getElementById("tabsNav");
+  const draw=()=>{tabs.innerHTML=pols.map(p=>`<button data-p="${esc(p)}" aria-pressed="${p===sel}">${esc(p)}</button>`).join("");
+    tabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{sel=b.dataset.p;draw()});
+    rangos(document.getElementById("rangoNav"),rn.filter(r=>r.pol===sel).sort((a,b)=>a.mediana-b.mediana))};
+  draw();
+}
+
+function pie(){
+  const uc=D.ultima_corrida;
+  document.getElementById("pie").innerHTML=
+   `Datos de posición: <a href="https://aisstream.io">aisstream.io</a> (antenas terrestres; en mar abierto puede no haber señal). Histórico: ${D.estadisticas.total_historico} embarques ya llegados.
+   ${uc?`<br>Última lectura AIS: ${new Date(uc.fin).toLocaleString("es-MX")} · ${Object.values(uc.mensajes).reduce((a,b)=>a+b,0).toLocaleString("es-MX")} mensajes · ${uc.con_mmsi} de ${uc.buques_objetivo} buques identificados.`:""}
+   <br>Para Excel: <a href="data/estado_embarques.csv">estado_embarques.csv</a> (se conecta con la columna <i>clave</i> = BUQUE|POL|ETD).`;
+}
+</script>
+</body>
+</html>

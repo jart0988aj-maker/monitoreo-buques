@@ -1,0 +1,4326 @@
+{
+ "generado": "2026-10-31T01:52:49+00:00",
+ "hoy": "2026-10-30",
+ "kpis": {
+  "embarques_activos": 319,
+  "buques_activos": 91,
+  "buques_en_mapa": 0,
+  "contenedores_transito": 481,
+  "buques_con_retraso": 0,
+  "retraso_mediano": 0,
+  "buques_con_riesgo": 21,
+  "buques_identificados": 0
+ },
+ "activos": [
+  {
+   "buque": "HUIZHOU66",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-22",
+   "pol": "LIANYUNGANG",
+   "origenes": [
+    "LIANYUNGANG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-30",
+   "contenedores": 15,
+   "embarques": 5,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-22",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-29",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 40,
+   "peor_caso": "2026-12-14",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-09",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 17,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC ISTANBUL",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-04",
+   "pol": "DALIAN",
+   "origenes": [
+    "DALIAN"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-11-13",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-12-04",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-11",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38,
+   "peor_caso": "2026-12-27",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-21",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 17,
+   "muestra_historico": 17,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "UNI-PRUDENT",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "HAIPHONG",
+   "origenes": [
+    "HAIPHONG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-10",
+   "contenedores": 13,
+   "embarques": 3,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38.0,
+   "peor_caso": "2026-11-26",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-17",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 15,
+   "muestra_historico": 40,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER CONFORM",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-13",
+   "pol": "HAIPHONG",
+   "origenes": [
+    "HAIPHONG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-21",
+   "contenedores": 14,
+   "embarques": 3,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-13",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-20",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38.0,
+   "peor_caso": "2026-12-07",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-28",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 15,
+   "muestra_historico": 40,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC REEF",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-22",
+   "pol": "DALIAN",
+   "origenes": [
+    "DALIAN"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-28",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-22",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-29",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38,
+   "peor_caso": "2026-12-11",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-05",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 13,
+   "muestra_historico": 17,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "FUJUNHENGTONG",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-24",
+   "pol": "LIANYUNGANG",
+   "origenes": [
+    "LIANYUNGANG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-27",
+   "contenedores": 11,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-24",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-01",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 40,
+   "peor_caso": "2026-12-11",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-06",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 12,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "KOTA EAGLE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-20",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI"
+   ],
+   "naviera": "YANG MING",
+   "etd": "2026-11-04",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-20",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-27",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 27,
+   "peor_caso": "2026-12-02",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-01",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 11,
+   "muestra_historico": 9,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER VERVE",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-14",
+   "pol": "MANILA",
+   "origenes": [
+    "MANILA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-11-13",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-12-14",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-21",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 42,
+   "peor_caso": "2026-12-31",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 11,
+   "muestra_historico": 25,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC DANIELA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-06",
+   "pol": "DALIAN",
+   "origenes": [
+    "DALIAN"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-09",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-06",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-13",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38,
+   "peor_caso": "2026-11-22",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-16",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 10,
+   "muestra_historico": 17,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC PRECISION",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-29",
+   "pol": "SINGAPORE",
+   "origenes": [
+    "SINGAPORE"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-04",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 34.0,
+   "peor_caso": "2026-11-19",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-07",
+   "base_historico": "origen",
+   "riesgo_dias": 9,
+   "muestra_historico": 26,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER VERVE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-16",
+   "pol": "MANILA",
+   "origenes": [
+    "MANILA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-14",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-16",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-23",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 42,
+   "peor_caso": "2026-12-01",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 9,
+   "muestra_historico": 25,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "KOTA PELANGI",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-20",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-11-07",
+   "contenedores": 10,
+   "embarques": 2,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-20",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-27",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-12-01",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-29",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 9,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "HUMBOLDT EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-08",
+   "pol": "YANTIAN",
+   "origenes": [
+    "BUSAN",
+    "KEELUNG",
+    "NINGBO",
+    "YANTIAN"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-18",
+   "contenedores": 12,
+   "embarques": 8,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-08",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-15",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-19",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-15",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 7,
+   "muestra_historico": 112,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC ALTAIR",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-05",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-22",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-12-05",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-12",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 51,
+   "peor_caso": "2026-12-21",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-12",
+   "base_historico": "origen",
+   "riesgo_dias": 7,
+   "muestra_historico": 33,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "YUANDAFANRONG",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-27",
+   "pol": "LIANYUNGANG",
+   "origenes": [
+    "LIANYUNGANG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-23",
+   "contenedores": 6,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-27",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-03",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 40,
+   "peor_caso": "2026-11-07",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-02",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 6,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "HYUNDAI BRAVE",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-28",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "LIANYUNGANG",
+    "QINGDAO",
+    "SHANGHAI"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-06",
+   "contenedores": 29,
+   "embarques": 12,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-28",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-04",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-07",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-03",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 6,
+   "muestra_historico": 168,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ONE SINCERITY",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-18",
+   "pol": "YANTIAN",
+   "origenes": [
+    "KEELUNG",
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-27",
+   "contenedores": 13,
+   "embarques": 12,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-18",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-25",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-12-01",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-24",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 6,
+   "muestra_historico": 114,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "UNI-PRUDENT",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-30",
+   "pol": "HAIPHONG",
+   "origenes": [
+    "HAIPHONG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-29",
+   "contenedores": 3,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-30",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-07",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38.0,
+   "peor_caso": "2026-12-15",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-06",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 6,
+   "muestra_historico": 40,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "POSORJA EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-28",
+   "pol": "BUENAVENTURA",
+   "origenes": [
+    "BUENAVENTURA"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-24",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-28",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-04",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 9,
+   "peor_caso": "2026-11-02",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-02",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 5,
+   "muestra_historico": 27,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER VAST",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-08",
+   "pol": "MANILA",
+   "origenes": [
+    "MANILA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-02",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-08",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-15",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 42,
+   "peor_caso": "2026-11-19",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-13",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 5,
+   "muestra_historico": 25,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "COSCO AMERICA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-11",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-25",
+   "contenedores": 6,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-11",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-18",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-18",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-16",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 5,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "WAN HAI A06",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-20",
+   "pol": "YANTIAN",
+   "origenes": [
+    "YANTIAN"
+   ],
+   "naviera": "PIL",
+   "etd": "2026-10-28",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-20",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-27",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.5,
+   "peor_caso": "2026-12-02",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 5,
+   "muestra_historico": 12,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MONTEVIDEO EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-30",
+   "pol": "YANTIAN",
+   "origenes": [
+    "JIANGMEN",
+    "KAOHSIUNG",
+    "KEELUNG",
+    "YANTIAN"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-11-07",
+   "contenedores": 10,
+   "embarques": 6,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-30",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-07",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-12-12",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-05",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 5,
+   "muestra_historico": 114,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC MAURA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-05",
+   "pol": "MUNDRA",
+   "origenes": [
+    "MUNDRA"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-09-23",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-05",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-12",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 47,
+   "peor_caso": "2026-11-23",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-09",
+   "base_historico": "origen",
+   "riesgo_dias": 4,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "WAN HAI A07",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-10",
+   "pol": "YANTIAN",
+   "origenes": [
+    "KAOHSIUNG",
+    "YANTIAN"
+   ],
+   "naviera": "YANG MING",
+   "etd": "2026-10-17",
+   "contenedores": 4,
+   "embarques": 3,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-10",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-17",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-21",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-14",
+   "base_historico": "origen",
+   "riesgo_dias": 4,
+   "muestra_historico": 376,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC FREEPORT",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-11",
+   "pol": "XINGANG",
+   "origenes": [
+    "XINGANG"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-16",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-11",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-18",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 30,
+   "peor_caso": "2026-11-25",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-15",
+   "base_historico": "promedio general",
+   "riesgo_dias": 4,
+   "muestra_historico": 0,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "TOLEDO TRIUMPH",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-16",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "KAOHSIUNG",
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-29",
+   "contenedores": 41,
+   "embarques": 23,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-16",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-23",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-22",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-20",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 4,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC IDANIA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-18",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-27",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-18",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-25",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 26.0,
+   "peor_caso": "2026-11-22",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-22",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 4,
+   "muestra_historico": 26,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "XIN ZHAN JIANG",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-24",
+   "pol": "HAIPHONG",
+   "origenes": [
+    "HAIPHONG"
+   ],
+   "naviera": "COSCO",
+   "etd": "2026-10-22",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-24",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-01",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 37,
+   "peor_caso": "2026-12-08",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-28",
+   "base_historico": "origen",
+   "riesgo_dias": 4,
+   "muestra_historico": 49,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ONE SIMPLICITY",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-29",
+   "pol": "HONG KONG",
+   "origenes": [
+    "HONG KONG"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-11-03",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-06",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 30,
+   "peor_caso": "2026-12-13",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-03",
+   "base_historico": "promedio general",
+   "riesgo_dias": 4,
+   "muestra_historico": 0,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "UTE",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-06",
+   "pol": "DALIAN",
+   "origenes": [
+    "DALIAN"
+   ],
+   "naviera": "MAERSK",
+   "etd": "2026-11-04",
+   "contenedores": 8,
+   "embarques": 4,
+   "estado": "por zarpar",
+   "pronostico": "2026-12-06",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-13",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 36.0,
+   "peor_caso": "2026-12-18",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-10",
+   "base_historico": "origen",
+   "riesgo_dias": 4,
+   "muestra_historico": 22,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "X-PRESS CAPELLA",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-07",
+   "pol": "MUNDRA",
+   "origenes": [
+    "MUNDRA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-25",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-12-07",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-14",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 47,
+   "peor_caso": "2026-12-25",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-11",
+   "base_historico": "origen",
+   "riesgo_dias": 4,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC CORNELI",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-29",
+   "pol": "NINGBO",
+   "origenes": [
+    "NINGBO"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-04",
+   "contenedores": 6,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28,
+   "peor_caso": "2026-11-04",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-01",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 3,
+   "muestra_historico": 29,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC ORSOLA",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-29",
+   "pol": "NINGBO",
+   "origenes": [
+    "NINGBO"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-04",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28,
+   "peor_caso": "2026-11-04",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-01",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 3,
+   "muestra_historico": 29,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "CMA CGM NORMA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "BUSAN",
+   "origenes": [
+    "BUSAN"
+   ],
+   "naviera": "CMA CGM",
+   "etd": "2026-10-18",
+   "contenedores": 4,
+   "embarques": 4,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 18,
+   "peor_caso": "2026-11-10",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-05",
+   "base_historico": "origen",
+   "riesgo_dias": 3,
+   "muestra_historico": 75,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC ANAHITA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-03",
+   "pol": "BUSAN",
+   "origenes": [
+    "BUSAN"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-19",
+   "contenedores": 4,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-03",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-10",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 18,
+   "peor_caso": "2026-11-11",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-06",
+   "base_historico": "origen",
+   "riesgo_dias": 3,
+   "muestra_historico": 75,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "HMM IVY",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-12",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "BUSAN",
+    "QINGDAO",
+    "SHANGHAI"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-18",
+   "contenedores": 19,
+   "embarques": 8,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-12",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-19",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-19",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-15",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 3,
+   "muestra_historico": 168,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC MAYA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-24",
+   "pol": "DALIAN",
+   "origenes": [
+    "DALIAN"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-20",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-24",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-01",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38,
+   "peor_caso": "2026-12-03",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-27",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 3,
+   "muestra_historico": 17,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ONE SAPPHIRE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-25",
+   "pol": "YANTIAN",
+   "origenes": [
+    "KAOHSIUNG",
+    "KEELUNG",
+    "TAICHUNG",
+    "YANTIAN"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-31",
+   "contenedores": 11,
+   "embarques": 8,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-25",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-02",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-12-05",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-28",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 3,
+   "muestra_historico": 114,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER CERTAIN",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-16",
+   "pol": "HAIPHONG",
+   "origenes": [
+    "HAIPHONG"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-11",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-16",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-23",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38.0,
+   "peor_caso": "2026-11-27",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-18",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 2,
+   "muestra_historico": 40,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MAERSK ALFIRK",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-21",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-18",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-21",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-28",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 36.0,
+   "peor_caso": "2026-12-03",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-23",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 2,
+   "muestra_historico": 48,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER FEAT",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-23",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "KAOHSIUNG",
+    "KEELUNG",
+    "NINGBO",
+    "SHANGHAI",
+    "TAICHUNG",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-11-03",
+   "contenedores": 28,
+   "embarques": 18,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-23",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-30",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-27",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 2,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "BUENOS AIRES EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-31",
+   "pol": "YANTIAN",
+   "origenes": [
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-04",
+   "contenedores": 7,
+   "embarques": 7,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-31",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-07",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-08",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-01",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 1,
+   "muestra_historico": 114,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER VERSE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "MANILA",
+   "origenes": [
+    "MANILA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-22",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 42,
+   "peor_caso": "2026-11-09",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-03",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 1,
+   "muestra_historico": 25,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC METTE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-05",
+   "pol": "DALIAN",
+   "origenes": [
+    "DALIAN"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-09-29",
+   "contenedores": 4,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-05",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-12",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 38,
+   "peor_caso": "2026-11-12",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-06",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 1,
+   "muestra_historico": 17,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER LINKING",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-10",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "NINGBO",
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-20",
+   "contenedores": 52,
+   "embarques": 28,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-10",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-17",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-13",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-11",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 1,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "NORDBORG MAERSK",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-11",
+   "pol": "YANTIAN",
+   "origenes": [
+    "YANTIAN"
+   ],
+   "naviera": "MAERSK",
+   "etd": "2026-10-15",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-11",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-18",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-19",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-12",
+   "base_historico": "origen",
+   "riesgo_dias": 1,
+   "muestra_historico": 376,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "TS COLOMBO",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-17",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "ESL",
+   "etd": "2026-10-28",
+   "contenedores": 3,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-17",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-24",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 21,
+   "peor_caso": "2026-11-24",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-18",
+   "base_historico": "origen",
+   "riesgo_dias": 1,
+   "muestra_historico": 87,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC LAUSANNE VI",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-24",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-11-03",
+   "contenedores": 3,
+   "embarques": 3,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-24",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-01",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-25",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 1,
+   "muestra_historico": 14,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "LIMA EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-28",
+   "pol": "YANTIAN",
+   "origenes": [
+    "BUSAN",
+    "KEELUNG",
+    "NINGBO",
+    "YANTIAN"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-09-28",
+   "contenedores": 10,
+   "embarques": 6,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-28",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-04",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-10-30",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-26",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 112,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "FUJUNHENGTONG",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-29",
+   "pol": "LIANYUNGANG",
+   "origenes": [
+    "LIANYUNGANG"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-09-16",
+   "contenedores": 17,
+   "embarques": 4,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 29.5,
+   "peor_caso": "2026-10-28",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-16",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 32,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ONE SPARKLE",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-29",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-01",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 21,
+   "peor_caso": "2026-10-28",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-22",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 87,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "SAPPHIRE TOWER",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-29",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "QINGDAO",
+    "SHANGHAI"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-09-15",
+   "contenedores": 3,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-10-17",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-13",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 168,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "COSTA RICA EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-10-30",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-09-04",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-10-30",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-06",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 52.0,
+   "peor_caso": "2026-11-03",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-26",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 30,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC JULIETTE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-01",
+   "pol": "BUSAN",
+   "origenes": [
+    "BUSAN"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-09-19",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-01",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-08",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 21,
+   "peor_caso": "2026-10-14",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-10",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 19,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER FOND",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "NINGBO",
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-05",
+   "contenedores": 52,
+   "embarques": 28,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-10-29",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-27",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER FRONT",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "YANTIAN",
+   "origenes": [
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-01",
+   "contenedores": 11,
+   "embarques": 8,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 26.0,
+   "peor_caso": "2026-11-06",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-27",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 112,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER LUCID",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "MUNDRA",
+   "origenes": [
+    "MUNDRA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-10",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 47,
+   "peor_caso": "2026-11-10",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-27",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER WIN",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "SIHANOUKVILLE",
+   "origenes": [
+    "SIHANOUKVILLE"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-16",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 30,
+   "peor_caso": "2026-10-26",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-16",
+   "base_historico": "promedio general",
+   "riesgo_dias": 0,
+   "muestra_historico": 0,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "UNI-POPULAR",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-02",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-29",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-02",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-09",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-11-02",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-01",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ALETTE MAERSK",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-03",
+   "pol": "SINGAPORE",
+   "origenes": [
+    "SINGAPORE"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-09-15",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-03",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-10",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-11-01",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-18",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "BUENAVENTURA EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-03",
+   "pol": "YANTIAN",
+   "origenes": [
+    "YANTIAN"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-09-21",
+   "contenedores": 4,
+   "embarques": 3,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-03",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-10",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-10-26",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-19",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 114,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "NEW MINGZHOU",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-03",
+   "pol": "TAICHUNG",
+   "origenes": [
+    "TAICHUNG"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-09-24",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-03",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-10",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 30,
+   "peor_caso": "2026-11-03",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-24",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 9,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "TS MUMBAI",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-05",
+   "pol": "MUNDRA",
+   "origenes": [
+    "MUNDRA"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-08-25",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-05",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-12",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 50.5,
+   "peor_caso": "2026-10-27",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-14",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 16,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "SPYROS V",
+   "pod": "ALTAMIRA",
+   "eta": "2026-11-07",
+   "pol": "SANTOS",
+   "origenes": [
+    "SANTOS"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-13",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-07",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-14",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 20.0,
+   "peor_caso": "2026-11-06",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-02",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 14,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER VERT",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-08",
+   "pol": "MANILA",
+   "origenes": [
+    "MANILA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-27",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-08",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-15",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 42,
+   "peor_caso": "2026-11-14",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-08",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 25,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MAERSK ALGOL",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-08",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-09-27",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-08",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-15",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 36.0,
+   "peor_caso": "2026-11-12",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-02",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 48,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER OMNI",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-09",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-27",
+   "contenedores": 3,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-10-31",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-30",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER OUTDO",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-09",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-01",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-11-04",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-03",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "YM CELEBRITY",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-09",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-09-30",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-11-03",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-02",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 21,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER FOCUS",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-10",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-19",
+   "contenedores": 13,
+   "embarques": 7,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-10",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-17",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-12",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-10",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC PROCIDA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-13",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-19",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-13",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-20",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 21,
+   "peor_caso": "2026-11-15",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-09",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 87,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "OLLY BIANCO",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-13",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-18",
+   "contenedores": 3,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-13",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-20",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-11-09",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-09",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 14,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "CISNES",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-17",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-11",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-17",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-24",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 36.0,
+   "peor_caso": "2026-11-26",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-16",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 48,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "YUANDAFANGRONG",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-17",
+   "pol": "LIANYUNGANG",
+   "origenes": [
+    "LIANYUNGANG"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-10",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-17",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-24",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 32,
+   "peor_caso": "2026-11-22",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-11",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 57,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "YM FOUNTAIN",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-18",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-27",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-18",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-25",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 21.0,
+   "peor_caso": "2026-11-17",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-17",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 56,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "COSCO PACIFIC",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-20",
+   "pol": "QINGDAO",
+   "origenes": [
+    "QINGDAO"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-06",
+   "contenedores": 4,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-20",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-27",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 21.0,
+   "peor_caso": "2026-10-27",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-27",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 56,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "HUA HANG",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-22",
+   "pol": "KEELUNG",
+   "origenes": [
+    "KEELUNG"
+   ],
+   "naviera": "MAERSK",
+   "etd": "2026-10-11",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-22",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-29",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 25,
+   "peor_caso": "2026-11-07",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-05",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 61,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MSC BEIRA IV",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-22",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-07",
+   "contenedores": 6,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-22",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-29",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.5,
+   "peor_caso": "2026-11-08",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-04",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 16,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "RACINE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-23",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "RCL",
+   "etd": "2026-10-01",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-23",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-30",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 51,
+   "peor_caso": "2026-11-30",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-21",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 33,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "YUANDAFANRONG",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-25",
+   "pol": "LIANYUNGANG",
+   "origenes": [
+    "LIANYUNGANG"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-10-23",
+   "contenedores": 2,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-25",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-02",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 32,
+   "peor_caso": "2026-12-05",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-24",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 57,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "HYUNDAI FORCE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-26",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "QINGDAO",
+    "SHANGHAI"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-27",
+   "contenedores": 20,
+   "embarques": 10,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-26",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-03",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-11-28",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-24",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 168,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "NAVIOS AMARILLO",
+   "pod": "ALTAMIRA",
+   "eta": "2026-11-28",
+   "pol": "SANTOS",
+   "origenes": [
+    "SANTOS"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-11-03",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-28",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-05",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 20.0,
+   "peor_caso": "2026-11-27",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-23",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 14,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "MAERSK EMDEN",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-29",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI"
+   ],
+   "naviera": "MAERSK",
+   "etd": "2026-10-30",
+   "contenedores": 6,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-11-29",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-06",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22,
+   "peor_caso": "2026-11-30",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-21",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 759,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER FORTUNE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-30",
+   "pol": "NINGBO",
+   "origenes": [
+    "NINGBO"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-11-12",
+   "contenedores": 5,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-30",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-07",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 18,
+   "peor_caso": "2026-12-05",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-30",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 27,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER LOADING",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-30",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI",
+    "TAIPEI",
+    "YANTIAN"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-11-08",
+   "contenedores": 11,
+   "embarques": 8,
+   "estado": "por zarpar",
+   "pronostico": "2026-11-30",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-07",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 22.0,
+   "peor_caso": "2026-12-02",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-30",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 436,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ONE COMPETENCE",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-03",
+   "pol": "SHANGHAI",
+   "origenes": [
+    "SHANGHAI"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-11-04",
+   "contenedores": 7,
+   "embarques": 3,
+   "estado": "por zarpar",
+   "pronostico": "2026-12-03",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-10",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.0,
+   "peor_caso": "2026-12-06",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-02",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 168,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "BAL ATHENA",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-09",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-11-01",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-12-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 36.0,
+   "peor_caso": "2026-12-17",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-07",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 48,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "BRISBANE MAERSK",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-09",
+   "pol": "SINGAPORE",
+   "origenes": [
+    "SINGAPORE"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-11-03",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2026-12-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-12-20",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-06",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "CAUQUENES",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-09",
+   "pol": "HO CHI MINH",
+   "origenes": [
+    "HO CHI MINH"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-25",
+   "contenedores": 3,
+   "embarques": 2,
+   "estado": "en tránsito",
+   "pronostico": "2026-12-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 36.0,
+   "peor_caso": "2026-12-10",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-30",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 48,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "SANTA CATARINA EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-09",
+   "pol": "SINGAPORE",
+   "origenes": [
+    "SINGAPORE"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-23",
+   "contenedores": 2,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-12-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-12-09",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "WILHELMSHAVEN EXPRESS",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-09",
+   "pol": "SINGAPORE",
+   "origenes": [
+    "SINGAPORE"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-10-29",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-12-09",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-16",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-12-15",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-01",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "ONE HUMBER",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-19",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-10-08",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "en tránsito",
+   "pronostico": "2026-12-19",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-26",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 52.0,
+   "peor_caso": "2026-12-07",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-29",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 30,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "EVER LIFTING",
+   "pod": "MANZANILLO",
+   "eta": "2027-01-07",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-11-02",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2027-01-07",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2027-01-14",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 52.0,
+   "peor_caso": "2027-01-01",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-24",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 30,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "X-PRESS PYXIS",
+   "pod": "MANZANILLO",
+   "eta": "2027-01-07",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "ONE",
+   "etd": "2026-11-06",
+   "contenedores": 1,
+   "embarques": 1,
+   "estado": "por zarpar",
+   "pronostico": "2027-01-07",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2027-01-14",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 52.0,
+   "peor_caso": "2027-01-05",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-28",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 30,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  }
+ ],
+ "congestion": [],
+ "estadisticas": {
+  "origen": {
+   "SHANGHAI>MANZANILLO": {
+    "n": 759,
+    "mediana": 22,
+    "p10": 19.0,
+    "p90": 31.0
+   },
+   "HO CHI MINH>MANZANILLO": {
+    "n": 90,
+    "mediana": 36.0,
+    "p10": 26.0,
+    "p90": 40.0
+   },
+   "QINGDAO>MANZANILLO": {
+    "n": 87,
+    "mediana": 21,
+    "p10": 18.0,
+    "p90": 27.0
+   },
+   "BUENAVENTURA>MANZANILLO": {
+    "n": 27,
+    "mediana": 9,
+    "p10": 8.0,
+    "p90": 9.0
+   },
+   "NINGBO>MANZANILLO": {
+    "n": 96,
+    "mediana": 23.5,
+    "p10": 17.0,
+    "p90": 29.5
+   },
+   "YANTIAN>MANZANILLO": {
+    "n": 376,
+    "mediana": 28.0,
+    "p10": 26.0,
+    "p90": 35.0
+   },
+   "NHAVA SHEVA>MANZANILLO": {
+    "n": 33,
+    "mediana": 51,
+    "p10": 37.2,
+    "p90": 59.8
+   },
+   "PIPAVAV>MANZANILLO": {
+    "n": 16,
+    "mediana": 53.5,
+    "p10": 47.0,
+    "p90": 68.0
+   },
+   "KEELUNG>MANZANILLO": {
+    "n": 61,
+    "mediana": 25,
+    "p10": 23.0,
+    "p90": 27.0
+   },
+   "HAIPHONG>MANZANILLO": {
+    "n": 49,
+    "mediana": 37,
+    "p10": 32.0,
+    "p90": 47.0
+   },
+   "KAOHSIUNG>MANZANILLO": {
+    "n": 29,
+    "mediana": 24,
+    "p10": 23.0,
+    "p90": 31.4
+   },
+   "SIHANOUKVILLE>MANZANILLO": {
+    "n": 5,
+    "mediana": 43,
+    "p10": 34.2,
+    "p90": 51.2
+   },
+   "BUSAN>MANZANILLO": {
+    "n": 75,
+    "mediana": 18,
+    "p10": 14.0,
+    "p90": 23.0
+   },
+   "LIANYUNGANG>MANZANILLO": {
+    "n": 57,
+    "mediana": 32,
+    "p10": 21.6,
+    "p90": 43.0
+   },
+   "MANILA>MANZANILLO": {
+    "n": 35,
+    "mediana": 38,
+    "p10": 27.4,
+    "p90": 46.2
+   },
+   "MUNDRA>MANZANILLO": {
+    "n": 21,
+    "mediana": 47,
+    "p10": 38.0,
+    "p90": 61.0
+   },
+   "SINGAPORE>MANZANILLO": {
+    "n": 26,
+    "mediana": 34.0,
+    "p10": 29.5,
+    "p90": 46.0
+   },
+   "GUAYAQUIL>MANZANILLO": {
+    "n": 8,
+    "mediana": 13.0,
+    "p10": 8.8,
+    "p90": 14.3
+   },
+   "SANTOS>ALTAMIRA": {
+    "n": 19,
+    "mediana": 21,
+    "p10": 17.8,
+    "p90": 24.8
+   },
+   "DALIAN>MANZANILLO": {
+    "n": 22,
+    "mediana": 36.0,
+    "p10": 29.0,
+    "p90": 44.0
+   },
+   "TAICHUNG>MANZANILLO": {
+    "n": 9,
+    "mediana": 30,
+    "p10": 24.4,
+    "p90": 40.0
+   },
+   "TAIPEI>MANZANILLO": {
+    "n": 13,
+    "mediana": 24,
+    "p10": 24.0,
+    "p90": 25.0
+   }
+  },
+  "ruta_naviera": {
+   "SHANGHAI>MANZANILLO>EVERGREEN": {
+    "n": 436,
+    "mediana": 22.0,
+    "p10": 19.0,
+    "p90": 24.0
+   },
+   "SHANGHAI>MANZANILLO>HAPAG LLOYD": {
+    "n": 74,
+    "mediana": 20.0,
+    "p10": 19.0,
+    "p90": 23.7
+   },
+   "HO CHI MINH>MANZANILLO>HAPAG LLOYD": {
+    "n": 48,
+    "mediana": 36.0,
+    "p10": 35.1,
+    "p90": 45.6
+   },
+   "HO CHI MINH>MANZANILLO>MSC": {
+    "n": 16,
+    "mediana": 28.5,
+    "p10": 24.0,
+    "p90": 32.5
+   },
+   "QINGDAO>MANZANILLO>EVERGREEN": {
+    "n": 56,
+    "mediana": 21.0,
+    "p10": 15.5,
+    "p90": 21.0
+   },
+   "BUENAVENTURA>MANZANILLO>ONE": {
+    "n": 27,
+    "mediana": 9,
+    "p10": 8.0,
+    "p90": 9.0
+   },
+   "NINGBO>MANZANILLO>HAPAG LLOYD": {
+    "n": 13,
+    "mediana": 23,
+    "p10": 22.0,
+    "p90": 24.0
+   },
+   "YANTIAN>MANZANILLO>HAPAG LLOYD": {
+    "n": 112,
+    "mediana": 28.0,
+    "p10": 27.0,
+    "p90": 32.0
+   },
+   "NHAVA SHEVA>MANZANILLO>ONE": {
+    "n": 30,
+    "mediana": 52.0,
+    "p10": 36.7,
+    "p90": 60.1
+   },
+   "YANTIAN>MANZANILLO>EVERGREEN": {
+    "n": 112,
+    "mediana": 26.0,
+    "p10": 25.0,
+    "p90": 35.9
+   },
+   "PIPAVAV>MANZANILLO>ONE": {
+    "n": 16,
+    "mediana": 53.5,
+    "p10": 47.0,
+    "p90": 68.0
+   },
+   "KEELUNG>MANZANILLO>MSC": {
+    "n": 5,
+    "mediana": 26,
+    "p10": 25.0,
+    "p90": 26.6
+   },
+   "HAIPHONG>MANZANILLO>ONE": {
+    "n": 5,
+    "mediana": 36,
+    "p10": 35.4,
+    "p90": 36.6
+   },
+   "KAOHSIUNG>MANZANILLO>EVERGREEN": {
+    "n": 25,
+    "mediana": 24,
+    "p10": 23.0,
+    "p90": 27.8
+   },
+   "NINGBO>MANZANILLO>ONE": {
+    "n": 10,
+    "mediana": 23.0,
+    "p10": 22.9,
+    "p90": 28.7
+   },
+   "BUSAN>MANZANILLO>HAPAG LLOYD": {
+    "n": 37,
+    "mediana": 16,
+    "p10": 14.0,
+    "p90": 22.8
+   },
+   "KEELUNG>MANZANILLO>ONE": {
+    "n": 31,
+    "mediana": 26,
+    "p10": 25.0,
+    "p90": 28.0
+   },
+   "YANTIAN>MANZANILLO>MSC": {
+    "n": 19,
+    "mediana": 28,
+    "p10": 27.0,
+    "p90": 33.0
+   },
+   "KEELUNG>MANZANILLO>HAPAG LLOYD": {
+    "n": 7,
+    "mediana": 26,
+    "p10": 23.0,
+    "p90": 26.0
+   },
+   "LIANYUNGANG>MANZANILLO>ONE": {
+    "n": 32,
+    "mediana": 29.5,
+    "p10": 21.0,
+    "p90": 42.5
+   },
+   "HAIPHONG>MANZANILLO>EVERGREEN": {
+    "n": 40,
+    "mediana": 38.0,
+    "p10": 32.0,
+    "p90": 47.0
+   },
+   "MANILA>MANZANILLO>ONE": {
+    "n": 10,
+    "mediana": 28.5,
+    "p10": 23.9,
+    "p90": 32.3
+   },
+   "SHANGHAI>MANZANILLO>ONE": {
+    "n": 168,
+    "mediana": 28.0,
+    "p10": 21.0,
+    "p90": 32.0
+   },
+   "MUNDRA>MANZANILLO>ONE": {
+    "n": 16,
+    "mediana": 50.5,
+    "p10": 40.5,
+    "p90": 63.0
+   },
+   "SINGAPORE>MANZANILLO>HAPAG LLOYD": {
+    "n": 15,
+    "mediana": 33,
+    "p10": 30.8,
+    "p90": 47.2
+   },
+   "GUAYAQUIL>MANZANILLO>ONE": {
+    "n": 7,
+    "mediana": 13,
+    "p10": 11.8,
+    "p90": 14.4
+   },
+   "QINGDAO>MANZANILLO>ONE": {
+    "n": 4,
+    "mediana": 27.0,
+    "p10": 23.2,
+    "p90": 28.0
+   },
+   "SANTOS>ALTAMIRA>MAERSK": {
+    "n": 3,
+    "mediana": 21,
+    "p10": 19.4,
+    "p90": 23.4
+   },
+   "DALIAN>MANZANILLO>MSC": {
+    "n": 17,
+    "mediana": 38,
+    "p10": 32.6,
+    "p90": 44.0
+   },
+   "SINGAPORE>MANZANILLO>ONE": {
+    "n": 10,
+    "mediana": 34.5,
+    "p10": 30.6,
+    "p90": 42.1
+   },
+   "SHANGHAI>MANZANILLO>HMM": {
+    "n": 16,
+    "mediana": 26.0,
+    "p10": 14.5,
+    "p90": 32.0
+   },
+   "BUSAN>MANZANILLO>MSC": {
+    "n": 3,
+    "mediana": 17,
+    "p10": 17.0,
+    "p90": 18.6
+   },
+   "YANTIAN>MANZANILLO>ONE": {
+    "n": 114,
+    "mediana": 28.0,
+    "p10": 26.0,
+    "p90": 35.0
+   },
+   "SHANGHAI>MANZANILLO>CMA CGM": {
+    "n": 4,
+    "mediana": 22.0,
+    "p10": 17.6,
+    "p90": 28.5
+   },
+   "NINGBO>MANZANILLO>EVERGREEN": {
+    "n": 27,
+    "mediana": 18,
+    "p10": 16.6,
+    "p90": 23.4
+   },
+   "QINGDAO>MANZANILLO>MAERSK": {
+    "n": 3,
+    "mediana": 28,
+    "p10": 27.2,
+    "p90": 28.0
+   },
+   "BUSAN>MANZANILLO>HMM": {
+    "n": 11,
+    "mediana": 16,
+    "p10": 14.0,
+    "p90": 21.0
+   },
+   "SHANGHAI>MANZANILLO>MSC": {
+    "n": 26,
+    "mediana": 26.0,
+    "p10": 20.5,
+    "p90": 26.5
+   },
+   "SANTOS>ALTAMIRA>ONE": {
+    "n": 14,
+    "mediana": 20.0,
+    "p10": 17.3,
+    "p90": 23.7
+   },
+   "NINGBO>MANZANILLO>MSC": {
+    "n": 29,
+    "mediana": 28,
+    "p10": 23.4,
+    "p90": 31.0
+   },
+   "HAIPHONG>MANZANILLO>MSC": {
+    "n": 4,
+    "mediana": 38.0,
+    "p10": 28.6,
+    "p90": 39.7
+   },
+   "MANILA>MANZANILLO>EVERGREEN": {
+    "n": 25,
+    "mediana": 42,
+    "p10": 32.0,
+    "p90": 48.2
+   },
+   "LIANYUNGANG>MANZANILLO>MSC": {
+    "n": 7,
+    "mediana": 32,
+    "p10": 23.8,
+    "p90": 34.8
+   },
+   "KEELUNG>MANZANILLO>EVERGREEN": {
+    "n": 18,
+    "mediana": 24.0,
+    "p10": 23.0,
+    "p90": 24.9
+   },
+   "NINGBO>MANZANILLO>HMM": {
+    "n": 6,
+    "mediana": 25.5,
+    "p10": 24.0,
+    "p90": 28.0
+   },
+   "HO CHI MINH>MANZANILLO>EVERGREEN": {
+    "n": 21,
+    "mediana": 33,
+    "p10": 29.0,
+    "p90": 34.0
+   },
+   "TAICHUNG>MANZANILLO>EVERGREEN": {
+    "n": 8,
+    "mediana": 32.5,
+    "p10": 25.0,
+    "p90": 40.0
+   },
+   "QINGDAO>MANZANILLO>MSC": {
+    "n": 14,
+    "mediana": 22.0,
+    "p10": 20.0,
+    "p90": 22.0
+   },
+   "BUSAN>MANZANILLO>ONE": {
+    "n": 19,
+    "mediana": 21,
+    "p10": 16.8,
+    "p90": 25.0
+   },
+   "TAIPEI>MANZANILLO>EVERGREEN": {
+    "n": 12,
+    "mediana": 24.0,
+    "p10": 24.0,
+    "p90": 25.0
+   },
+   "BUSAN>MANZANILLO>EVERGREEN": {
+    "n": 3,
+    "mediana": 17,
+    "p10": 17.0,
+    "p90": 18.6
+   },
+   "SHANGHAI>MANZANILLO>MAERSK": {
+    "n": 6,
+    "mediana": 26.5,
+    "p10": 21.0,
+    "p90": 36.5
+   },
+   "LIANYUNGANG>MANZANILLO>EVERGREEN": {
+    "n": 15,
+    "mediana": 40,
+    "p10": 27.4,
+    "p90": 44.6
+   },
+   "HO CHI MINH>MANZANILLO>YANG MING": {
+    "n": 3,
+    "mediana": 32,
+    "p10": 32.0,
+    "p90": 35.2
+   },
+   "NINGBO>MANZANILLO>MAERSK": {
+    "n": 4,
+    "mediana": 28.0,
+    "p10": 26.6,
+    "p90": 28.0
+   },
+   "YANTIAN>MANZANILLO>PIL": {
+    "n": 12,
+    "mediana": 28.5,
+    "p10": 24.2,
+    "p90": 35.0
+   },
+   "NINGBO>MANZANILLO>PIL": {
+    "n": 5,
+    "mediana": 17,
+    "p10": 9.0,
+    "p90": 24.6
+   },
+   "SHANGHAI>MANZANILLO>PIL": {
+    "n": 6,
+    "mediana": 19.5,
+    "p10": 15.5,
+    "p90": 25.5
+   },
+   "YANTIAN>MANZANILLO>YANG MING": {
+    "n": 4,
+    "mediana": 28.5,
+    "p10": 23.8,
+    "p90": 33.2
+   },
+   "SHANGHAI>MANZANILLO>WAN HAI": {
+    "n": 3,
+    "mediana": 21,
+    "p10": 17.0,
+    "p90": 24.2
+   },
+   "SHANGHAI>MANZANILLO>ZIM": {
+    "n": 9,
+    "mediana": 17,
+    "p10": 15.8,
+    "p90": 20.0
+   },
+   "SHANGHAI>MANZANILLO>YANG MING": {
+    "n": 9,
+    "mediana": 27,
+    "p10": 26.0,
+    "p90": 28.0
+   },
+   "QINGDAO>MANZANILLO>HMM": {
+    "n": 7,
+    "mediana": 24,
+    "p10": 18.0,
+    "p90": 27.4
+   }
+  },
+  "naviera": {
+   "EVERGREEN": {
+    "n": 805,
+    "mediana": 22,
+    "p10": 19.0,
+    "p90": 36.0
+   },
+   "HAPAG LLOYD": {
+    "n": 312,
+    "mediana": 27.0,
+    "p10": 18.0,
+    "p90": 36.0
+   },
+   "MSC": {
+    "n": 146,
+    "mediana": 27.0,
+    "p10": 21.0,
+    "p90": 36.0
+   },
+   "ONE": {
+    "n": 516,
+    "mediana": 28.0,
+    "p10": 20.0,
+    "p90": 47.0
+   },
+   "MAERSK": {
+    "n": 25,
+    "mediana": 28,
+    "p10": 21.0,
+    "p90": 35.0
+   },
+   "CMA CGM": {
+    "n": 8,
+    "mediana": 25.5,
+    "p10": 18.4,
+    "p90": 30.6
+   },
+   "HMM": {
+    "n": 43,
+    "mediana": 24,
+    "p10": 14.2,
+    "p90": 32.0
+   },
+   "COSCO": {
+    "n": 5,
+    "mediana": 28,
+    "p10": 22.2,
+    "p90": 35.2
+   },
+   "ZIM": {
+    "n": 11,
+    "mediana": 17,
+    "p10": 16.0,
+    "p90": 20.0
+   },
+   "PIL": {
+    "n": 24,
+    "mediana": 25.5,
+    "p10": 15.3,
+    "p90": 35.0
+   },
+   "YANG MING": {
+    "n": 18,
+    "mediana": 28.0,
+    "p10": 26.0,
+    "p90": 35.0
+   }
+  },
+  "mensual": {
+   "SHANGHAI|2025-12": {
+    "n": 28,
+    "mediana": 20.0,
+    "p10": 19.7,
+    "p90": 21.0
+   },
+   "HO CHI MINH|2025-12": {
+    "n": 10,
+    "mediana": 30.0,
+    "p10": 24.0,
+    "p90": 36.3
+   },
+   "NINGBO|2025-12": {
+    "n": 3,
+    "mediana": 23,
+    "p10": 23.0,
+    "p90": 23.0
+   },
+   "YANTIAN|2025-12": {
+    "n": 12,
+    "mediana": 28.0,
+    "p10": 25.1,
+    "p90": 28.0
+   },
+   "YANTIAN|2026-01": {
+    "n": 46,
+    "mediana": 27.0,
+    "p10": 26.0,
+    "p90": 28.5
+   },
+   "SHANGHAI|2026-01": {
+    "n": 70,
+    "mediana": 21.0,
+    "p10": 19.0,
+    "p90": 24.0
+   },
+   "NINGBO|2026-01": {
+    "n": 6,
+    "mediana": 22.5,
+    "p10": 22.0,
+    "p90": 23.5
+   },
+   "KEELUNG|2026-01": {
+    "n": 13,
+    "mediana": 25,
+    "p10": 23.4,
+    "p90": 26.0
+   },
+   "NHAVA SHEVA|2026-01": {
+    "n": 5,
+    "mediana": 55,
+    "p10": 50.8,
+    "p90": 60.8
+   },
+   "QINGDAO|2026-01": {
+    "n": 16,
+    "mediana": 21.0,
+    "p10": 21.0,
+    "p90": 21.0
+   },
+   "LIANYUNGANG|2026-01": {
+    "n": 3,
+    "mediana": 29,
+    "p10": 25.8,
+    "p90": 34.6
+   },
+   "HAIPHONG|2026-01": {
+    "n": 5,
+    "mediana": 35,
+    "p10": 30.4,
+    "p90": 41.2
+   },
+   "BUSAN|2026-01": {
+    "n": 5,
+    "mediana": 18,
+    "p10": 15.6,
+    "p90": 19.2
+   },
+   "HO CHI MINH|2026-01": {
+    "n": 6,
+    "mediana": 38.0,
+    "p10": 28.0,
+    "p90": 43.5
+   },
+   "MANILA|2026-01": {
+    "n": 3,
+    "mediana": 28,
+    "p10": 24.0,
+    "p90": 40.8
+   },
+   "MUNDRA|2026-01": {
+    "n": 3,
+    "mediana": 54,
+    "p10": 48.4,
+    "p90": 54.0
+   },
+   "KAOHSIUNG|2026-01": {
+    "n": 4,
+    "mediana": 23.5,
+    "p10": 23.0,
+    "p90": 24.0
+   },
+   "SINGAPORE|2026-01": {
+    "n": 3,
+    "mediana": 36,
+    "p10": 36.0,
+    "p90": 40.8
+   },
+   "DALIAN|2026-01": {
+    "n": 3,
+    "mediana": 44,
+    "p10": 29.6,
+    "p90": 47.2
+   },
+   "SHANGHAI|2026-02": {
+    "n": 80,
+    "mediana": 21.0,
+    "p10": 20.0,
+    "p90": 23.0
+   },
+   "NINGBO|2026-02": {
+    "n": 9,
+    "mediana": 23,
+    "p10": 21.6,
+    "p90": 30.2
+   },
+   "MANILA|2026-02": {
+    "n": 4,
+    "mediana": 28.0,
+    "p10": 27.0,
+    "p90": 30.4
+   },
+   "HO CHI MINH|2026-02": {
+    "n": 9,
+    "mediana": 40,
+    "p10": 27.8,
+    "p90": 47.0
+   },
+   "QINGDAO|2026-02": {
+    "n": 9,
+    "mediana": 21,
+    "p10": 21.0,
+    "p90": 22.8
+   },
+   "LIANYUNGANG|2026-02": {
+    "n": 7,
+    "mediana": 21,
+    "p10": 18.6,
+    "p90": 22.4
+   },
+   "SINGAPORE|2026-02": {
+    "n": 4,
+    "mediana": 36.5,
+    "p10": 29.1,
+    "p90": 41.8
+   },
+   "YANTIAN|2026-02": {
+    "n": 25,
+    "mediana": 28,
+    "p10": 25.0,
+    "p90": 29.6
+   },
+   "BUSAN|2026-02": {
+    "n": 6,
+    "mediana": 17.5,
+    "p10": 16.5,
+    "p90": 21.5
+   },
+   "KEELUNG|2026-02": {
+    "n": 11,
+    "mediana": 26,
+    "p10": 25.0,
+    "p90": 26.0
+   },
+   "HAIPHONG|2026-02": {
+    "n": 4,
+    "mediana": 37.5,
+    "p10": 35.6,
+    "p90": 40.8
+   },
+   "NHAVA SHEVA|2026-02": {
+    "n": 4,
+    "mediana": 48.5,
+    "p10": 31.0,
+    "p90": 56.9
+   },
+   "YANTIAN|2026-03": {
+    "n": 29,
+    "mediana": 28,
+    "p10": 26.8,
+    "p90": 29.0
+   },
+   "SINGAPORE|2026-03": {
+    "n": 5,
+    "mediana": 32,
+    "p10": 31.0,
+    "p90": 36.8
+   },
+   "NINGBO|2026-03": {
+    "n": 9,
+    "mediana": 24,
+    "p10": 19.8,
+    "p90": 28.4
+   },
+   "HO CHI MINH|2026-03": {
+    "n": 14,
+    "mediana": 36.0,
+    "p10": 36.0,
+    "p90": 36.7
+   },
+   "BUENAVENTURA|2026-03": {
+    "n": 6,
+    "mediana": 9.0,
+    "p10": 9.0,
+    "p90": 9.0
+   },
+   "KEELUNG|2026-03": {
+    "n": 10,
+    "mediana": 26.0,
+    "p10": 24.8,
+    "p90": 26.7
+   },
+   "SHANGHAI|2026-03": {
+    "n": 60,
+    "mediana": 21.0,
+    "p10": 20.0,
+    "p90": 23.0
+   },
+   "BUSAN|2026-03": {
+    "n": 11,
+    "mediana": 17,
+    "p10": 15.0,
+    "p90": 26.0
+   },
+   "QINGDAO|2026-03": {
+    "n": 4,
+    "mediana": 21.0,
+    "p10": 21.0,
+    "p90": 25.2
+   },
+   "MANILA|2026-03": {
+    "n": 5,
+    "mediana": 30,
+    "p10": 26.0,
+    "p90": 32.6
+   },
+   "SANTOS|2026-03": {
+    "n": 4,
+    "mediana": 21.5,
+    "p10": 20.3,
+    "p90": 23.4
+   },
+   "NHAVA SHEVA|2026-03": {
+    "n": 3,
+    "mediana": 52,
+    "p10": 48.0,
+    "p90": 59.2
+   },
+   "KAOHSIUNG|2026-03": {
+    "n": 4,
+    "mediana": 24.0,
+    "p10": 24.0,
+    "p90": 25.4
+   },
+   "HAIPHONG|2026-03": {
+    "n": 5,
+    "mediana": 36,
+    "p10": 33.0,
+    "p90": 38.4
+   },
+   "YANTIAN|2026-04": {
+    "n": 55,
+    "mediana": 27,
+    "p10": 25.0,
+    "p90": 28.0
+   },
+   "LIANYUNGANG|2026-04": {
+    "n": 7,
+    "mediana": 23,
+    "p10": 22.0,
+    "p90": 35.8
+   },
+   "SHANGHAI|2026-04": {
+    "n": 94,
+    "mediana": 22.0,
+    "p10": 20.0,
+    "p90": 32.0
+   },
+   "KAOHSIUNG|2026-04": {
+    "n": 5,
+    "mediana": 24,
+    "p10": 24.0,
+    "p90": 25.6
+   },
+   "QINGDAO|2026-04": {
+    "n": 6,
+    "mediana": 20.5,
+    "p10": 19.0,
+    "p90": 25.0
+   },
+   "NHAVA SHEVA|2026-04": {
+    "n": 4,
+    "mediana": 55.5,
+    "p10": 49.4,
+    "p90": 56.7
+   },
+   "PIPAVAV|2026-04": {
+    "n": 5,
+    "mediana": 49,
+    "p10": 34.6,
+    "p90": 56.8
+   },
+   "KEELUNG|2026-04": {
+    "n": 6,
+    "mediana": 24.0,
+    "p10": 23.0,
+    "p90": 24.0
+   },
+   "MUNDRA|2026-04": {
+    "n": 3,
+    "mediana": 43,
+    "p10": 43.0,
+    "p90": 54.2
+   },
+   "HAIPHONG|2026-04": {
+    "n": 8,
+    "mediana": 36.0,
+    "p10": 28.5,
+    "p90": 40.5
+   },
+   "HO CHI MINH|2026-04": {
+    "n": 11,
+    "mediana": 33,
+    "p10": 19.0,
+    "p90": 36.0
+   },
+   "NINGBO|2026-04": {
+    "n": 13,
+    "mediana": 28,
+    "p10": 20.0,
+    "p90": 29.6
+   },
+   "BUENAVENTURA|2026-04": {
+    "n": 3,
+    "mediana": 9,
+    "p10": 8.2,
+    "p90": 9.0
+   },
+   "BUSAN|2026-04": {
+    "n": 5,
+    "mediana": 21,
+    "p10": 16.8,
+    "p90": 22.2
+   },
+   "YANTIAN|2026-05": {
+    "n": 49,
+    "mediana": 27,
+    "p10": 26.0,
+    "p90": 32.2
+   },
+   "SHANGHAI|2026-05": {
+    "n": 71,
+    "mediana": 22,
+    "p10": 15.0,
+    "p90": 31.0
+   },
+   "KEELUNG|2026-05": {
+    "n": 4,
+    "mediana": 24.0,
+    "p10": 23.3,
+    "p90": 25.4
+   },
+   "SANTOS|2026-05": {
+    "n": 3,
+    "mediana": 17,
+    "p10": 17.0,
+    "p90": 19.4
+   },
+   "MANILA|2026-05": {
+    "n": 6,
+    "mediana": 38.5,
+    "p10": 34.0,
+    "p90": 41.5
+   },
+   "QINGDAO|2026-05": {
+    "n": 12,
+    "mediana": 21.0,
+    "p10": 19.0,
+    "p90": 22.0
+   },
+   "HAIPHONG|2026-05": {
+    "n": 7,
+    "mediana": 36,
+    "p10": 35.6,
+    "p90": 44.0
+   },
+   "NINGBO|2026-05": {
+    "n": 8,
+    "mediana": 29.5,
+    "p10": 25.9,
+    "p90": 31.0
+   },
+   "HO CHI MINH|2026-05": {
+    "n": 10,
+    "mediana": 36.0,
+    "p10": 29.0,
+    "p90": 40.0
+   },
+   "LIANYUNGANG|2026-05": {
+    "n": 7,
+    "mediana": 33,
+    "p10": 29.2,
+    "p90": 45.6
+   },
+   "BUSAN|2026-05": {
+    "n": 5,
+    "mediana": 15,
+    "p10": 13.4,
+    "p90": 21.6
+   },
+   "TAIPEI|2026-05": {
+    "n": 3,
+    "mediana": 24,
+    "p10": 24.0,
+    "p90": 24.8
+   },
+   "PIPAVAV|2026-05": {
+    "n": 3,
+    "mediana": 61,
+    "p10": 56.2,
+    "p90": 69.0
+   },
+   "YANTIAN|2026-06": {
+    "n": 32,
+    "mediana": 27.0,
+    "p10": 26.1,
+    "p90": 31.8
+   },
+   "SHANGHAI|2026-06": {
+    "n": 96,
+    "mediana": 22.0,
+    "p10": 21.5,
+    "p90": 31.0
+   },
+   "QINGDAO|2026-06": {
+    "n": 5,
+    "mediana": 21,
+    "p10": 20.0,
+    "p90": 21.6
+   },
+   "NINGBO|2026-06": {
+    "n": 9,
+    "mediana": 24,
+    "p10": 18.0,
+    "p90": 28.6
+   },
+   "HO CHI MINH|2026-06": {
+    "n": 5,
+    "mediana": 36,
+    "p10": 18.0,
+    "p90": 38.0
+   },
+   "LIANYUNGANG|2026-06": {
+    "n": 4,
+    "mediana": 36.0,
+    "p10": 33.2,
+    "p90": 42.3
+   },
+   "HAIPHONG|2026-06": {
+    "n": 4,
+    "mediana": 32.0,
+    "p10": 32.0,
+    "p90": 36.2
+   },
+   "TAIPEI|2026-06": {
+    "n": 4,
+    "mediana": 24.0,
+    "p10": 24.0,
+    "p90": 24.0
+   },
+   "NHAVA SHEVA|2026-06": {
+    "n": 5,
+    "mediana": 50,
+    "p10": 42.8,
+    "p90": 50.0
+   },
+   "BUSAN|2026-06": {
+    "n": 6,
+    "mediana": 22.5,
+    "p10": 20.0,
+    "p90": 25.0
+   },
+   "DALIAN|2026-06": {
+    "n": 3,
+    "mediana": 29,
+    "p10": 29.0,
+    "p90": 36.2
+   },
+   "SINGAPORE|2026-06": {
+    "n": 4,
+    "mediana": 33.0,
+    "p10": 33.0,
+    "p90": 44.9
+   },
+   "SHANGHAI|2026-07": {
+    "n": 81,
+    "mediana": 22,
+    "p10": 19.0,
+    "p90": 32.0
+   },
+   "LIANYUNGANG|2026-07": {
+    "n": 11,
+    "mediana": 39,
+    "p10": 24.0,
+    "p90": 42.0
+   },
+   "MANILA|2026-07": {
+    "n": 6,
+    "mediana": 44.5,
+    "p10": 41.5,
+    "p90": 56.0
+   },
+   "YANTIAN|2026-07": {
+    "n": 49,
+    "mediana": 27,
+    "p10": 26.0,
+    "p90": 36.0
+   },
+   "MUNDRA|2026-07": {
+    "n": 5,
+    "mediana": 41,
+    "p10": 37.4,
+    "p90": 53.6
+   },
+   "NINGBO|2026-07": {
+    "n": 9,
+    "mediana": 18,
+    "p10": 16.6,
+    "p90": 24.8
+   },
+   "TAIPEI|2026-07": {
+    "n": 5,
+    "mediana": 24,
+    "p10": 23.4,
+    "p90": 26.8
+   },
+   "HO CHI MINH|2026-07": {
+    "n": 6,
+    "mediana": 37.0,
+    "p10": 33.0,
+    "p90": 38.5
+   },
+   "BUSAN|2026-07": {
+    "n": 15,
+    "mediana": 19,
+    "p10": 13.4,
+    "p90": 22.2
+   },
+   "HAIPHONG|2026-07": {
+    "n": 5,
+    "mediana": 47,
+    "p10": 42.8,
+    "p90": 47.6
+   },
+   "SANTOS|2026-07": {
+    "n": 3,
+    "mediana": 24,
+    "p10": 20.8,
+    "p90": 27.2
+   },
+   "QINGDAO|2026-07": {
+    "n": 8,
+    "mediana": 21.0,
+    "p10": 21.0,
+    "p90": 21.3
+   },
+   "TAICHUNG|2026-07": {
+    "n": 3,
+    "mediana": 37,
+    "p10": 35.4,
+    "p90": 39.4
+   },
+   "DALIAN|2026-07": {
+    "n": 4,
+    "mediana": 37.0,
+    "p10": 31.8,
+    "p90": 56.9
+   },
+   "MUNDRA|2026-08": {
+    "n": 5,
+    "mediana": 52,
+    "p10": 34.6,
+    "p90": 60.2
+   },
+   "NHAVA SHEVA|2026-08": {
+    "n": 5,
+    "mediana": 46,
+    "p10": 34.0,
+    "p90": 58.2
+   },
+   "KAOHSIUNG|2026-08": {
+    "n": 6,
+    "mediana": 25.0,
+    "p10": 23.5,
+    "p90": 31.0
+   },
+   "SHANGHAI|2026-08": {
+    "n": 57,
+    "mediana": 22,
+    "p10": 17.6,
+    "p90": 29.0
+   },
+   "NINGBO|2026-08": {
+    "n": 13,
+    "mediana": 20,
+    "p10": 16.2,
+    "p90": 25.0
+   },
+   "BUSAN|2026-08": {
+    "n": 10,
+    "mediana": 16.5,
+    "p10": 14.9,
+    "p90": 18.3
+   },
+   "QINGDAO|2026-08": {
+    "n": 9,
+    "mediana": 22,
+    "p10": 15.0,
+    "p90": 28.0
+   },
+   "KEELUNG|2026-08": {
+    "n": 6,
+    "mediana": 24.5,
+    "p10": 22.0,
+    "p90": 26.5
+   },
+   "YANTIAN|2026-08": {
+    "n": 31,
+    "mediana": 29,
+    "p10": 25.0,
+    "p90": 46.0
+   },
+   "SINGAPORE|2026-08": {
+    "n": 6,
+    "mediana": 37.5,
+    "p10": 30.5,
+    "p90": 47.0
+   },
+   "MANILA|2026-08": {
+    "n": 4,
+    "mediana": 45.0,
+    "p10": 45.0,
+    "p90": 47.8
+   },
+   "DALIAN|2026-08": {
+    "n": 3,
+    "mediana": 35,
+    "p10": 32.6,
+    "p90": 35.8
+   },
+   "HO CHI MINH|2026-08": {
+    "n": 9,
+    "mediana": 32,
+    "p10": 28.4,
+    "p90": 45.0
+   },
+   "HAIPHONG|2026-08": {
+    "n": 6,
+    "mediana": 44.5,
+    "p10": 40.0,
+    "p90": 46.0
+   },
+   "BUENAVENTURA|2026-08": {
+    "n": 3,
+    "mediana": 9,
+    "p10": 8.2,
+    "p90": 9.0
+   },
+   "LIANYUNGANG|2026-08": {
+    "n": 5,
+    "mediana": 33,
+    "p10": 27.8,
+    "p90": 49.4
+   },
+   "NINGBO|2026-09": {
+    "n": 14,
+    "mediana": 25.5,
+    "p10": 11.4,
+    "p90": 28.7
+   },
+   "QINGDAO|2026-09": {
+    "n": 10,
+    "mediana": 22.0,
+    "p10": 16.0,
+    "p90": 27.0
+   },
+   "BUSAN|2026-09": {
+    "n": 9,
+    "mediana": 15,
+    "p10": 13.4,
+    "p90": 17.0
+   },
+   "LIANYUNGANG|2026-09": {
+    "n": 10,
+    "mediana": 35.0,
+    "p10": 27.9,
+    "p90": 42.1
+   },
+   "SHANGHAI|2026-09": {
+    "n": 105,
+    "mediana": 26,
+    "p10": 18.0,
+    "p90": 29.0
+   },
+   "HAIPHONG|2026-09": {
+    "n": 4,
+    "mediana": 43.0,
+    "p10": 38.9,
+    "p90": 46.4
+   },
+   "YANTIAN|2026-09": {
+    "n": 48,
+    "mediana": 32.0,
+    "p10": 26.0,
+    "p90": 37.0
+   },
+   "NHAVA SHEVA|2026-09": {
+    "n": 3,
+    "mediana": 46,
+    "p10": 38.8,
+    "p90": 51.6
+   },
+   "KEELUNG|2026-09": {
+    "n": 5,
+    "mediana": 28,
+    "p10": 23.4,
+    "p90": 33.0
+   },
+   "KAOHSIUNG|2026-09": {
+    "n": 3,
+    "mediana": 31,
+    "p10": 24.6,
+    "p90": 32.6
+   },
+   "MANILA|2026-09": {
+    "n": 3,
+    "mediana": 44,
+    "p10": 43.2,
+    "p90": 44.8
+   },
+   "HO CHI MINH|2026-09": {
+    "n": 10,
+    "mediana": 30.0,
+    "p10": 28.9,
+    "p90": 36.4
+   },
+   "SANTOS|2026-09": {
+    "n": 3,
+    "mediana": 21,
+    "p10": 18.6,
+    "p90": 26.6
+   },
+   "SHANGHAI|2026-10": {
+    "n": 17,
+    "mediana": 23,
+    "p10": 22.0,
+    "p90": 26.4
+   },
+   "QINGDAO|2026-10": {
+    "n": 7,
+    "mediana": 24,
+    "p10": 12.0,
+    "p90": 28.0
+   },
+   "NINGBO|2026-10": {
+    "n": 3,
+    "mediana": 25,
+    "p10": 24.2,
+    "p90": 25.0
+   }
+  },
+  "total_historico": 1921
+ },
+ "puertos": {
+  "MANZANILLO": {
+   "lat": 19.06,
+   "lon": -104.3
+  },
+  "LAZARO CARDENAS": {
+   "lat": 17.93,
+   "lon": -102.18
+  },
+  "SHANGHAI": {
+   "lat": 30.63,
+   "lon": 122.07
+  },
+  "NINGBO": {
+   "lat": 29.93,
+   "lon": 121.88
+  },
+  "YANTIAN": {
+   "lat": 22.57,
+   "lon": 114.27
+  },
+  "QINGDAO": {
+   "lat": 36.02,
+   "lon": 120.2
+  },
+  "LIANYUNGANG": {
+   "lat": 34.74,
+   "lon": 119.45
+  },
+  "BUSAN": {
+   "lat": 35.08,
+   "lon": 128.83
+  },
+  "KEELUNG": {
+   "lat": 25.15,
+   "lon": 121.75
+  },
+  "KAOHSIUNG": {
+   "lat": 22.56,
+   "lon": 120.3
+  },
+  "HO CHI MINH": {
+   "lat": 10.45,
+   "lon": 107.05
+  },
+  "HAIPHONG": {
+   "lat": 20.75,
+   "lon": 106.85
+  },
+  "SINGAPORE": {
+   "lat": 1.26,
+   "lon": 103.8
+  }
+ },
+ "ultima_corrida": null
+}
