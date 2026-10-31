@@ -37,5 +37,11 @@
   "nombre_ais": "SPYROS",
   "metodo": "exacto",
   "desde": "2026-10-31T14:15:26.265214+00:00"
+ },
+ "WILHELMSHAVEN EXPRESS": {
+  "mmsi": "211151710",
+  "nombre_ais": "WILHELMSHAVEN EXPRES",
+  "metodo": "aproximado",
+  "desde": "2026-10-31T22:11:53.296411+00:00"
  }
 }
