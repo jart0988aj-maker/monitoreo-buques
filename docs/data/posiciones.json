@@ -7,8 +7,8 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-10-31T18:05:43+00:00",
-  "fuente": "B"
+  "hora": "2026-10-31T18:47:44+00:00",
+  "fuente": "A"
  },
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
@@ -40,29 +40,29 @@
   "sog": 0,
   "cog": 72.6,
   "nav": 5,
-  "hora": "2026-10-31T18:07:26+00:00",
-  "fuente": "C"
+  "hora": "2026-10-31T18:46:26+00:00",
+  "fuente": "B"
  },
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": -24.7078,
-  "lon": 9.9193,
-  "sog": 16.6,
-  "cog": 323.2,
+  "lat": -24.1344,
+  "lon": 9.4353,
+  "sog": 16.9,
+  "cog": 323,
   "nav": 0,
-  "hora": "2026-10-31T16:10:02+00:00",
+  "hora": "2026-10-31T18:45:56+00:00",
   "fuente": "B"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
   "mmsi": "215726000",
-  "lat": -27.4184,
-  "lon": 14.6531,
-  "sog": 12,
-  "cog": 159.5,
-  "nav": 0,
-  "hora": "2026-10-31T18:07:05+00:00",
-  "fuente": "B"
+  "lat": -27.5457,
+  "lon": 14.7067,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-10-31T18:47:08+00:00",
+  "fuente": "A"
  }
 }
