@@ -4,11 +4,11 @@
   "mmsi": "538011207",
   "lat": -27.36,
   "lon": 153.1788,
-  "sog": 0,
-  "cog": 188,
-  "nav": 5,
-  "hora": "2026-10-31T06:52:15+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-10-31T07:53:44+00:00",
+  "fuente": "A"
  },
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
