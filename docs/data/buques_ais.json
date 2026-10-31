@@ -24,5 +24,11 @@
   "nombre_ais": "WAN HAI A06",
   "metodo": "exacto",
   "desde": "2026-10-31T10:37:35.494907+00:00"
+ },
+ "MSC ALTAIR": {
+  "mmsi": "636015664",
+  "nombre_ais": "MSC ALTAMIRA",
+  "metodo": "aproximado",
+  "desde": "2026-10-31T13:28:51.628429+00:00"
  }
 }
