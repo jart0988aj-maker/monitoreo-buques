@@ -34,6 +34,7 @@ h1{font-size:26px;margin:0;letter-spacing:-.01em}
 .kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
 .kpi b{display:block;font-family:var(--mono);font-size:28px;font-weight:500;line-height:1.1}
 .kpi small{color:var(--ink-2)}
+.kpi.clic{cursor:pointer}.kpi.clic:hover{border-color:var(--ink-3)}.kpi.clic small{text-decoration:underline dotted}
 .kpi.alerta b{color:var(--serious)}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:14px}
 @media (max-width:980px){.grid{grid-template-columns:1fr}}
@@ -112,6 +113,7 @@ footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
 
   <div id="aviso"></div>
   <div class="chips" id="chips"></div>
+  <div id="filtroAviso" style="color:var(--ink-2);font-size:13px;margin:-4px 0 10px"></div>
   <div class="kpis" id="kpis"></div>
 
   <div class="grid">
@@ -224,6 +226,8 @@ function chips(){
     el.querySelectorAll("[data-e]").forEach(x=>x.setAttribute("aria-pressed",x===b));pinta()});
 }
 
+function abreTab(t){tabAlerta=t;document.querySelectorAll("#tabsAlertas button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.t===t));alertas();
+  document.getElementById("alertas").closest(".panel").scrollIntoView({behavior:"smooth",block:"start"})}
 function pinta(){kpis();marcadores();alertas();tabla()}
 
 function kpis(){
@@ -233,19 +237,26 @@ function kpis(){
   const k=[
     [bu.size,"buques activos"],
     [new Set(A.filter(a=>a.posicion).map(a=>a.buque)).size,"en el mapa (con AIS)"],
-    [new Set(ret.map(a=>a.buque)).size,"con retraso (AIS)",ret.length>0],
+    [new Set(ret.map(a=>a.buque)).size,"con retraso (AIS)",ret.length>0,"retraso"],
     [ret.length?signo(med)+" d":"–","retraso mediano"],
-    [new Set(A.filter(a=>a.riesgo_dias>=5).map(a=>a.buque)).size,"con riesgo histórico"],
+    [new Set(A.filter(a=>a.riesgo_dias>=5).map(a=>a.buque)).size,"con riesgo histórico · ver lista",false,"riesgo"],
     [A.filter(a=>a.estado!=="por zarpar").reduce((s,a)=>s+a.contenedores,0),"contenedores en tránsito"],
   ];
-  document.getElementById("kpis").innerHTML=k.map(([v,t,al])=>`<div class="kpi${al?" alerta":""}"><b>${v}</b><small>${t}</small></div>`).join("");
+  const el=document.getElementById("kpis");
+  el.innerHTML=k.map(([v,t,al,tab])=>`<div class="kpi${al?" alerta":""}${tab?" clic":""}"${tab?` data-tab="${tab}" role="button" tabindex="0"`:""}><b>${v}</b><small>${t}</small></div>`).join("");
+  el.querySelectorAll("[data-tab]").forEach(n=>n.onclick=()=>abreTab(n.dataset.tab));
+  const fil=filtroNav!=="TODAS"||filtroEstado!=="activos";
+  document.getElementById("filtroAviso").innerHTML=fil?`Estás viendo solo: <b>${filtroEstado==="activos"?"todos los estados":esc(filtroEstado)}</b> · <b>${filtroNav==="TODAS"?"todas las navieras":esc(filtroNav)}</b> <button class="chip" id="limpiar" style="padding:2px 8px;margin-left:6px">Quitar filtros</button>`:"";
+  if(fil)document.getElementById("limpiar").onclick=()=>{filtroNav="TODAS";filtroEstado="activos";
+    document.querySelectorAll("#chips [data-n]").forEach(x=>x.setAttribute("aria-pressed",x.dataset.n==="TODAS"));
+    document.querySelectorAll("#chips [data-e]").forEach(x=>x.setAttribute("aria-pressed",x.dataset.e==="activos"));pinta()};
 }
 
 function mapaInicia(){
   if(!window.L){document.getElementById("mapa").innerHTML='<div class="vacio">No se pudo cargar el mapa.</div>';return}
   mapa=L.map("mapa",{worldCopyJump:false,zoomControl:true,attributionControl:true}).fitBounds([[-5,100],[45,262]]);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{subdomains:"abcd",maxZoom:12,
-    attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(mapa);
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",{maxZoom:12,
+    attribution:'Mapa &copy; Esri, HERE, Garmin, &copy; OpenStreetMap'}).addTo(mapa);
   Object.entries(D.puertos).forEach(([n,p])=>L.marker([p.lat,lonP(p.lon)],{icon:L.divIcon({className:"",html:'<div class="portico"></div>',iconSize:[9,9]})})
     .bindTooltip(n,{direction:"top"}).addTo(mapa));
   capa=L.layerGroup().addTo(mapa);
