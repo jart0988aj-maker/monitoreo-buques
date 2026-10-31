@@ -1,0 +1,16 @@
+{
+ "TS MUMBAI": {
+  "mmsi": "538011207",
+  "imo": 9937543,
+  "nombre_ais": "TS MUMBAI",
+  "metodo": "exacto",
+  "desde": "2026-10-31T01:53:47.405372+00:00"
+ },
+ "ALETTE MAERSK": {
+  "mmsi": "220000001",
+  "imo": 9948774,
+  "nombre_ais": "ALETTE MAERSK",
+  "metodo": "exacto",
+  "desde": "2026-10-31T01:56:04.734824+00:00"
+ }
+}

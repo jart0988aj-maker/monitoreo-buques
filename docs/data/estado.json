@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-31T01:52:49+00:00",
+ "generado": "2026-10-31T01:57:50+00:00",
  "hoy": "2026-10-30",
  "kpis": {
   "embarques_activos": 319,
@@ -9,7 +9,7 @@
   "buques_con_retraso": 0,
   "retraso_mediano": 0,
   "buques_con_riesgo": 21,
-  "buques_identificados": 0
+  "buques_identificados": 2
  },
  "activos": [
   {
@@ -1871,9 +1871,18 @@
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
    "muestra_historico": 15,
-   "mmsi": null,
+   "mmsi": "220000001",
    "posicion": null,
-   "eta_ais": null
+   "eta_ais": {
+    "primer_eta_ais": "2026-11-08",
+    "primer_destino": "EG SUEZ> GB LGP",
+    "primer_visto": "2026-10-31T01:57:50+00:00",
+    "eta_ais": "2026-11-08",
+    "destino": "EG SUEZ> GB LGP",
+    "imo": 9948774,
+    "calado": 16.6,
+    "ultimo_visto": "2026-10-31T01:57:50+00:00"
+   }
   },
   {
    "buque": "BUENAVENTURA EXPRESS",
@@ -1961,9 +1970,18 @@
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
    "muestra_historico": 16,
-   "mmsi": null,
+   "mmsi": "538011207",
    "posicion": null,
-   "eta_ais": null
+   "eta_ais": {
+    "primer_eta_ais": "2026-10-30",
+    "primer_destino": "AUBNE",
+    "primer_visto": "2026-10-31T01:57:50+00:00",
+    "eta_ais": "2026-10-30",
+    "destino": "AUBNE",
+    "imo": 9937543,
+    "calado": 11,
+    "ultimo_visto": "2026-10-31T01:57:50+00:00"
+   }
   },
   {
    "buque": "SPYROS V",
@@ -2900,7 +2918,138 @@
    "eta_ais": null
   }
  ],
- "congestion": [],
+ "congestion": [
+  {
+   "puerto": "YANTIAN",
+   "fondeados": 6,
+   "atracados": 2,
+   "promedio_7d": 6.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 22.57,
+   "lon": 114.27
+  },
+  {
+   "puerto": "MANZANILLO",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 19.06,
+   "lon": -104.3
+  },
+  {
+   "puerto": "LAZARO CARDENAS",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 17.93,
+   "lon": -102.18
+  },
+  {
+   "puerto": "SHANGHAI",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 30.63,
+   "lon": 122.07
+  },
+  {
+   "puerto": "NINGBO",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 29.93,
+   "lon": 121.88
+  },
+  {
+   "puerto": "QINGDAO",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 36.02,
+   "lon": 120.2
+  },
+  {
+   "puerto": "LIANYUNGANG",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 34.74,
+   "lon": 119.45
+  },
+  {
+   "puerto": "BUSAN",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 35.08,
+   "lon": 128.83
+  },
+  {
+   "puerto": "KEELUNG",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 25.15,
+   "lon": 121.75
+  },
+  {
+   "puerto": "KAOHSIUNG",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 22.56,
+   "lon": 120.3
+  },
+  {
+   "puerto": "HO CHI MINH",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 10.45,
+   "lon": 107.05
+  },
+  {
+   "puerto": "HAIPHONG",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 20.75,
+   "lon": 106.85
+  },
+  {
+   "puerto": "SINGAPORE",
+   "fondeados": 0,
+   "atracados": 0,
+   "promedio_7d": 0.0,
+   "fecha": "2026-10-31T01:57:50+00:00",
+   "lecturas": 1,
+   "lat": 1.26,
+   "lon": 103.8
+  }
+ ],
  "estadisticas": {
   "origen": {
    "SHANGHAI>MANZANILLO": {
@@ -4322,5 +4471,18 @@
    "lon": 103.8
   }
  },
- "ultima_corrida": null
+ "ultima_corrida": {
+  "inicio": "2026-10-31T01:53:39+00:00",
+  "fin": "2026-10-31T01:57:50+00:00",
+  "duracion_s": 240,
+  "mensajes": {
+   "A": 5729,
+   "B": 0,
+   "C": 203
+  },
+  "buques_objetivo": 98,
+  "con_mmsi": 2,
+  "posiciones_nuevas": 0,
+  "errores": []
+ }
 }

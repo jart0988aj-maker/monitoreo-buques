@@ -1,0 +1,14 @@
+{
+ "inicio": "2026-10-31T01:53:39+00:00",
+ "fin": "2026-10-31T01:57:50+00:00",
+ "duracion_s": 240,
+ "mensajes": {
+  "A": 5729,
+  "B": 0,
+  "C": 203
+ },
+ "buques_objetivo": 98,
+ "con_mmsi": 2,
+ "posiciones_nuevas": 0,
+ "errores": []
+}
