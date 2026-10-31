@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Mabe Supplier Invoice Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+/* Layout: formulario tipo documento aduanal — encabezado de pasos, hoja de factura con secciones fijas (bloqueadas) y editables, panel de resultado. */
+:root{
+  --bg:#f3f5f7; --sheet:#ffffff; --ink:#18212b; --ink-2:#4a5866; --ink-3:#7b8794;
+  --line:#d9dfe5; --lock:#eef2f6; --accent:#1d4f91; --accent-ink:#ffffff; --accent-soft:#e3ecf8;
+  --ok:#0f7a3b; --ok-soft:#e2f4e9; --warn:#9a6200; --warn-soft:#fdf1d8; --err:#b3261e; --err-soft:#fbe5e3;
+  --display:"Fraunces",Georgia,serif; --body:"Public Sans",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11161c; --sheet:#182029; --ink:#e8edf2; --ink-2:#b2bdc8; --ink-3:#8593a1; --line:#2c3743; --lock:#1e2832;
+  --accent:#7fb0ef; --accent-ink:#0d1620; --accent-soft:#1d2d42; --ok:#5fd08e; --ok-soft:#14301f; --warn:#f0b54a; --warn-soft:#33270f; --err:#ff8a80; --err-soft:#3a1916; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161c; --sheet:#182029; --ink:#e8edf2; --ink-2:#b2bdc8; --ink-3:#8593a1; --line:#2c3743; --lock:#1e2832;
+  --accent:#7fb0ef; --accent-ink:#0d1620; --accent-soft:#1d2d42; --ok:#5fd08e; --ok-soft:#14301f; --warn:#f0b54a; --warn-soft:#33270f; --err:#ff8a80; --err-soft:#3a1916; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font:600 28px/1.15 var(--display);margin:0;text-wrap:balance}
+h2{font:600 18px/1.2 var(--display);margin:0 0 4px}
+h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px}
+p{margin:0}
+.lead{color:var(--ink-2);max-width:70ch;margin-top:6px}
+.demo{display:inline-block;font-size:12px;background:var(--warn-soft);color:var(--warn);border-radius:4px;padding:2px 8px;margin-top:8px}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0}
+.steps button{font:500 13px var(--body);border:1px solid var(--line);background:var(--sheet);color:var(--ink-2);border-radius:999px;padding:6px 14px;cursor:pointer}
+.steps button[aria-current="step"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.steps button:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sheet{background:var(--sheet);border:1px solid var(--line);border-radius:8px;padding:22px}
+.sec{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.sec:first-child{border-top:0;margin-top:0;padding-top:0}
+.grid{display:grid;gap:10px 14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.parties{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.party{background:var(--lock);border-radius:6px;padding:12px 14px;min-width:0}
+.party .who{font-weight:600}
+.party dl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:8px 0 0;font-size:13px}
+.party dt{color:var(--ink-3)} .party dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.lock{font-size:11px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--ink-2);min-width:0}
+label .req{color:var(--err)}
+input,select{font:14px var(--body);color:var(--ink);background:var(--sheet);border:1px solid var(--line);border-radius:5px;padding:7px 9px;width:100%;min-width:0}
+input.num,td input.num{font-family:var(--mono);text-align:right}
+input[readonly]{background:var(--lock);color:var(--ink-2)}
+input.bad{border-color:var(--err);background:var(--err-soft)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th{background:var(--lock);color:var(--ink-2);font-weight:600;text-align:left;padding:7px 6px;white-space:nowrap;font-size:12px}
+td{border-top:1px solid var(--line);padding:4px}
+td input{padding:5px 6px;font-size:13px;min-width:80px}
+td.calc{font-family:var(--mono);text-align:right;padding-right:8px;white-space:nowrap}
+tfoot td{font-weight:600;background:var(--lock)}
+.row-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.btn{font:600 14px var(--body);border-radius:6px;padding:9px 16px;cursor:pointer;border:1px solid var(--line);background:var(--sheet);color:var(--ink)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.small{font-size:12px;padding:5px 10px}
+.btn[disabled]{opacity:.55;cursor:default}
+.x{border:0;background:none;color:var(--ink-3);cursor:pointer;font-size:16px}
+.result{margin-top:18px}
+.folio{background:var(--ok-soft);border:1px solid var(--ok);border-radius:8px;padding:18px}
+.folio .num{font:600 30px/1.1 var(--mono);color:var(--ok);margin:6px 0;user-select:all}
+.issues{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.issue{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;border-radius:6px;padding:8px 10px;font-size:14px}
+.issue.err{background:var(--err-soft)} .issue.warn{background:var(--warn-soft)}
+.tag{font:600 11px var(--body);letter-spacing:.05em;text-transform:uppercase;border-radius:4px;padding:2px 6px}
+.issue.err .tag{color:var(--err);border:1px solid var(--err)} .issue.warn .tag{color:var(--warn);border:1px solid var(--warn)}
+.muted{color:var(--ink-3);font-size:13px}
+.flow{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:12px}
+.flow div{background:var(--lock);border-radius:6px;padding:10px 12px;font-size:13px}
+.flow b{display:block;font-size:13px;margin-bottom:2px}
+.login{max-width:440px}
+.hint{font-family:var(--mono);font-size:12px;background:var(--lock);padding:2px 6px;border-radius:4px}
+.list td{padding:7px 6px}
+.pill{font-size:12px;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.pill.ok{background:var(--ok-soft);color:var(--ok)} .pill.err{background:var(--err-soft);color:var(--err)}
+
+/* Hoja de factura: papel blanco en ambos temas, como el documento impreso */
+.doc-scroll{overflow-x:auto;border-radius:8px}
+.doc{--paper:#ffffff;--pink:#1a1a1a;--pline:#1a1a1a;--pfield:#fffbe6;--plock:#f1f1f1;background:var(--paper);color:var(--pink);min-width:760px;max-width:900px;margin:0 auto;padding:26px 30px;font:12.5px/1.35 "Times New Roman",Times,serif;border:1px solid var(--line)}
+.doc input,.doc select{font:12.5px "Times New Roman",Times,serif;color:var(--pink);background:var(--pfield);border:1px solid #c9b46b;border-radius:2px;padding:2px 4px;width:100%}
+.doc input[readonly]{background:var(--plock);border-color:#d6d6d6;color:#333}
+.doc input.bad{border-color:#b3261e;background:#fbe5e3}
+.doc .mini{width:46px;display:inline-block}
+.d-head{display:grid;grid-template-columns:1fr 1.3fr;gap:16px;align-items:start}
+.d-brand{font:700 22px/1.1 "Times New Roman",serif;color:#1a1a1a}
+.d-logo{display:block;max-height:56px;max-width:220px;object-fit:contain}
+.logo-up{display:inline-block;margin-top:6px;font:12px Arial,sans-serif;color:#1d5fbf;cursor:pointer;text-decoration:underline;background:none;border:0;padding:0}
+@media print{.new,#f_shSel,.logo-up,header,.steps,.row-actions,#v-acceso,#v-resultado,.muted,.del,#btnAdd{display:none!important}body{background:#fff}.wrap{padding:0;max-width:none}.doc{border:0;min-width:0;padding:0}.doc input,.doc select{background:none!important;border:0!important;padding:0;appearance:none;-webkit-appearance:none}#v-machote{display:block!important}}
+.send{background:var(--sheet);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-top:14px}
+.send ol{margin:6px 0 0;padding-left:20px}.send li{margin:4px 0}
+.d-brand small{display:block;font:italic 12px Arial,sans-serif;color:#333;letter-spacing:0;margin-top:4px}
+.d-exp{font-size:12px}
+.d-title{text-align:center;font:700 19px "Times New Roman",serif;text-decoration:underline;margin:16px 0 6px;border-top:1px solid var(--pline);padding-top:8px}
+.d-top{display:grid;grid-template-columns:1.6fr 1fr;border:1px solid var(--pline)}
+.d-left{border-right:1px solid var(--pline)}
+.d-left .d-box{border-bottom:1px solid var(--pline)}
+.d-left .d-box:last-child{border-bottom:0}
+.d-box{padding:6px 8px}
+.d-lbl{font-weight:700;font-size:11px;text-decoration:underline;margin-bottom:2px}
+.addr{display:grid;grid-template-columns:auto 1fr;gap:0 8px;font-size:11.5px}
+.addr dt{color:#555}.addr dd{margin:0}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:6px;align-items:center;margin-bottom:3px}
+.kv span{font-weight:700;font-size:11.5px}
+.d-route{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;border:1px solid var(--pline);border-top:0;padding:6px 8px}
+.d-cols{display:grid;grid-template-columns:1.4fr 1.3fr .8fr .8fr .9fr;font-weight:700;border-bottom:1px solid var(--pline);padding:8px 0 3px;margin-top:4px}
+.d-cols .r,.r{text-align:right}
+.d-inc{display:flex;justify-content:center;margin:4px 0 8px}.d-inc input{width:150px;text-align:center;font-weight:700;text-decoration:underline}
+.d-line{display:grid;grid-template-columns:1.4fr 1.3fr .8fr .8fr .9fr;gap:6px 10px;padding:10px 0;border-bottom:1px dashed #bbb;position:relative}
+.d-line .mk{display:grid;grid-template-columns:44px 1fr;gap:2px 4px;align-items:center;font-size:11.5px}
+.d-line .amt{text-align:right;font-weight:700;padding-top:3px}
+.d-pack{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:11.5px;padding-left:120px}
+.d-pack label{flex-direction:row;align-items:center;gap:4px;color:#1a1a1a;font-size:11.5px}
+.d-pack input{width:90px}
+.d-line .del{position:absolute;right:-22px;top:8px;border:0;background:none;color:#888;cursor:pointer;font-size:16px}
+.d-total{margin-top:10px;padding-left:120px}
+.t-row{display:grid;grid-template-columns:70px 1.6fr .7fr .4fr 1.1fr;gap:6px;align-items:center;border-top:1px solid var(--pline);padding-top:6px}
+.t-row .red{color:#c0262d;font-weight:700}
+.t-sub{display:grid;grid-template-columns:130px 110px 50px;gap:6px;font-weight:700}
+.t-sub b{text-align:right}
+.d-sign{text-align:right;font-weight:700;margin-top:18px}
+.new{font:600 9.5px Arial,sans-serif;letter-spacing:.05em;text-transform:uppercase;background:#1d4f91;color:#fff;border-radius:3px;padding:1px 4px;vertical-align:1px}
+@media (prefers-reduced-motion:no-preference){.result{animation:in .25s ease-out}}
+@keyframes in{from{transform:translateY(4px)}to{transform:none}}
+</style>
+</head><body>
+
+<div class="wrap">
+  <header>
+    <h1>Supplier Invoice &amp; Packing List</h1>
+    <p class="lead">Fill in your commercial invoice and packing list on this template. Fiscal data for Mabe is already filled in. If it passes validation you get a <b>validation folio</b> to request the SO from the forwarder; if not, you see exactly what to fix.</p>
+    <span class="demo">Pilot · Controladora Mabe S.A. de C.V. · Ocean imports FOB</span>
+  </header>
+
+  <nav class="steps" aria-label="Pasos">
+    <button data-step="acceso" aria-current="step">1 · Supplier access</button>
+    <button data-step="machote">2 · Invoice &amp; packing list</button>
+    <button data-step="resultado">3 · Validation &amp; folio</button>
+      </nav>
+
+  <!-- PASO 1 -->
+  <section id="v-acceso" class="sheet login">
+    <h2>Supplier access</h2>
+    <p class="muted" style="margin:4px 0 14px">Enter the supplier ID assigned by Mabe Logistics. It loads your fiscal data and your customer's.</p>
+    <label for="supId">Supplier ID <span class="req">*</span>
+      <input id="supId" autocomplete="off" placeholder="e.g. NIDEC-INST" value=""></label>
+    <p class="muted" style="margin-top:8px">IDs de prueba: <span class="hint">NIDEC-INST</span></p>
+    <p id="loginErr" class="muted" style="color:var(--err);margin-top:8px" hidden></p>
+    <div class="row-actions"><button class="btn primary" id="btnLogin">Open template</button></div>
+  </section>
+
+  <!-- PASO 2 -->
+  <section id="v-machote" hidden>
+    <p class="muted" style="margin-bottom:10px">This is your usual format. Fill in the yellow fields; grey fields are fixed. Fields marked <span class="new">new</span> are now required by Mexican customs.</p>
+    <div class="doc-scroll"><div class="doc" id="doc">
+      <div class="d-head">
+        <div class="d-brand" id="dBrand"></div>
+        <div class="d-exp" id="dExp"></div>
+      </div>
+      <div class="d-title">INVOICE &amp; PACKING LIST</div>
+      <div class="d-top">
+        <div class="d-left">
+          <div class="d-box"><div class="d-lbl">Consignee:</div><div id="dCons"></div></div>
+          <div class="d-box"><div class="d-lbl">Shipper:</div><div id="dShip"></div></div>
+          <div class="d-box"><div class="d-lbl">Ship To:</div><div id="dShipTo"></div></div>
+        </div>
+        <div class="d-right d-box">
+          <div class="kv"><span>Date</span><input id="f_date" type="date"></div>
+          <div class="kv"><span>Invoice No.</span><input id="f_inv"></div>
+          <div class="kv"><span>Order No.</span><input id="f_po" class="num"></div>
+          <div class="kv"><span>Origin</span><input id="f_orig" value="CHINA"></div>
+          <div class="kv"><span>Payment</span><input id="f_pay" value="REMITTANCE"></div>
+          <div class="kv"><span>Remarks</span><input id="f_rem"></div>
+          <div class="kv"><span>Ref. Mabe (IMP) <span class="new">new</span></span><input id="f_imp" placeholder="IMP00000"></div>
+          <div class="kv"><span>ASN <span class="new">new</span></span><input id="f_asn" placeholder="Advance Ship Notice No."></div>
+          <div class="kv"><span>Business license <span class="new">new</span></span><input id="f_lic" placeholder="License No."></div>
+          <div class="kv"><span>Currency</span><input id="f_cur" readonly></div>
+        </div>
+      </div>
+      <div class="d-route">
+        <div class="kv"><span>From:</span><input id="f_pol"></div>
+        <div class="kv"><span>To:</span><input id="f_pod" readonly></div>
+        <div class="kv"><span>Shipped per:</span><input value="OCEAN FREIGHT" readonly></div>
+        <div class="kv"><span>ETD:</span><input id="f_etd" type="date"></div>
+      </div>
+      <div class="d-cols"><span>Marks and Numbers</span><span>Description</span><span class="r">Quantity</span><span class="r">Unit Price</span><span class="r">Amount</span></div>
+      <div class="d-inc"><input id="f_inc" readonly></div>
+      <div id="dLines"></div>
+      <div class="row-actions" style="margin:6px 0 14px"><button class="btn small" id="btnAdd">Add container / line</button></div>
+      <div class="d-total">
+        <div class="t-row"><b>TOTAL:</b><span class="red"><span id="tCtn"></span> CTNS / <input id="f_pal" class="num mini" value=""> PALLETS</span><span class="r" id="tQty"></span><span>PCS</span><span class="r">USD <b id="tAmt"></b></span></div>
+        <div class="t-sub"><span>M3:</span><b id="tCbm"></b><span>CBM</span></div>
+        <div class="t-sub"><span>NET WEIGHT:</span><b id="tNet"></b><span>KGS</span></div>
+        <div class="t-sub"><span>GROSS WEIGHT:</span><b id="tGross"></b><span>KGS</span></div>
+      </div>
+      <div class="d-sign" id="dSign"></div>
+    </div></div>
+
+    <div class="row-actions" style="margin-top:16px">
+      <button class="btn primary" id="btnValidate">Validate invoice</button>
+      <span class="muted" id="validState" style="align-self:center"></span>
+    </div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section id="v-resultado" class="sheet" hidden>
+    <div id="resBox"><p class="muted">You have not validated an invoice yet. Fill it in on step 2 and press <b>Validate invoice</b>.</p></div>
+    <div class="sec">
+      <h3>What happens next</h3>
+      <div class="flow">
+        <div><b>1. Validation folio</b>You get a folio once the invoice meets every requirement.</div>
+        <div><b>2. Send the package</b>Email the PDF and the data file to Mabe with the folio in the subject.</div>
+        <div><b>3. Forwarder</b>Give the folio to the forwarder. Without a folio the SO is not released.</div>
+        <div><b>4. Customs broker</b>Mabe forwards the validated invoice to the customs broker automatically.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+/* ---------- Configuración del piloto (cambiar aquí) ---------- */
+const BUZON_MABE="jose.jimenez.perez@mabe.com.mx";   // buzón que vigila el flujo de Power Automate
+const VERSION_PORTAL="1.0-piloto";
+
+/* ---------- Datos maestros ---------- */
+const CONSIGNATARIO={nombre:"CONTROLADORA MABE SA DE CV",taxId:"CMA811126AW9",calle:"AVENIDA DE LAS PALMAS",numero:"215",interior:"PISO 7",colonia:"LOMAS DE CHAPULTEPEC I SECCIÓN",ciudad:"CIUDAD DE MÉXICO",municipio:"MIGUEL HIDALGO",provincia:"—",estado:"CIUDAD DE MÉXICO",cp:"11000",pais:"MÉXICO"};
+const PROVEEDORES={
+ "NIDEC-INST":{
+  marca:"Nidec",nombre:"NIDEC INSTRUMENTS (AMERICA) CORPORATION",
+  taxId:"22-2285032",calle:"NORTHRIDGE DRIVE",numero:"275",interior:"",colonia:"—",ciudad:"SHELBYVILLE",municipio:"SHELBY COUNTY",provincia:"—",estado:"INDIANA",cp:"46176",pais:"UNITED STATES",
+  shippers:[
+   {nombre:"NIDEC INSTRUMENTS (ZHEJIANG) CORPORATION",taxId:"",lic:"",calle:"XINGPING 2ND ROAD",numero:"888",interior:"",colonia:"PINGHU ECONOMIC DEVELOPMENT ZONE",ciudad:"PINGHU",municipio:"JIAXING",provincia:"ZHEJIANG",estado:"ZHEJIANG",cp:"314200",pais:"CHINA",origen:"CHINA",pol:"SHANGHAI, CHINA"},
+   {nombre:"SCD CO., LTD",taxId:"",lic:"",calle:"HYEONGJE-RO 17BEON-GIL, NAMSA-MYEON",numero:"21",interior:"",colonia:"CHEOIN-GU",ciudad:"YONGIN-CITY",municipio:"—",provincia:"GYEONGGI-DO",estado:"GYEONGGI-DO",cp:"—",pais:"KOREA",origen:"VIETNAM",pol:"HO CHI MINH, VIETNAM"}
+  ],
+  shipTo:{nombre:"CONTROLADORA MABE SA DE CV · Celaya plant (R001)",calle:"CARRETERA FEDERAL 51 KM 110",colonia:"POBLADO OJO SECO",ciudad:"CELAYA",estado:"GUANAJUATO",cp:"38158"},
+  incoterm:"FOB",pod:"MANZANILLO, MEXICO",moneda:"USD",
+  partes:{"294D3697G001":{modelo:"NTPVA00R01",desc:"ICE MAKER"},"294D3697G002":{modelo:"NTPVA00R02",desc:"ICE MAKER"},"294D3213G001":{modelo:"NTXA004RA2",desc:"ICE MAKER"},"294D2239G002":{modelo:"RMF002AMBA",desc:"CONDENSER FAN"}}
+ }
+};
+const UMC=["PZA","KG","MT","LT","JGO","PAR","M2","M3"];
+
+/* ---------- Estado ---------- */
+let sup=null, lineas=[], ultimo=null, logo="";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=n=>(+n||0).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const num=(n,d=2)=>(+n||0).toLocaleString("en-US",{maximumFractionDigits:d});
+
+function show(step){
+  document.querySelectorAll(".steps button").forEach(b=>b.setAttribute("aria-current",b.dataset.step===step?"step":"false"));
+  ["acceso","machote","resultado"].forEach(s=>$("#v-"+s).hidden=s!==step);
+  window.scrollTo(0,0);
+}
+document.querySelectorAll(".steps button").forEach(b=>b.onclick=()=>{ if(!sup&&b.dataset.step!=="acceso")return; show(b.dataset.step)});
+
+/* ---------- Paso 1 ---------- */
+function entrar(){
+  const id=$("#supId").value.trim().toUpperCase(); const p=PROVEEDORES[id];
+  if(!p){$("#loginErr").hidden=false;$("#loginErr").textContent="We could not find that ID. Check the email from Mabe Logistics or ask your buyer for your ID.";return}
+  $("#loginErr").hidden=true; sup={id,...p}; pintarPartes(); nuevaFactura(); show("machote");
+}
+$("#btnLogin").onclick=entrar;
+$("#supId").addEventListener("keydown",e=>{if(e.key==="Enter")entrar()});
+
+const addr=(p,extra)=>`<div style="font-weight:700">${esc(p.nombre)}</div>${extra||""}<dl class="addr">${[["Street",p.calle],["No.",p.numero],["Int.",p.interior||"—"],["Neighborhood",p.colonia],["City",p.ciudad],["Municipality",p.municipio||"—"],["Province",p.provincia||"—"],["State",p.estado],["ZIP",p.cp],["Country",p.pais]].map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
+function pintarPartes(){
+  pintarMarca();
+  $("#dExp").innerHTML=addr(sup,`<div>TAX ID: ${esc(sup.taxId)}</div>`);
+  $("#dCons").innerHTML=addr(CONSIGNATARIO,`<div>TAX ID: ${esc(CONSIGNATARIO.taxId)} · PHONE: +52 55 917 8100</div>`);
+  pintarShipper(0);
+  $("#dShipTo").innerHTML=`<div style="font-weight:700">${esc(sup.shipTo.nombre)}</div><div>${esc(sup.shipTo.calle)}, ${esc(sup.shipTo.colonia)}</div><div>${esc(sup.shipTo.ciudad)}, ${esc(sup.shipTo.estado)}, MEXICO, C.P. ${esc(sup.shipTo.cp)}</div><div>ID: R001</div>`;
+  $("#dSign").textContent=sup.nombre;
+  $("#f_pod").value=sup.pod; $("#f_cur").value=sup.moneda;
+}
+function pintarMarca(){
+  const txt=`${esc(sup.marca||sup.nombre.split(" ")[0])}<small>${esc(sup.nombre)}</small>`;
+  $("#dBrand").innerHTML=(logo?`<img src="${logo}" alt="Logo ${esc(sup.nombre)}" class="d-logo">`:txt)+
+    `<label class="logo-up">${logo?"Change logo":"Upload your company logo"}<input type="file" id="f_logo" accept="image/png,image/jpeg" hidden></label>`+
+    (logo?` <button type="button" class="logo-up" id="f_logoX">remove</button>`:"");
+  $("#f_logo").onchange=ev=>{
+    const file=ev.target.files[0]; if(!file)return;
+    if(file.size>300*1024){alert("The logo must be smaller than 300 KB.");return}
+    const r=new FileReader(); r.onload=()=>{logo=r.result; try{localStorage.setItem("logo_"+sup.id,logo)}catch(e){} pintarMarca()}; r.readAsDataURL(file);
+  };
+  if($("#f_logoX")) $("#f_logoX").onclick=()=>{logo=""; try{localStorage.removeItem("logo_"+sup.id)}catch(e){} pintarMarca()};
+}
+function shipperActual(){ return sup.shippers[+($("#f_shSel")?.value||0)] }
+function pintarShipper(idx){
+  const sh=sup.shippers[idx], china=sh.pais==="CHINA";
+  const sel=sup.shippers.length>1?`<select id="f_shSel" aria-label="Shipper" style="width:100%;margin-bottom:4px">${sup.shippers.map((s,i)=>`<option value="${i}" ${i===idx?"selected":""}>${esc(s.nombre)} (ships from ${esc(s.origen)})</option>`).join("")}</select>`:"";
+  $("#dShip").innerHTML=sel+addr(sh,`<div class="kv" style="margin:3px 0"><span>${china?"TAX ID (USCC)":"TAX ID / BUSINESS REG. NO."} <span class="new">new</span></span><input id="f_shTax" placeholder="${china?"18 characters":"e.g. 123-45-67890"}" value="${esc(sh.taxId)}"></div>`);
+  $("#f_orig").value=sh.origen; $("#f_pol").value=sh.pol; $("#f_lic").value=sh.lic||"";
+  $("#f_inc").value=`${sup.incoterm} ${sh.pol.split(",")[0]}`;
+  if($("#f_shSel")) $("#f_shSel").onchange=e=>{ pintarShipper(+e.target.value); lineas.forEach(l=>l.origen=shipperActual().origen); pintarLineas(); };
+}
+function nuevaFactura(){
+  try{ logo=localStorage.getItem("logo_"+sup.id)||"" }catch(e){ logo="" } pintarMarca();
+  ["f_inv","f_imp","f_asn","f_po","f_etd","f_rem"].forEach(i=>$("#"+i).value="");
+  $("#f_date").value=new Date().toISOString().slice(0,10);
+  lineas=[lineaVacia()]; pintarLineas();
+}
+const lineaVacia=()=>({ctr:"",parte:"",modelo:"",desc:"",origen:shipperActual()?.origen||"CHINA",qty:0,umc:"PZA",precio:0,ctn:0,pc:0,net:0,gross:0,cbm:0});
+const NUMS=["qty","precio","ctn","pc","net","gross","cbm"];
+function inp(i,k,cls,extra){const l=lineas[i];const v=NUMS.includes(k)&&!l[k]?"":l[k];return `<input id="l${i}_${k}" data-i="${i}" data-k="${k}" class="${cls||""}" value="${esc(v)}" aria-label="${k}" ${extra||""}>`}
+function pintarLineas(){
+  const po=$("#f_po").value;
+  const opts=Object.keys(sup.partes).map(p=>`<option value="${p}">`).join("");
+  $("#dLines").innerHTML=`<datalist id="dlPartes">${opts}</datalist>`+lineas.map((l,i)=>`<div class="d-line">
+    <div class="mk"><span>MABE</span><span></span>
+      <span>MDL:</span>${inp(i,"modelo")}
+      <span>P/N:</span>${inp(i,"parte","",'list="dlPartes" placeholder="Mabe part no."')}
+      <span>PO:</span><span>${esc(po)}</span>
+      <span>MADE IN</span>${inp(i,"origen")}</div>
+    <div>${inp(i,"desc")}<div style="margin-top:4px;display:flex;gap:4px;align-items:center"><span style="font-size:11px">UMC</span><select id="l${i}_umc" data-i="${i}" data-k="umc" aria-label="UMC">${UMC.map(u=>`<option ${u===l.umc?"selected":""}>${u}</option>`).join("")}</select></div></div>
+    <div>${inp(i,"qty","num")}</div>
+    <div>${inp(i,"precio","num")}</div>
+    <div class="amt" data-amt="${i}">${money(l.qty*l.precio)}</div>
+    <div class="d-pack"><b style="font-style:italic">PACKING:</b>
+      <label>C/NO.: 1 - ${inp(i,"ctn","num")}</label><label>@ ${inp(i,"pc","num")} PCS / CTN</label>
+      <label><b>Container #:</b> ${inp(i,"ctr","",'style="width:120px" placeholder="ABCU1234567"')}</label>
+      <label>Net kg ${inp(i,"net","num")}</label><label>Gross kg ${inp(i,"gross","num")}</label><label>M3 ${inp(i,"cbm","num")}</label></div>
+    ${lineas.length>1?`<button class="del" data-del="${i}" aria-label="Remove line">×</button>`:""}
+  </div>`).join("");
+  document.querySelectorAll("#dLines input,#dLines select").forEach(el=>el.oninput=()=>{
+    const l=lineas[+el.dataset.i], k=el.dataset.k;
+    l[k]=NUMS.includes(k)?parseFloat(el.value.replace(/,/g,""))||0:el.value.toUpperCase();
+    if(k==="parte"&&sup.partes[l.parte]){const p=sup.partes[l.parte];
+      if(!l.modelo){l.modelo=p.modelo;$(`#l${el.dataset.i}_modelo`).value=p.modelo}
+      if(!l.desc){l.desc=p.desc;$(`#l${el.dataset.i}_desc`).value=p.desc}}
+    document.querySelector(`[data-amt="${el.dataset.i}"]`).textContent=money(l.qty*l.precio); totales();
+  });
+  document.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{lineas.splice(+b.dataset.del,1);pintarLineas()});
+  totales();
+}
+function totales(){
+  const s=k=>lineas.reduce((a,l)=>a+(+l[k]||0),0);
+  $("#tQty").textContent=num(s("qty"),0); $("#tAmt").textContent=money(lineas.reduce((a,l)=>a+l.qty*l.precio,0));
+  $("#tCtn").textContent=num(s("ctn"),0); $("#tNet").textContent=money(s("net")); $("#tGross").textContent=money(s("gross")); $("#tCbm").textContent=num(s("cbm"),2);
+}
+document.addEventListener("input",e=>{ if(e.target.id==="f_po"&&sup) document.querySelectorAll(".d-line .mk span:nth-child(8)").forEach(s=>s.textContent=e.target.value); });
+$("#btnAdd").onclick=()=>{lineas.push(lineaVacia());pintarLineas()};
+
+/* ---------- Reglas (requisitos de aduana) ---------- */
+const ISO={};(()=>{let n=10;for(const c of "ABCDEFGHIJKLMNOPQRSTUVWXYZ"){if(n%11===0)n++;ISO[c]=n++}})();
+function contenedorOk(s){s=(s||"").replace(/\s/g,"").toUpperCase();if(!/^[A-Z]{4}\d{7}$/.test(s))return false;let t=0;for(let i=0;i<10;i++){const ch=s[i];t+=(/\d/.test(ch)?+ch:ISO[ch])*2**i}return (t%11)%10===+s[10]}
+function reglas(f){
+  const E=[],W=[]; const err=(campo,msg)=>E.push({campo,msg}); const warn=(campo,msg)=>W.push({campo,msg});
+  if(!f.inv) err("f_inv","Invoice number is missing.");
+  if(!f.date) err("f_date","Invoice date is missing.");
+  if(!/^[0-9A-Z\-]{6,20}$/.test(f.asn)) err("f_asn","ASN (Advance Ship Notice) is missing or invalid: use 6 to 20 letters or digits.");
+  if(!/^IMP\d{5}$/.test(f.imp)) err("f_imp","Mabe reference must be IMP + 5 digits (e.g. IMP93301). Ask Mabe Logistics if you don't have it.");
+  if(!/^\d{10}$/.test(f.po)) err("f_po","Purchase order must have 10 digits.");
+  if(!f.pol) err("f_pol","Port of loading is missing.");
+  if(!f.etd) err("f_etd","ETD is missing.");
+  if(f.date&&f.etd&&f.etd<f.date) warn("f_etd","ETD is earlier than the invoice date. Please confirm.");
+  if(!f.lic) err("f_lic","Business license number is missing. Customs requires it to match the shipper name and address.");
+  if(f.shipperPais==="CHINA"){ if(!/^[0-9A-Z]{18}$/.test(f.shTax)) err("f_shTax","Shipper Tax ID in China (USCC) must have 18 alphanumeric characters."); }
+  else if(f.shipperPais==="KOREA"){ if(!/^\d{3}-?\d{2}-?\d{5}$/.test(f.shTax)) err("f_shTax","Shipper Business Registration No. in Korea must have 10 digits (123-45-67890)."); }
+  else if(!f.shTax) err("f_shTax","Shipper Tax ID is missing.");
+  if(!f.lineas.length) err(null,"The invoice has no lines.");
+  f.lineas.forEach((l,i)=>{
+    const r=`Line ${i+1}: `, id=k=>`l${i}_${k}`;
+    if(!contenedorOk(l.ctr)) err(id("ctr"),r+`container "${l.ctr||"empty"}" is not valid (ISO 6346 format with check digit).`);
+    if(!l.parte) err(id("parte"),r+"Mabe part number is missing.");
+    else if(!sup.partes[l.parte]) err(id("parte"),r+`part number ${l.parte} is not registered for this supplier. Check the PO.`);
+    if(!l.desc) err(id("desc"),r+"description is missing.");
+    if(!l.origen) err(id("origen"),r+"country of origin (MADE IN) is missing.");
+    if(!(l.qty>0)) err(id("qty"),r+"quantity must be greater than zero.");
+    if(!UMC.includes(l.umc)) err(id("umc"),r+"commercial unit of measure (UMC) is not valid.");
+    if(!(l.precio>0)) err(id("precio"),r+"unit price is missing.");
+    if(l.ctn>0&&l.pc>0&&l.ctn*l.pc!==l.qty) err(id("ctn"),r+`cartons × pcs per carton (${l.ctn} × ${l.pc} = ${l.ctn*l.pc}) does not match quantity ${l.qty}.`);
+    if(!(l.ctn>0)) err(id("ctn"),r+"number of cartons is missing.");
+    if(!(l.net>0)||!(l.gross>0)) err(id("net"),r+"net and gross weight are missing.");
+    else if(l.gross<=l.net) err(id("gross"),r+"gross weight must be greater than net weight.");
+    if(!(l.cbm>0)) err(id("cbm"),r+"volume (CBM) is missing.");
+    else if(l.cbm>76) err(id("cbm"),r+`volume ${l.cbm} CBM exceeds a 40' HC container (≈76 CBM). Check that CBM and weight are not swapped.`);
+    if(l.gross>0&&l.cbm>0&&l.gross/l.cbm<15) warn(id("gross"),r+`gross weight per CBM is very low (${num(l.gross/l.cbm,1)} kg/m³). Check that CBM and weight are not swapped.`);
+  });
+  const ctrs=f.lineas.map(l=>l.ctr).filter(Boolean);
+  if(new Set(ctrs).size<ctrs.length&&f.lineas.length>1) warn(null,"The same container appears on more than one line. That is fine if it holds several part numbers.");
+  return {E,W};
+}
+function leerForm(){
+  const sh=shipperActual();
+  return {version:VERSION_PORTAL,proveedor:sup.id,proveedorNombre:sup.nombre,inv:$("#f_inv").value.trim().toUpperCase(),date:$("#f_date").value,imp:$("#f_imp").value.trim().toUpperCase(),asn:$("#f_asn").value.trim().toUpperCase(),
+   po:$("#f_po").value.trim(),pol:$("#f_pol").value.trim().toUpperCase(),pod:sup.pod,etd:$("#f_etd").value,lic:$("#f_lic").value.trim().toUpperCase(),origen:$("#f_orig").value.trim().toUpperCase(),pago:$("#f_pay").value.trim(),remarks:$("#f_rem").value.trim(),pallets:+$("#f_pal").value||0,
+   shTax:($("#f_shTax")?.value||"").trim().toUpperCase(),shipper:sh.nombre,shipperPais:sh.pais,
+   incoterm:sup.incoterm,moneda:sup.moneda,lineas:lineas.map(l=>({...l,importe:+(l.qty*l.precio).toFixed(2)}))};
+}
+
+/* ---------- Folio: incluye un código de control sobre los datos clave ---------- */
+function fnv(s){let h=0x811c9dc5;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,0x01000193)>>>0}return h.toString(36).toUpperCase().padStart(7,"0").slice(-6)}
+function folio(f){ const tot=f.lineas.reduce((a,l)=>a+l.importe,0).toFixed(2), q=f.lineas.reduce((a,l)=>a+l.qty,0);
+  return `VF-${f.imp.replace("IMP","")}-${fnv([f.proveedor,f.inv,f.imp,f.asn,q,tot].join("|"))}` }
+
+$("#btnValidate").onclick=()=>{
+  document.querySelectorAll(".bad").forEach(e=>e.classList.remove("bad"));
+  const f=leerForm(); const {E,W}=reglas(f);
+  E.concat(W).forEach(x=>x.campo&&document.getElementById(x.campo)?.classList.add("bad"));
+  const ok=!E.length;
+  if(ok){ f.folio=folio(f); f.validadoEn=new Date().toISOString(); f.totales={qty:f.lineas.reduce((a,l)=>a+l.qty,0),importe:+f.lineas.reduce((a,l)=>a+l.importe,0).toFixed(2),ctn:f.lineas.reduce((a,l)=>a+l.ctn,0),net:f.lineas.reduce((a,l)=>a+l.net,0),gross:f.lineas.reduce((a,l)=>a+l.gross,0),cbm:+f.lineas.reduce((a,l)=>a+l.cbm,0).toFixed(2),contenedores:[...new Set(f.lineas.map(l=>l.ctr))]}; f.avisos=W.map(w=>w.msg) }
+  ultimo={f,errores:E,avisos:W,folio:ok?f.folio:null};
+  pintarResultado(); show("resultado");
+};
+
+const nombreBase=f=>`${f.folio}_${f.inv}_${f.imp}`.replace(/[^A-Za-z0-9_\-]/g,"-");
+const asunto=f=>`${f.folio} | ${f.proveedorNombre} | INV ${f.inv} | ${f.imp} | ASN ${f.asn}`;
+function descargarJSON(f){
+  const b=new Blob([JSON.stringify(f,null,2)],{type:"application/json"}); const a=document.createElement("a");
+  a.href=URL.createObjectURL(b); a.download=nombreBase(f)+".json"; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+function imprimirPDF(f){
+  const t=document.title; document.title=nombreBase(f); show("machote");
+  setTimeout(()=>{ window.print(); document.title=t; show("resultado") },150);
+}
+function pintarResultado(){
+  const {f,errores,avisos,folio:fol}=ultimo;
+  const lista=(arr,cls,tag)=>arr.map(x=>`<div class="issue ${cls}"><span class="tag">${tag}</span><span>${esc(x.msg)}</span></div>`).join("");
+  if(!fol){
+    $("#resBox").innerHTML=`<div class="result"><h2>The invoice has ${errores.length} ${errores.length===1?"error":"errors"}</h2>
+      <p class="muted">Fix them on step 2 (highlighted in red) and validate again. Without a folio the forwarder will not release the SO.</p>
+      <div class="issues">${lista(errores,"err","Fix")}${lista(avisos,"warn","Check")}</div>
+      <div class="row-actions"><button class="btn primary" id="btnBack">Back to invoice</button></div></div>`;
+    $("#btnBack").onclick=()=>show("machote"); return;
+  }
+  const body=encodeURIComponent(`Validated invoice & packing list.\n\nFolio: ${fol}\nInvoice: ${f.inv}\nMabe ref: ${f.imp}\nASN: ${f.asn}\nPO: ${f.po}\nContainers: ${f.totales.contenedores.join(", ")}\nTotal: ${f.moneda} ${money(f.totales.importe)}\n\nAttached: invoice PDF and data file (.json).`);
+  $("#resBox").innerHTML=`<div class="folio result"><h2>Invoice validated</h2><p>Give this folio to your forwarder to release the SO for ${esc(f.imp)}.</p>
+      <div class="num" id="folioTxt">${fol}</div>
+      <p class="muted">Invoice ${esc(f.inv)} · ASN ${esc(f.asn)} · ${esc(f.totales.contenedores.join(", "))} · ${f.moneda} ${money(f.totales.importe)}</p>
+      <div class="row-actions"><button class="btn small" id="btnCopy">Copy folio</button></div>
+      ${avisos.length?`<div class="issues">${lista(avisos,"warn","Check")}</div>`:""}</div>
+    <div class="send"><h2>Send the package to Mabe</h2>
+      <ol>
+        <li><button class="btn small" id="btnPdf">1 · Save invoice as PDF</button> <span class="muted">In the print window choose “Save as PDF”.</span></li>
+        <li><button class="btn small" id="btnJson">2 · Download data file (.json)</button></li>
+        <li><a class="btn small primary" id="btnMail" href="mailto:${BUZON_MABE}?subject=${encodeURIComponent(asunto(f))}&body=${body}">3 · Open email to Mabe</a> <span class="muted">Attach both files and send. Do not change the subject.</span></li>
+      </ol>
+      <p class="muted" style="margin-top:8px">Send to: <b>${esc(BUZON_MABE)}</b> · Subject: <span class="hint">${esc(asunto(f))}</span></p>
+    </div>`;
+  $("#btnPdf").onclick=()=>imprimirPDF(f);
+  $("#btnJson").onclick=()=>descargarJSON(f);
+  $("#btnCopy").onclick=async()=>{try{await navigator.clipboard.writeText(fol);$("#btnCopy").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#folioTxt"));const s=getSelection();s.removeAllRanges();s.addRange(r)}};
+}
+/* Enlace directo: ?p=ID-PROVEEDOR */
+try{ const q=new URLSearchParams(location.search).get("p"); if(q){$("#supId").value=q; if(PROVEEDORES[q.toUpperCase()]) entrar()} }catch(e){console.error(e)}
+</script>
+</body></html>
