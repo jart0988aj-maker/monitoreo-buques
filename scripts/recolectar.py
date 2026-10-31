@@ -71,6 +71,8 @@ class Corrida:
 
     def identifica(self, mmsi, nombre, imo=None):
         mmsi = str(mmsi)
+        if not mmsi.isdigit() or len(mmsi) != 9 or int(mmsi[3:]) < 1000:
+            return None   # MMSI de relleno (p. ej. 220000001): no confiable
         if nombre:
             self.nombres_vistos[clave_ais(nombre)] = (mmsi, nombre.strip())
         if mmsi in self.por_mmsi:

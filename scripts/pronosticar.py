@@ -194,6 +194,8 @@ def main():
         g["eta"] = min(r["eta"] for r in fs)
         g["contenedores"] = sum(r["contenedores"] for r in fs)
         g["embarques"] = len(fs)
+        g["imps"] = sorted({r.get("imp") for r in fs if r.get("imp")})
+        g["buques_iniciales"] = sorted({r.get("buque_inicial") for r in fs if r.get("buque_inicial") and r.get("buque_inicial") != r["buque"]})
         g["_filas"] = fs
 
     activos, por_embarque = [], []
@@ -219,7 +221,7 @@ def main():
         })
         a = activos[-1]
         for r in fs:   # una fila por embarque, para cruzar con el Excel interno
-            por_embarque.append({**a, "clave": r["clave"], "pol": r["pol"], "naviera": r["naviera"],
+            por_embarque.append({**a, "imp": r.get("imp", ""), "clave": r["clave"], "pol": r["pol"], "naviera": r["naviera"],
                                  "etd": r["etd"].isoformat(), "eta": r["eta"].isoformat(),
                                  "contenedores": r["contenedores"], "embarques": 1,
                                  "retraso_dias": (p["pronostico"] - r["eta"]).days})
@@ -245,7 +247,7 @@ def main():
         "ultima_corrida": lee_json(DATOS / "ultima_corrida.json", None),
     })
 
-    campos = ["clave", "buque", "naviera", "pol", "pod", "etd", "eta", "pronostico", "retraso_dias",
+    campos = ["imp", "clave", "buque", "naviera", "pol", "pod", "etd", "eta", "pronostico", "retraso_dias",
               "fecha_planta", "estado", "metodo", "confianza", "riesgo_dias", "esperado_historico", "transito_normal", "peor_caso",
               "contenedores", "embarques"]
     with open(DATOS / "estado_embarques.csv", "w", newline="", encoding="utf-8-sig") as f:

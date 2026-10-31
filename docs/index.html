@@ -45,7 +45,7 @@ h1{font-size:26px;margin:0;letter-spacing:-.01em}
 @media (max-width:600px){#mapa{height:380px}}
 .leyenda{display:flex;flex-wrap:wrap;gap:14px;padding:10px 14px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-2)}
 .leyenda i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:2px solid var(--panel)}
-.lista{max-height:560px;overflow:auto;border-top:1px solid var(--line)}
+.lista{max-height:520px;overflow:auto;border-top:1px solid var(--line)}
 .item{display:grid;grid-template-columns:62px 1fr auto;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer}
 .item:hover{background:var(--panel-2)}
 .badge{font-family:var(--mono);font-weight:500;border-radius:5px;padding:3px 0;text-align:center;font-size:13px;align-self:start}
@@ -60,7 +60,7 @@ h1{font-size:26px;margin:0;letter-spacing:-.01em}
 .tabs button{font:inherit;font-size:12px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);border-radius:5px;padding:3px 8px;cursor:pointer}
 .tabs button[aria-pressed=true]{background:var(--panel-2);color:var(--ink);border-color:var(--ink-3)}
 section{margin-top:14px}
-.puertos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:0 14px 14px}
+.puertos{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;padding:0 14px 14px}
 .puerto{background:var(--panel-2);border-radius:6px;padding:10px 12px}
 .puerto .n{font-weight:600;font-size:13px}
 .puerto b{font-family:var(--mono);font-size:22px;font-weight:500}
@@ -87,6 +87,12 @@ tr:hover td{background:var(--panel-2)}
 .eje .p{position:relative;height:14px}
 .eje .p span{position:absolute;transform:translateX(-50%)}
 #tip{position:fixed;pointer-events:none;background:#000;color:#fff;border:1px solid var(--line-2);border-radius:6px;padding:7px 9px;font-size:12px;display:none;z-index:2000;max-width:260px}
+.imp{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+td.celda-imp{white-space:normal;min-width:150px;max-width:230px;vertical-align:top}
+.imps summary{cursor:pointer;list-style:none}.imps summary::-webkit-details-marker{display:none}
+.imps .mas{font-family:var(--mono);font-size:11px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:4px;padding:0 5px;color:var(--ink)}
+.imps[open] summary .imp{display:none}.imps[open] summary .mas{display:inline-block;margin-bottom:4px}
+tr.marca td{background:rgba(57,135,229,.18)!important;transition:background .6s}
 footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#0b0c0e;color:var(--ink);border:1px solid var(--line-2)}
 .leaflet-popup-content{margin:10px 12px;font:13px/1.45 "IBM Plex Sans",sans-serif}
@@ -116,41 +122,30 @@ footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
   <div id="filtroAviso" style="color:var(--ink-2);font-size:13px;margin:-4px 0 10px"></div>
   <div class="kpis" id="kpis"></div>
 
-  <div class="grid">
-    <div class="panel">
-      <div id="mapa"></div>
-      <div class="leyenda">
-        <span><i style="background:var(--good)"></i>A tiempo (≤1 día)</span>
-        <span><i style="background:var(--warn)"></i>Retraso 2–4 días</span>
-        <span><i style="background:var(--crit)"></i>Retraso 5+ días</span>
-        <span><span class="portico" style="display:inline-block;margin-right:6px"></span>Puerto</span>
-        <span>- - - ruta estimada al destino</span>
-      </div>
-    </div>
-    <div class="panel">
+  <section class="panel" style="margin-top:0">
+    <h2>Embarques activos</h2>
+    <div class="sub">Un renglón por buque y viaje. En tránsito, por zarpar (14 días) o recién llegados. Fecha a planta = llegada + 7 días. Da clic en los IMP para ver la lista completa.</div>
+    <input class="buscar" id="buscar" placeholder="Buscar IMP, buque, naviera o puerto…">
+    <div class="tabla-w"><table id="tabla"></table></div>
+  </section>
+
+  <div class="dos">
+    <section class="panel">
       <h2>Alertas de llegada</h2>
       <div class="sub" id="subAlertas"></div>
       <div class="tabs" id="tabsAlertas">
-        <button data-t="retraso" aria-pressed="true">Retraso (AIS)</button>
-        <button data-t="riesgo" aria-pressed="false">Riesgo histórico</button>
+        <button data-t="riesgo" aria-pressed="true">Riesgo histórico</button>
+        <button data-t="retraso" aria-pressed="false">Retraso (AIS)</button>
         <button data-t="proximas" aria-pressed="false">Próximas llegadas</button>
       </div>
       <div class="lista" id="alertas"></div>
-    </div>
+    </section>
+    <section class="panel">
+      <h2>Congestión en puertos</h2>
+      <div class="sub">Buques de carga fondeados (esperando muelle) en la última lectura AIS, contra el promedio de 7 días. Solo hay señal en algunos puertos.</div>
+      <div class="puertos" id="puertos"></div>
+    </section>
   </div>
-
-  <section class="panel">
-    <h2>Congestión en puertos</h2>
-    <div class="sub">Buques de carga fondeados (esperando muelle) en la última lectura, comparado con el promedio de 7 días.</div>
-    <div class="puertos" id="puertos"></div>
-  </section>
-
-  <section class="panel">
-    <h2>Embarques activos</h2>
-    <div class="sub">En tránsito, por zarpar (14 días) o recién llegados. Fecha a planta = llegada + 7 días.</div>
-    <input class="buscar" id="buscar" placeholder="Buscar buque, naviera o puerto…">
-    <div class="tabla-w"><table id="tabla"></table></div>
-  </section>
 
   <div class="dos">
     <section class="panel">
@@ -166,6 +161,17 @@ footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
     </section>
   </div>
 
+  <details class="panel" id="detMapa" style="margin-top:14px">
+    <summary style="padding:12px 14px;cursor:pointer;font-weight:600">Mapa AIS (beta) <span style="color:var(--ink-3);font-weight:400;font-size:12px">· pocas posiciones: la señal gratuita casi no cubre Asia ni Manzanillo</span></summary>
+    <div id="mapa"></div>
+    <div class="leyenda">
+      <span><i style="background:var(--good)"></i>A tiempo (≤1 día)</span>
+      <span><i style="background:var(--warn)"></i>Retraso 2–4 días</span>
+      <span><i style="background:var(--crit)"></i>Retraso 5+ días</span>
+      <span><span class="portico" style="display:inline-block;margin-right:6px"></span>Puerto</span>
+    </div>
+  </details>
+
   <footer id="pie"></footer>
 </div>
 <div id="tip" role="tooltip"></div>
@@ -179,7 +185,7 @@ const signo=n=>n>0?"+"+n:String(n);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const og=a=>a.origenes&&a.origenes.length>1?a.pol+" +"+(a.origenes.length-1):a.pol;
 const lonP=l=>l<0?l+360:l;   // centra el Pacífico
-let D, filtroNav="TODAS", filtroEstado="activos", tabAlerta="retraso", orden={k:"retraso_dias",d:-1}, mapa, capa;
+let D, filtroNav="TODAS", filtroEstado="activos", tabAlerta="riesgo", orden={k:"eta",d:1}, mapa, capa;
 
 const tip=document.getElementById("tip");
 function muestraTip(e,html){tip.innerHTML=html;tip.style.display="block";
@@ -204,7 +210,9 @@ function inicia(){
   if(!uc)document.getElementById("aviso").innerHTML='<div class="aviso">Todavía no corre el recolector AIS. Lo que ves sale solo del reporte de embarques y del histórico; el mapa se llena con la primera corrida.</div>';
   else if(uc.errores&&uc.errores.length&&!Object.values(uc.mensajes).some(n=>n>0))
     document.getElementById("aviso").innerHTML=`<div class="aviso">La última corrida no recibió datos AIS: ${esc(uc.errores[0])}</div>`;
-  chips(); mapaInicia(); pinta();
+  chips(); pinta();
+  document.getElementById("detMapa").addEventListener("toggle",e=>{if(!e.target.open)return;
+    if(!mapa){mapaInicia();marcadores()}else mapa.invalidateSize()});
   document.getElementById("buscar").addEventListener("input",tabla);
   document.querySelectorAll("#tabsAlertas button").forEach(b=>b.onclick=()=>{tabAlerta=b.dataset.t;
     document.querySelectorAll("#tabsAlertas button").forEach(x=>x.setAttribute("aria-pressed",x===b));alertas()});
@@ -287,11 +295,13 @@ function marcadores(){
 }
 
 function irA(a){
-  if(!a.posicion||!mapa)return;
-  mapa.setView([a.posicion.lat,lonP(a.posicion.lon)],5);
-  capa.eachLayer(l=>{if(l.getPopup&&l.getPopup()&&l.getLatLng&&l.getLatLng().lat===a.posicion.lat)l.openPopup()});
-  document.getElementById("mapa").scrollIntoView({behavior:"smooth",block:"center"});
+  const b=document.getElementById("buscar");b.value=a.buque;tabla();
+  const t=document.getElementById("tabla");t.closest("section").scrollIntoView({behavior:"smooth",block:"start"});
+  const f=t.querySelector("tbody tr");if(f){f.classList.add("marca");setTimeout(()=>f.classList.remove("marca"),2500)}
 }
+const listaImp=a=>{const l=a.imps||[];if(!l.length)return"–";
+  if(l.length<=2)return `<span class="imp">${l.map(esc).join(", ")}</span>`;
+  return `<details class="imps"><summary><span class="imp">${l.slice(0,2).map(esc).join(", ")}</span> <span class="mas">+${l.length-2}</span></summary><div class="imp">${l.map(esc).join(", ")}</div></details>`};
 
 function alertas(){
   let A=filtrados().filter(a=>a.estado!=="en puerto"||tabAlerta==="proximas"), sub;
@@ -307,7 +317,8 @@ function alertas(){
   el.innerHTML=A.slice(0,80).map((a,i)=>{
     const badge=tabAlerta==="riesgo"?`<div class="badge b-riesgo" title="Riesgo histórico">+${a.riesgo_dias}</div>`:
       `<div class="badge b-${a.nivel}" title="${a.nivel==="verde"?"A tiempo":"Retraso"}">${signo(a.retraso_dias)}</div>`;
-    const det=tabAlerta==="riesgo"?`Normal ${Math.round(a.transito_normal)} d · reporte ${daysBetween(a.etd,a.eta)} d`:esc(a.metodo);
+    const det=(tabAlerta==="riesgo"?`Normal ${Math.round(a.transito_normal)} d · reporte ${daysBetween(a.etd,a.eta)} d`:esc(a.metodo))+
+      `<br><span class="imp">${(a.imps||[]).slice(0,3).map(esc).join(", ")}${(a.imps||[]).length>3?" +"+((a.imps.length)-3):""}</span>`;
     return `<div class="item" data-i="${i}">${badge}<div><div class="t">${esc(a.buque)}</div>
       <div class="d">${esc(a.naviera)} · ${esc(og(a))} → ${esc(a.pod)}</div><div class="d">${det}</div></div>
       <div class="f">${tabAlerta==="riesgo"?fd(a.esperado_historico):fd(a.pronostico)}<br><span style="color:var(--ink-3)">ETA ${fd(a.eta)}</span></div></div>`}).join("");
@@ -317,14 +328,14 @@ const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
 
 function tabla(){
   const q=document.getElementById("buscar").value.trim().toUpperCase();
-  const cols=[["buque","Buque"],["naviera","Naviera"],["pol","Origen"],["pod","Destino"],["estado","Estado"],
+  const cols=[["imps","IMP"],["buque","Buque"],["naviera","Naviera"],["pol","Origen"],["pod","Destino"],["estado","Estado"],
     ["etd","ETD",1],["eta","ETA reporte",1],["pronostico","Pronóstico",1],["retraso_dias","Retraso",1],
     ["riesgo_dias","Riesgo hist.",1],["fecha_planta","A planta",1],["contenedores","Ctr",1],["metodo","Fuente del pronóstico"]];
-  let A=filtrados().filter(a=>!q||[a.buque,a.naviera,...(a.origenes||[a.pol]),a.pod].join(" ").includes(q));
-  A.sort((x,y)=>{const a=x[orden.k],b=y[orden.k];return (a>b?1:a<b?-1:0)*orden.d});
+  let A=filtrados().filter(a=>!q||[a.buque,a.naviera,...(a.origenes||[a.pol]),a.pod,...(a.imps||[]),...(a.buques_iniciales||[])].join(" ").includes(q));
+  A.sort((x,y)=>{let a=x[orden.k],b=y[orden.k];if(Array.isArray(a)){a=a[0]||"";b=b[0]||""}return (a>b?1:a<b?-1:0)*orden.d});
   const t=document.getElementById("tabla");
   t.innerHTML=`<thead><tr>${cols.map(([k,n,num])=>`<th data-k="${k}" class="${num?"num":""}">${n}${orden.k===k?(orden.d>0?" ▲":" ▼"):""}</th>`).join("")}</tr></thead><tbody>${
-    A.map(a=>`<tr><td><b>${esc(a.buque)}</b></td><td>${esc(a.naviera)}</td><td title="${esc((a.origenes||[]).join(", "))}">${esc(og(a))}</td><td>${esc(a.pod)}</td><td>${esc(a.estado)}</td>
+    A.map(a=>`<tr><td class="celda-imp">${listaImp(a)}</td><td><b>${esc(a.buque)}</b>${a.buques_iniciales&&a.buques_iniciales.length?`<div class="d" style="color:var(--ink-3);font-size:11px">inicial: ${esc(a.buques_iniciales.join(", "))}</div>`:""}</td><td>${esc(a.naviera)}</td><td title="${esc((a.origenes||[]).join(", "))}">${esc(og(a))}</td><td>${esc(a.pod)}</td><td>${esc(a.estado)}</td>
     <td class="num">${fd(a.etd)}</td><td class="num">${fd(a.eta)}</td><td class="num">${fd(a.pronostico)}</td>
     <td class="num"><span class="badge b-${a.nivel}" style="padding:1px 6px">${signo(a.retraso_dias)}</span></td>
     <td class="num">${a.riesgo_dias?"+"+a.riesgo_dias:"–"}</td><td class="num">${fd(a.fecha_planta)}</td>

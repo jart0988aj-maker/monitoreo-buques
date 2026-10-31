@@ -1,66 +1,17 @@
 {
- "generado": "2026-10-31T02:51:33+00:00",
+ "generado": "2026-10-31T03:01:12+00:00",
  "hoy": "2026-10-30",
  "kpis": {
   "embarques_activos": 319,
   "buques_activos": 91,
-  "buques_en_mapa": 1,
+  "buques_en_mapa": 0,
   "contenedores_transito": 481,
-  "buques_con_retraso": 1,
-  "retraso_mediano": 12,
+  "buques_con_retraso": 0,
+  "retraso_mediano": 0,
   "buques_con_riesgo": 21,
-  "buques_identificados": 2
+  "buques_identificados": 1
  },
  "activos": [
-  {
-   "buque": "ALETTE MAERSK",
-   "pod": "MANZANILLO",
-   "eta": "2026-11-03",
-   "pol": "SINGAPORE",
-   "origenes": [
-    "SINGAPORE"
-   ],
-   "naviera": "HAPAG LLOYD",
-   "etd": "2026-09-15",
-   "contenedores": 1,
-   "embarques": 1,
-   "estado": "en tránsito",
-   "pronostico": "2026-11-15",
-   "retraso_dias": 12,
-   "nivel": "rojo",
-   "fecha_planta": "2026-11-22",
-   "metodo": "Posición y velocidad (AIS)",
-   "confianza": "alta",
-   "transito_normal": 33,
-   "peor_caso": "2026-11-01",
-   "estado_puerto": null,
-   "esperado_historico": "2026-10-18",
-   "base_historico": "ruta y naviera",
-   "riesgo_dias": 0,
-   "muestra_historico": 15,
-   "mmsi": "220000001",
-   "posicion": {
-    "buque": "ALETTE MAERSK",
-    "mmsi": "220000001",
-    "lat": 37.182,
-    "lon": -10.9193,
-    "sog": 1,
-    "cog": 289.2,
-    "nav": 0,
-    "hora": "2026-10-31T02:49:22+00:00",
-    "fuente": "B"
-   },
-   "eta_ais": {
-    "primer_eta_ais": "2026-11-08",
-    "primer_destino": "EG SUEZ> GB LGP",
-    "primer_visto": "2026-10-31T01:57:50+00:00",
-    "eta_ais": "2026-11-08",
-    "destino": "EG SUEZ> GB LGP",
-    "imo": 9948774,
-    "calado": 16.6,
-    "ultimo_visto": "2026-10-31T02:02:39+00:00"
-   }
-  },
   {
    "buque": "HUIZHOU66",
    "pod": "MANZANILLO",
@@ -73,6 +24,14 @@
    "etd": "2026-10-30",
    "contenedores": 15,
    "embarques": 5,
+   "imps": [
+    "IMP93789",
+    "IMP93794",
+    "IMP93795",
+    "IMP97772",
+    "IMP97903"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-22",
    "retraso_dias": 0,
@@ -103,6 +62,10 @@
    "etd": "2026-11-13",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP97425"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-12-04",
    "retraso_dias": 0,
@@ -133,6 +96,12 @@
    "etd": "2026-10-10",
    "contenedores": 13,
    "embarques": 3,
+   "imps": [
+    "IMP88120",
+    "IMP90094",
+    "IMP91688"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -163,6 +132,12 @@
    "etd": "2026-10-21",
    "contenedores": 14,
    "embarques": 3,
+   "imps": [
+    "IMP89341",
+    "IMP92852",
+    "IMP93923"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-13",
    "retraso_dias": 0,
@@ -193,6 +168,10 @@
    "etd": "2026-10-28",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP95901"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-22",
    "retraso_dias": 0,
@@ -223,6 +202,11 @@
    "etd": "2026-10-27",
    "contenedores": 11,
    "embarques": 2,
+   "imps": [
+    "IMP93792",
+    "IMP93793"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-24",
    "retraso_dias": 0,
@@ -253,6 +237,10 @@
    "etd": "2026-11-04",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP98626"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-20",
    "retraso_dias": 0,
@@ -283,6 +271,10 @@
    "etd": "2026-11-13",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP94870"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-12-14",
    "retraso_dias": 0,
@@ -313,6 +305,10 @@
    "etd": "2026-10-09",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP91684"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-06",
    "retraso_dias": 0,
@@ -343,6 +339,10 @@
    "etd": "2026-10-04",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89030"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-29",
    "retraso_dias": 0,
@@ -373,6 +373,10 @@
    "etd": "2026-10-14",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP96675"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-16",
    "retraso_dias": 0,
@@ -403,6 +407,11 @@
    "etd": "2026-11-07",
    "contenedores": 10,
    "embarques": 2,
+   "imps": [
+    "IMP94881",
+    "IMP95000"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-20",
    "retraso_dias": 0,
@@ -436,6 +445,17 @@
    "etd": "2026-10-18",
    "contenedores": 12,
    "embarques": 8,
+   "imps": [
+    "IMP86568",
+    "IMP90669",
+    "IMP90882",
+    "IMP92839",
+    "IMP92848",
+    "IMP93458",
+    "IMP94041",
+    "IMP97708"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-08",
    "retraso_dias": 0,
@@ -466,6 +486,10 @@
    "etd": "2026-10-22",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89691"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-12-05",
    "retraso_dias": 0,
@@ -496,6 +520,11 @@
    "etd": "2026-09-23",
    "contenedores": 6,
    "embarques": 2,
+   "imps": [
+    "IMP90662",
+    "IMP93790"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-27",
    "retraso_dias": 0,
@@ -528,6 +557,21 @@
    "etd": "2026-10-06",
    "contenedores": 29,
    "embarques": 12,
+   "imps": [
+    "IMP89175",
+    "IMP89703",
+    "IMP90273",
+    "IMP90674",
+    "IMP90675",
+    "IMP90677",
+    "IMP91682",
+    "IMP91691",
+    "IMP92176",
+    "IMP92835",
+    "IMP93452",
+    "IMP95868"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-28",
    "retraso_dias": 0,
@@ -560,6 +604,21 @@
    "etd": "2026-10-27",
    "contenedores": 13,
    "embarques": 12,
+   "imps": [
+    "IMP92832",
+    "IMP92846",
+    "IMP92847",
+    "IMP93457",
+    "IMP93587",
+    "IMP93799",
+    "IMP94331",
+    "IMP94332",
+    "IMP94887",
+    "IMP94891",
+    "IMP94893",
+    "IMP96684"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-18",
    "retraso_dias": 0,
@@ -590,6 +649,11 @@
    "etd": "2026-10-29",
    "contenedores": 3,
    "embarques": 2,
+   "imps": [
+    "IMP94744",
+    "IMP95644"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-30",
    "retraso_dias": 0,
@@ -620,6 +684,11 @@
    "etd": "2026-10-24",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP93759",
+    "IMP95903"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-28",
    "retraso_dias": 0,
@@ -650,6 +719,10 @@
    "etd": "2026-10-02",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP94325"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-08",
    "retraso_dias": 0,
@@ -680,6 +753,10 @@
    "etd": "2026-10-25",
    "contenedores": 6,
    "embarques": 1,
+   "imps": [
+    "IMP94998"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-11",
    "retraso_dias": 0,
@@ -710,6 +787,11 @@
    "etd": "2026-10-28",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP93459",
+    "IMP94724"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-20",
    "retraso_dias": 0,
@@ -743,6 +825,15 @@
    "etd": "2026-11-07",
    "contenedores": 10,
    "embarques": 6,
+   "imps": [
+    "IMP92831",
+    "IMP92843",
+    "IMP95007",
+    "IMP95008",
+    "IMP95846",
+    "IMP96677"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-30",
    "retraso_dias": 0,
@@ -773,6 +864,11 @@
    "etd": "2026-09-23",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP85161",
+    "IMP85163"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-05",
    "retraso_dias": 0,
@@ -804,6 +900,12 @@
    "etd": "2026-10-17",
    "contenedores": 4,
    "embarques": 3,
+   "imps": [
+    "IMP90572",
+    "IMP91696",
+    "IMP93456"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-10",
    "retraso_dias": 0,
@@ -834,6 +936,11 @@
    "etd": "2026-10-16",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP94324",
+    "IMP97761"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-11",
    "retraso_dias": 0,
@@ -866,6 +973,32 @@
    "etd": "2026-10-29",
    "contenedores": 41,
    "embarques": 23,
+   "imps": [
+    "IMP88853",
+    "IMP92178",
+    "IMP92189",
+    "IMP92838",
+    "IMP93288",
+    "IMP93289",
+    "IMP93291",
+    "IMP93588",
+    "IMP94040",
+    "IMP94328",
+    "IMP94884",
+    "IMP94892",
+    "IMP96722",
+    "IMP96723",
+    "IMP96725",
+    "IMP97387",
+    "IMP97779",
+    "IMP97780",
+    "IMP97781",
+    "IMP97785",
+    "IMP97909",
+    "IMP98092",
+    "IMP98476"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-16",
    "retraso_dias": 0,
@@ -896,6 +1029,13 @@
    "etd": "2026-10-27",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP86786",
+    "IMP86818"
+   ],
+   "buques_iniciales": [
+    "MSC IDANIA V"
+   ],
    "estado": "en tránsito",
    "pronostico": "2026-11-18",
    "retraso_dias": 0,
@@ -926,6 +1066,10 @@
    "etd": "2026-10-22",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP88846"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-24",
    "retraso_dias": 0,
@@ -956,6 +1100,10 @@
    "etd": "2026-11-03",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP98012"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-29",
    "retraso_dias": 0,
@@ -986,6 +1134,13 @@
    "etd": "2026-11-04",
    "contenedores": 8,
    "embarques": 4,
+   "imps": [
+    "IMP97427",
+    "IMP97429",
+    "IMP97430",
+    "IMP97431"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-12-06",
    "retraso_dias": 0,
@@ -1016,6 +1171,10 @@
    "etd": "2026-10-25",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89026"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-12-07",
    "retraso_dias": 0,
@@ -1046,6 +1205,10 @@
    "etd": "2026-10-04",
    "contenedores": 6,
    "embarques": 1,
+   "imps": [
+    "IMP85558"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-29",
    "retraso_dias": 0,
@@ -1076,6 +1239,10 @@
    "etd": "2026-10-04",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP91040"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-29",
    "retraso_dias": 0,
@@ -1106,6 +1273,13 @@
    "etd": "2026-10-18",
    "contenedores": 4,
    "embarques": 4,
+   "imps": [
+    "IMP91687",
+    "IMP93582",
+    "IMP93583",
+    "IMP93584"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1136,6 +1310,10 @@
    "etd": "2026-10-19",
    "contenedores": 4,
    "embarques": 1,
+   "imps": [
+    "IMP91683"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-03",
    "retraso_dias": 0,
@@ -1168,6 +1346,17 @@
    "etd": "2026-10-18",
    "contenedores": 19,
    "embarques": 8,
+   "imps": [
+    "IMP88336",
+    "IMP89698",
+    "IMP89699",
+    "IMP93283",
+    "IMP94409",
+    "IMP94410",
+    "IMP94997",
+    "IMP96676"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-12",
    "retraso_dias": 0,
@@ -1198,6 +1387,10 @@
    "etd": "2026-10-20",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP91685"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-24",
    "retraso_dias": 0,
@@ -1231,6 +1424,17 @@
    "etd": "2026-10-31",
    "contenedores": 11,
    "embarques": 8,
+   "imps": [
+    "IMP88340",
+    "IMP92844",
+    "IMP92845",
+    "IMP93183",
+    "IMP93455",
+    "IMP95647",
+    "IMP95847",
+    "IMP98262"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-25",
    "retraso_dias": 0,
@@ -1261,6 +1465,10 @@
    "etd": "2026-10-11",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP88847"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-16",
    "retraso_dias": 0,
@@ -1291,6 +1499,10 @@
    "etd": "2026-10-18",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP93921"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-21",
    "retraso_dias": 0,
@@ -1326,6 +1538,29 @@
    "etd": "2026-11-03",
    "contenedores": 28,
    "embarques": 18,
+   "imps": [
+    "IMP88856",
+    "IMP93290",
+    "IMP94037",
+    "IMP94038",
+    "IMP94746",
+    "IMP94886",
+    "IMP94889",
+    "IMP94894",
+    "IMP95009",
+    "IMP95646",
+    "IMP95842",
+    "IMP96662",
+    "IMP96718",
+    "IMP96719",
+    "IMP96724",
+    "IMP96727",
+    "IMP96730",
+    "IMP97651"
+   ],
+   "buques_iniciales": [
+    "EVER FEAT V"
+   ],
    "estado": "por zarpar",
    "pronostico": "2026-11-23",
    "retraso_dias": 0,
@@ -1357,6 +1592,16 @@
    "etd": "2026-10-04",
    "contenedores": 7,
    "embarques": 7,
+   "imps": [
+    "IMP86569",
+    "IMP86570",
+    "IMP90571",
+    "IMP90834",
+    "IMP90874",
+    "IMP90883",
+    "IMP93296"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-31",
    "retraso_dias": 0,
@@ -1387,6 +1632,11 @@
    "etd": "2026-09-22",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP89033",
+    "IMP96667"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1417,6 +1667,11 @@
    "etd": "2026-09-29",
    "contenedores": 4,
    "embarques": 2,
+   "imps": [
+    "IMP89695",
+    "IMP90577"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-05",
    "retraso_dias": 0,
@@ -1449,6 +1704,37 @@
    "etd": "2026-10-20",
    "contenedores": 52,
    "embarques": 28,
+   "imps": [
+    "IMP85822",
+    "IMP90659",
+    "IMP90688",
+    "IMP92187",
+    "IMP92631",
+    "IMP92833",
+    "IMP93287",
+    "IMP93292",
+    "IMP93293",
+    "IMP93294",
+    "IMP93295",
+    "IMP93297",
+    "IMP93298",
+    "IMP93299",
+    "IMP93300",
+    "IMP93460",
+    "IMP93925",
+    "IMP93927",
+    "IMP93930",
+    "IMP94035",
+    "IMP94327",
+    "IMP94329",
+    "IMP94879",
+    "IMP95001",
+    "IMP95003",
+    "IMP95844",
+    "IMP96726",
+    "IMP96728"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-10",
    "retraso_dias": 0,
@@ -1479,6 +1765,10 @@
    "etd": "2026-10-15",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP90832"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-11",
    "retraso_dias": 0,
@@ -1509,6 +1799,10 @@
    "etd": "2026-10-28",
    "contenedores": 3,
    "embarques": 1,
+   "imps": [
+    "IMP94995"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-17",
    "retraso_dias": 0,
@@ -1539,6 +1833,12 @@
    "etd": "2026-11-03",
    "contenedores": 3,
    "embarques": 3,
+   "imps": [
+    "IMP89697",
+    "IMP90872",
+    "IMP90873"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-24",
    "retraso_dias": 0,
@@ -1572,6 +1872,15 @@
    "etd": "2026-09-28",
    "contenedores": 10,
    "embarques": 6,
+   "imps": [
+    "IMP90670",
+    "IMP90671",
+    "IMP90879",
+    "IMP92188",
+    "IMP92849",
+    "IMP93581"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-28",
    "retraso_dias": 0,
@@ -1602,6 +1911,13 @@
    "etd": "2026-09-16",
    "contenedores": 17,
    "embarques": 4,
+   "imps": [
+    "IMP90657",
+    "IMP90658",
+    "IMP90661",
+    "IMP91681"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-29",
    "retraso_dias": 0,
@@ -1632,6 +1948,10 @@
    "etd": "2026-10-01",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89172"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-29",
    "retraso_dias": 0,
@@ -1663,6 +1983,11 @@
    "etd": "2026-09-15",
    "contenedores": 3,
    "embarques": 2,
+   "imps": [
+    "IMP87105",
+    "IMP89701"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-29",
    "retraso_dias": 0,
@@ -1693,6 +2018,10 @@
    "etd": "2026-09-04",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP87525"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-10-30",
    "retraso_dias": 0,
@@ -1723,6 +2052,10 @@
    "etd": "2026-09-19",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP87331"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-01",
    "retraso_dias": 0,
@@ -1755,6 +2088,39 @@
    "etd": "2026-10-05",
    "contenedores": 52,
    "embarques": 28,
+   "imps": [
+    "IMP89345",
+    "IMP89948",
+    "IMP90271",
+    "IMP90666",
+    "IMP90684",
+    "IMP90687",
+    "IMP90888",
+    "IMP90889",
+    "IMP90890",
+    "IMP90892",
+    "IMP90896",
+    "IMP91022",
+    "IMP92190",
+    "IMP92627",
+    "IMP92630",
+    "IMP92632",
+    "IMP92836",
+    "IMP92837",
+    "IMP93048",
+    "IMP93284",
+    "IMP93285",
+    "IMP93286",
+    "IMP93454",
+    "IMP93919",
+    "IMP93924",
+    "IMP93926",
+    "IMP94330",
+    "IMP95845"
+   ],
+   "buques_iniciales": [
+    "EVER FOND V"
+   ],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1786,6 +2152,17 @@
    "etd": "2026-10-01",
    "contenedores": 11,
    "embarques": 8,
+   "imps": [
+    "IMP89348",
+    "IMP90274",
+    "IMP90672",
+    "IMP90691",
+    "IMP90878",
+    "IMP90884",
+    "IMP92622",
+    "IMP93301"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1816,6 +2193,11 @@
    "etd": "2026-09-10",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP88053",
+    "IMP88054"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1846,6 +2228,10 @@
    "etd": "2026-09-16",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP88844"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1876,6 +2262,10 @@
    "etd": "2026-09-29",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP93447"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-02",
    "retraso_dias": 0,
@@ -1895,6 +2285,40 @@
    "eta_ais": null
   },
   {
+   "buque": "ALETTE MAERSK",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-03",
+   "pol": "SINGAPORE",
+   "origenes": [
+    "SINGAPORE"
+   ],
+   "naviera": "HAPAG LLOYD",
+   "etd": "2026-09-15",
+   "contenedores": 1,
+   "embarques": 1,
+   "imps": [
+    "IMP89294"
+   ],
+   "buques_iniciales": [],
+   "estado": "en tránsito",
+   "pronostico": "2026-11-03",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-10",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 33,
+   "peor_caso": "2026-11-01",
+   "estado_puerto": null,
+   "esperado_historico": "2026-10-18",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 0,
+   "muestra_historico": 15,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
    "buque": "BUENAVENTURA EXPRESS",
    "pod": "MANZANILLO",
    "eta": "2026-11-03",
@@ -1906,6 +2330,12 @@
    "etd": "2026-09-21",
    "contenedores": 4,
    "embarques": 3,
+   "imps": [
+    "IMP87349",
+    "IMP88124",
+    "IMP89351"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-03",
    "retraso_dias": 0,
@@ -1936,6 +2366,11 @@
    "etd": "2026-09-24",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP87358",
+    "IMP88067"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-03",
    "retraso_dias": 0,
@@ -1966,6 +2401,10 @@
    "etd": "2026-08-25",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP82070"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-05",
    "retraso_dias": 0,
@@ -2005,6 +2444,10 @@
    "etd": "2026-10-13",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP92614"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-07",
    "retraso_dias": 0,
@@ -2035,6 +2478,10 @@
    "etd": "2026-09-27",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89032"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-08",
    "retraso_dias": 0,
@@ -2065,6 +2512,11 @@
    "etd": "2026-09-27",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP91011",
+    "IMP91689"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-08",
    "retraso_dias": 0,
@@ -2095,6 +2547,10 @@
    "etd": "2026-09-27",
    "contenedores": 3,
    "embarques": 1,
+   "imps": [
+    "IMP90829"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-09",
    "retraso_dias": 0,
@@ -2125,6 +2581,10 @@
    "etd": "2026-10-01",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP93450"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-09",
    "retraso_dias": 0,
@@ -2155,6 +2615,10 @@
    "etd": "2026-09-30",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP90830"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-09",
    "retraso_dias": 0,
@@ -2186,6 +2650,16 @@
    "etd": "2026-10-19",
    "contenedores": 13,
    "embarques": 7,
+   "imps": [
+    "IMP89947",
+    "IMP91693",
+    "IMP92179",
+    "IMP92184",
+    "IMP92185",
+    "IMP93049",
+    "IMP94036"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-10",
    "retraso_dias": 0,
@@ -2216,6 +2690,10 @@
    "etd": "2026-10-19",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP92618"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-13",
    "retraso_dias": 0,
@@ -2246,6 +2724,10 @@
    "etd": "2026-10-18",
    "contenedores": 3,
    "embarques": 1,
+   "imps": [
+    "IMP94326"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-13",
    "retraso_dias": 0,
@@ -2276,6 +2758,11 @@
    "etd": "2026-10-11",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP93448",
+    "IMP93922"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-17",
    "retraso_dias": 0,
@@ -2306,6 +2793,10 @@
    "etd": "2026-10-10",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP93791"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-17",
    "retraso_dias": 0,
@@ -2336,6 +2827,10 @@
    "etd": "2026-10-27",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP94745"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-18",
    "retraso_dias": 0,
@@ -2366,6 +2861,10 @@
    "etd": "2026-10-06",
    "contenedores": 4,
    "embarques": 1,
+   "imps": [
+    "IMP93453"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-20",
    "retraso_dias": 0,
@@ -2396,6 +2895,10 @@
    "etd": "2026-10-11",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP92624"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-22",
    "retraso_dias": 0,
@@ -2426,6 +2929,10 @@
    "etd": "2026-10-07",
    "contenedores": 6,
    "embarques": 1,
+   "imps": [
+    "IMP93047"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-22",
    "retraso_dias": 0,
@@ -2456,6 +2963,10 @@
    "etd": "2026-10-01",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP87527"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-23",
    "retraso_dias": 0,
@@ -2486,6 +2997,11 @@
    "etd": "2026-10-23",
    "contenedores": 2,
    "embarques": 2,
+   "imps": [
+    "IMP97770",
+    "IMP97771"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-25",
    "retraso_dias": 0,
@@ -2517,6 +3033,19 @@
    "etd": "2026-10-27",
    "contenedores": 20,
    "embarques": 10,
+   "imps": [
+    "IMP90685",
+    "IMP94407",
+    "IMP94408",
+    "IMP94880",
+    "IMP94996",
+    "IMP95002",
+    "IMP95645",
+    "IMP96720",
+    "IMP96721",
+    "IMP97407"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-26",
    "retraso_dias": 0,
@@ -2547,6 +3076,10 @@
    "etd": "2026-11-03",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP92615"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-28",
    "retraso_dias": 0,
@@ -2577,6 +3110,10 @@
    "etd": "2026-10-30",
    "contenedores": 6,
    "embarques": 1,
+   "imps": [
+    "IMP94999"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-11-29",
    "retraso_dias": 0,
@@ -2607,6 +3144,10 @@
    "etd": "2026-11-12",
    "contenedores": 5,
    "embarques": 1,
+   "imps": [
+    "IMP90667"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-30",
    "retraso_dias": 0,
@@ -2639,6 +3180,17 @@
    "etd": "2026-11-08",
    "contenedores": 11,
    "embarques": 8,
+   "imps": [
+    "IMP90686",
+    "IMP94042",
+    "IMP96680",
+    "IMP96714",
+    "IMP96715",
+    "IMP96716",
+    "IMP96717",
+    "IMP97386"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-11-30",
    "retraso_dias": 0,
@@ -2669,6 +3221,12 @@
    "etd": "2026-11-04",
    "contenedores": 7,
    "embarques": 3,
+   "imps": [
+    "IMP94406",
+    "IMP97784",
+    "IMP98007"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-12-03",
    "retraso_dias": 0,
@@ -2699,6 +3257,10 @@
    "etd": "2026-11-01",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP94875"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-12-09",
    "retraso_dias": 0,
@@ -2729,6 +3291,10 @@
    "etd": "2026-11-03",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP92617"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2026-12-09",
    "retraso_dias": 0,
@@ -2759,6 +3325,11 @@
    "etd": "2026-10-25",
    "contenedores": 3,
    "embarques": 2,
+   "imps": [
+    "IMP97384",
+    "IMP97385"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-12-09",
    "retraso_dias": 0,
@@ -2789,6 +3360,10 @@
    "etd": "2026-10-23",
    "contenedores": 2,
    "embarques": 1,
+   "imps": [
+    "IMP94323"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-12-09",
    "retraso_dias": 0,
@@ -2819,6 +3394,10 @@
    "etd": "2026-10-29",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP94322"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-12-09",
    "retraso_dias": 0,
@@ -2849,6 +3428,10 @@
    "etd": "2026-10-08",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89027"
+   ],
+   "buques_iniciales": [],
    "estado": "en tránsito",
    "pronostico": "2026-12-19",
    "retraso_dias": 0,
@@ -2879,6 +3462,10 @@
    "etd": "2026-11-02",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP97846"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2027-01-07",
    "retraso_dias": 0,
@@ -2909,6 +3496,10 @@
    "etd": "2026-11-06",
    "contenedores": 1,
    "embarques": 1,
+   "imps": [
+    "IMP89690"
+   ],
+   "buques_iniciales": [],
    "estado": "por zarpar",
    "pronostico": "2027-01-07",
    "retraso_dias": 0,

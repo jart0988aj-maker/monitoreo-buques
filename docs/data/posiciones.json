@@ -1,13 +1,1 @@
-{
- "ALETTE MAERSK": {
-  "buque": "ALETTE MAERSK",
-  "mmsi": "220000001",
-  "lat": 37.182,
-  "lon": -10.9193,
-  "sog": 1,
-  "cog": 289.2,
-  "nav": 0,
-  "hora": "2026-10-31T02:49:22+00:00",
-  "fuente": "B"
- }
-}
+{}

@@ -2,8 +2,11 @@
 
 Uso:  python scripts/preparar_embarques.py "Reporte_KPIs.xlsx"
 
-Columnas que se publican: clave, buque, naviera, pol, pod, etd, eta, contenedores, tipo_ctr.
-NO se publican proveedor, booking, factura, IMP, planta, forwarder ni observaciones.
+Columnas que se publican: imp, clave, buque, buque_inicial, naviera, pol, pod, etd, eta, contenedores, tipo_ctr.
+NO se publican proveedor, booking, factura, planta, forwarder ni observaciones.
+
+Transbordos: si el Excel trae una columna "BUQUE ACTUAL" (o "BUQUE FINAL" / "BUQUE TRANSBORDO")
+con valor, se usa ese buque para el seguimiento en lugar del BUQUE INICIAL.
 El Excel nunca se sube al repositorio (.gitignore).
 """
 import sys
@@ -15,7 +18,8 @@ from comun import DATOS, normaliza_buque, normaliza_puerto
 COLUMNAS = {
     "BUQUE INCIAL": "buque", "BUQUE INICIAL": "buque", "BUQUE": "buque",
     "NAVIERA": "naviera", "POL": "pol", "POD": "pod", "ETD": "etd", "ETA": "eta",
-    "CTN QTY": "contenedores", "CTR TYPE": "tipo_ctr",
+    "CTN QTY": "contenedores", "CTR TYPE": "tipo_ctr", "IMP": "imp",
+    "BUQUE ACTUAL": "buque_actual", "BUQUE FINAL": "buque_actual", "BUQUE TRANSBORDO": "buque_actual",
 }
 
 
@@ -26,12 +30,16 @@ def preparar(ruta_excel):
     faltan = {"buque", "pol", "pod", "etd", "eta"} - set(df.columns)
     if faltan:
         sys.exit(f"Faltan columnas en el Excel: {faltan}")
-    for c in ("naviera", "contenedores", "tipo_ctr"):
+    for c in ("naviera", "contenedores", "tipo_ctr", "imp", "buque_actual"):
         if c not in df.columns:
             df[c] = ""
 
+    inicial = df["buque"].map(normaliza_buque)
+    actual = df["buque_actual"].map(normaliza_buque)
     out = pd.DataFrame({
-        "buque": df["buque"].map(normaliza_buque),
+        "imp": df["imp"].fillna("").astype(str).str.strip().replace({"nan": ""}),
+        "buque": actual.where(actual != "", inicial),
+        "buque_inicial": inicial,
         "naviera": df["naviera"].fillna("").astype(str).str.upper().str.strip().replace({"NAN": ""}),
         "pol": df["pol"].map(normaliza_puerto),
         "pod": df["pod"].map(normaliza_puerto),
@@ -50,7 +58,7 @@ def preparar(ruta_excel):
     dias = (pd.to_datetime(out.eta) - pd.to_datetime(out.etd)).dt.days
     out = out[(dias >= 3) & (dias <= 90)]
     out["clave"] = out.buque + "|" + out.pol + "|" + out.etd.astype(str)
-    out = out[["clave", "buque", "naviera", "pol", "pod", "etd", "eta", "contenedores", "tipo_ctr"]]
+    out = out[["imp", "clave", "buque", "buque_inicial", "naviera", "pol", "pod", "etd", "eta", "contenedores", "tipo_ctr"]]
     out = out.sort_values(["etd", "buque"])
     DATOS.mkdir(parents=True, exist_ok=True)
     out.to_csv(DATOS / "embarques.csv", index=False)
