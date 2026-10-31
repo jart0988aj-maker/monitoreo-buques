@@ -211,7 +211,11 @@ def main():
             "estado": estado, "pronostico": p["pronostico"].isoformat(), "retraso_dias": retraso,
             "nivel": nivel, "fecha_planta": (p["pronostico"] + timedelta(days=DIAS_A_PLANTA)).isoformat(),
             "metodo": p["metodo"], "confianza": p["confianza"], "transito_normal": p["transito_normal"],
-            "peor_caso": p["peor_caso"], "estado_puerto": p.get("estado_puerto"),
+            "peor_caso": max(date.fromisoformat(p["peor_caso"]), g["eta"]).isoformat(),
+            "fecha_planta_peor": (max(date.fromisoformat(p["peor_caso"]), g["eta"]) + timedelta(days=DIAS_A_PLANTA)).isoformat(),
+            "eta_historica": max(p["esperado_historico"], g["eta"]).isoformat(),
+            "fecha_planta_historica": (max(p["esperado_historico"], g["eta"]) + timedelta(days=DIAS_A_PLANTA)).isoformat(),
+            "estado_puerto": p.get("estado_puerto"),
             "esperado_historico": p["esperado_historico"].isoformat(), "base_historico": p["base_historico"],
             "riesgo_dias": max(0, (p["esperado_historico"] - g["eta"]).days),
             "muestra_historico": p["muestra"],
@@ -220,11 +224,22 @@ def main():
             "eta_ais": etas.get(g["buque"]),
         })
         a = activos[-1]
-        for r in fs:   # una fila por embarque, para cruzar con el Excel interno
-            por_embarque.append({**a, "imp": r.get("imp", ""), "clave": r["clave"], "pol": r["pol"], "naviera": r["naviera"],
-                                 "etd": r["etd"].isoformat(), "eta": r["eta"].isoformat(),
+        dias_norm = round(p["transito_normal"])
+        dias_p90 = (date.fromisoformat(p["peor_caso"]) - g["etd"]).days
+        for r in fs:   # una fila por embarque, con su propio ETD/ETA, para cruzar con el Excel interno
+            esp = r["etd"] + timedelta(days=dias_norm)
+            peor_r = max(r["etd"] + timedelta(days=dias_p90), r["eta"])
+            pron = r["eta"] if p["confianza"] == "sin AIS" else p["pronostico"]
+            por_embarque.append({**a, "imp": r.get("imp", ""), "clave": r["clave"], "pol": r["pol"],
+                                 "naviera": r["naviera"], "etd": r["etd"].isoformat(), "eta": r["eta"].isoformat(),
                                  "contenedores": r["contenedores"], "embarques": 1,
-                                 "retraso_dias": (p["pronostico"] - r["eta"]).days})
+                                 "pronostico": pron.isoformat(), "retraso_dias": (pron - r["eta"]).days,
+                                 "fecha_planta": (pron + timedelta(days=DIAS_A_PLANTA)).isoformat(),
+                                 "riesgo_dias": max(0, (esp - r["eta"]).days),
+                                 "eta_historica": max(esp, r["eta"]).isoformat(),
+                                 "fecha_planta_historica": (max(esp, r["eta"]) + timedelta(days=DIAS_A_PLANTA)).isoformat(),
+                                 "peor_caso": peor_r.isoformat(),
+                                 "fecha_planta_peor": (peor_r + timedelta(days=DIAS_A_PLANTA)).isoformat()})
     activos.sort(key=lambda a: (-a["retraso_dias"], -a["riesgo_dias"], a["eta"]))
 
     en_mapa = [a for a in activos if a["posicion"]]
@@ -247,9 +262,9 @@ def main():
         "ultima_corrida": lee_json(DATOS / "ultima_corrida.json", None),
     })
 
-    campos = ["imp", "clave", "buque", "naviera", "pol", "pod", "etd", "eta", "pronostico", "retraso_dias",
-              "fecha_planta", "estado", "metodo", "confianza", "riesgo_dias", "esperado_historico", "transito_normal", "peor_caso",
-              "contenedores", "embarques"]
+    campos = ["imp", "clave", "buque", "naviera", "pol", "pod", "etd", "eta", "fecha_planta",
+              "riesgo_dias", "eta_historica", "fecha_planta_historica", "peor_caso", "fecha_planta_peor",
+              "transito_normal", "pronostico", "retraso_dias", "metodo", "estado", "contenedores"]
     with open(DATOS / "estado_embarques.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=campos, extrasaction="ignore")
         w.writeheader()

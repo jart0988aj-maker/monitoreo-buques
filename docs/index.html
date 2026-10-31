@@ -93,6 +93,7 @@ td.celda-imp{white-space:normal;min-width:150px;max-width:230px;vertical-align:t
 .imps .mas{font-family:var(--mono);font-size:11px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:4px;padding:0 5px;color:var(--ink)}
 .imps[open] summary .imp{display:none}.imps[open] summary .mas{display:inline-block;margin-bottom:4px}
 tr.marca td{background:rgba(57,135,229,.18)!important;transition:background .6s}
+.riesgo{color:var(--serious)}.riesgo small{font-size:11px}
 footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#0b0c0e;color:var(--ink);border:1px solid var(--line-2)}
 .leaflet-popup-content{margin:10px 12px;font:13px/1.45 "IBM Plex Sans",sans-serif}
@@ -124,7 +125,7 @@ footer{margin-top:18px;color:var(--ink-3);font-size:12px;line-height:1.6}
 
   <section class="panel" style="margin-top:0">
     <h2>Embarques activos</h2>
-    <div class="sub">Un renglón por buque y viaje. En tránsito, por zarpar (14 días) o recién llegados. Fecha a planta = llegada + 7 días. Da clic en los IMP para ver la lista completa.</div>
+    <div class="sub">Un renglón por buque y viaje. En tránsito, por zarpar (14 días) o recién llegados. A planta = llegada + 7 días. <b>ETA histórica</b>: lo que normalmente tarda esa ruta y naviera. <b>Peor caso</b>: 9 de cada 10 embarques llegaron antes. Da clic en los IMP para ver la lista completa.</div>
     <input class="buscar" id="buscar" placeholder="Buscar IMP, buque, naviera o puerto…">
     <div class="tabla-w"><table id="tabla"></table></div>
   </section>
@@ -321,25 +322,31 @@ function alertas(){
       `<br><span class="imp">${(a.imps||[]).slice(0,3).map(esc).join(", ")}${(a.imps||[]).length>3?" +"+((a.imps.length)-3):""}</span>`;
     return `<div class="item" data-i="${i}">${badge}<div><div class="t">${esc(a.buque)}</div>
       <div class="d">${esc(a.naviera)} · ${esc(og(a))} → ${esc(a.pod)}</div><div class="d">${det}</div></div>
-      <div class="f">${tabAlerta==="riesgo"?fd(a.esperado_historico):fd(a.pronostico)}<br><span style="color:var(--ink-3)">ETA ${fd(a.eta)}</span></div></div>`}).join("");
+      <div class="f">${tabAlerta==="riesgo"?fd(a.eta_historica):fd(a.pronostico)}<br><span style="color:var(--ink-3)">ETA ${fd(a.eta)}</span></div></div>`}).join("");
   el.querySelectorAll(".item").forEach(n=>n.onclick=()=>irA(A[+n.dataset.i]));
 }
+const addD=(s,n)=>{const d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return d.toISOString().slice(0,10)};
 const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
 
 function tabla(){
   const q=document.getElementById("buscar").value.trim().toUpperCase();
   const cols=[["imps","IMP"],["buque","Buque"],["naviera","Naviera"],["pol","Origen"],["pod","Destino"],["estado","Estado"],
-    ["etd","ETD",1],["eta","ETA reporte",1],["pronostico","Pronóstico",1],["retraso_dias","Retraso",1],
-    ["riesgo_dias","Riesgo hist.",1],["fecha_planta","A planta",1],["contenedores","Ctr",1],["metodo","Fuente del pronóstico"]];
+    ["etd","ETD",1],["eta","ETA reporte",1],["fecha_planta","A planta",1],
+    ["eta_historica","ETA histórica",1,"ETA según lo que normalmente tarda esa ruta y naviera (mediana)"],["fecha_planta_historica","A planta (hist.)",1],
+    ["peor_caso","Peor caso",1,"9 de cada 10 embarques de esa ruta y naviera llegaron antes de esta fecha"],["fecha_planta_peor","A planta (peor)",1],
+    ["retraso_dias","Señal AIS",1,"Pronóstico con posición real del buque, cuando hay señal"],["contenedores","Ctr",1]];
   let A=filtrados().filter(a=>!q||[a.buque,a.naviera,...(a.origenes||[a.pol]),a.pod,...(a.imps||[]),...(a.buques_iniciales||[])].join(" ").includes(q));
   A.sort((x,y)=>{let a=x[orden.k],b=y[orden.k];if(Array.isArray(a)){a=a[0]||"";b=b[0]||""}return (a>b?1:a<b?-1:0)*orden.d});
   const t=document.getElementById("tabla");
-  t.innerHTML=`<thead><tr>${cols.map(([k,n,num])=>`<th data-k="${k}" class="${num?"num":""}">${n}${orden.k===k?(orden.d>0?" ▲":" ▼"):""}</th>`).join("")}</tr></thead><tbody>${
-    A.map(a=>`<tr><td class="celda-imp">${listaImp(a)}</td><td><b>${esc(a.buque)}</b>${a.buques_iniciales&&a.buques_iniciales.length?`<div class="d" style="color:var(--ink-3);font-size:11px">inicial: ${esc(a.buques_iniciales.join(", "))}</div>`:""}</td><td>${esc(a.naviera)}</td><td title="${esc((a.origenes||[]).join(", "))}">${esc(og(a))}</td><td>${esc(a.pod)}</td><td>${esc(a.estado)}</td>
-    <td class="num">${fd(a.etd)}</td><td class="num">${fd(a.eta)}</td><td class="num">${fd(a.pronostico)}</td>
-    <td class="num"><span class="badge b-${a.nivel}" style="padding:1px 6px">${signo(a.retraso_dias)}</span></td>
-    <td class="num">${a.riesgo_dias?"+"+a.riesgo_dias:"–"}</td><td class="num">${fd(a.fecha_planta)}</td>
-    <td class="num">${a.contenedores}</td><td style="color:var(--ink-3)">${esc(a.metodo)}</td></tr>`).join("")}</tbody>`;
+  t.innerHTML=`<thead><tr>${cols.map(([k,n,num,tt])=>`<th data-k="${k}" class="${num?"num":""}"${tt?` title="${tt}"`:""}>${n}${orden.k===k?(orden.d>0?" ▲":" ▼"):""}</th>`).join("")}</tr></thead><tbody>${
+    A.map(a=>`<tr><td class="celda-imp">${listaImp(a)}</td><td><b>${esc(a.buque)}</b>${a.buques_iniciales&&a.buques_iniciales.length?`<div class="d" style="color:var(--ink-3);font-size:11px">inicial: ${esc(a.buques_iniciales.join(", "))}</div>`:""}</td>
+    <td>${esc(a.naviera)}</td><td title="${esc((a.origenes||[]).join(", "))}">${esc(og(a))}</td><td>${esc(a.pod)}</td><td>${esc(a.estado)}</td>
+    <td class="num">${fd(a.etd)}</td><td class="num">${fd(a.eta)}</td><td class="num">${fd(a.confianza==="sin AIS"?a.fecha_planta:addD(a.eta,7))}</td>
+    <td class="num">${a.riesgo_dias?`<span class="riesgo">${fd(a.eta_historica)} <small>+${a.riesgo_dias}</small></span>`:fd(a.eta_historica)}</td>
+    <td class="num">${fd(a.fecha_planta_historica)}</td>
+    <td class="num">${fd(a.peor_caso)}</td><td class="num">${fd(a.fecha_planta_peor)}</td>
+    <td class="num">${a.confianza==="sin AIS"?'<span style="color:var(--ink-3)">sin señal</span>':`<span class="badge b-${a.nivel}" style="padding:1px 6px" title="${esc(a.metodo)}">${fd(a.pronostico)} ${signo(a.retraso_dias)}</span>`}</td>
+    <td class="num">${a.contenedores}</td></tr>`).join("")}</tbody>`;
   t.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;orden={k,d:orden.k===k?-orden.d:(k==="retraso_dias"||k==="riesgo_dias"?-1:1)};tabla()});
 }
 
