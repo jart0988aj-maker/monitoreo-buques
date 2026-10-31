@@ -57,12 +57,12 @@
  "SPYROS V": {
   "buque": "SPYROS V",
   "mmsi": "215726000",
-  "lat": -27.5457,
-  "lon": 14.7067,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-10-31T18:47:08+00:00",
-  "fuente": "A"
+  "lat": -27.7168,
+  "lon": 14.7841,
+  "sog": 12,
+  "cog": 156.4,
+  "nav": 0,
+  "hora": "2026-10-31T19:41:45+00:00",
+  "fuente": "B"
  }
 }
