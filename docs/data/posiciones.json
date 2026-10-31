@@ -7,29 +7,29 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-10-31T18:47:44+00:00",
-  "fuente": "A"
+  "hora": "2026-10-31T23:41:44+00:00",
+  "fuente": "B"
  },
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.8353,
+  "lat": 51.8354,
   "lon": -8.3303,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-10-31T22:10:32+00:00",
+  "sog": 0,
+  "cog": 151.8,
+  "nav": 5,
+  "hora": "2026-10-31T23:40:36+00:00",
   "fuente": "B"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
   "mmsi": "538011294",
-  "lat": 50.8925,
-  "lon": 1.2558,
-  "sog": 13.4,
-  "cog": 224.6,
-  "nav": 0,
-  "hora": "2026-10-31T23:07:28+00:00",
+  "lat": 50.8162,
+  "lon": 1.1289,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-10-31T23:39:32+00:00",
   "fuente": "B"
  },
  "WAN HAI A06": {
@@ -46,12 +46,12 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": -23.1669,
-  "lon": 8.661,
+  "lat": -23.0468,
+  "lon": 8.5621,
   "sog": 16.6,
-  "cog": 321.1,
+  "cog": 322.6,
   "nav": 0,
-  "hora": "2026-10-31T23:06:38+00:00",
+  "hora": "2026-10-31T23:39:20+00:00",
   "fuente": "B"
  },
  "SPYROS V": {
