@@ -2,12 +2,12 @@
  "TS MUMBAI": {
   "buque": "TS MUMBAI",
   "mmsi": "538011207",
-  "lat": -27.36,
-  "lon": 153.1788,
-  "sog": 0,
-  "cog": 188,
-  "nav": 5,
-  "hora": "2026-11-01T02:49:19+00:00",
+  "lat": -27.3173,
+  "lon": 153.2046,
+  "sog": 12.5,
+  "cog": 32.9,
+  "nav": 0,
+  "hora": "2026-11-01T04:54:24+00:00",
   "fuente": "B"
  },
  "YM CELEBRITY": {
@@ -57,12 +57,34 @@
  "SPYROS V": {
   "buque": "SPYROS V",
   "mmsi": "215726000",
-  "lat": -28.3552,
-  "lon": 15.0872,
-  "sog": 12.2,
-  "cog": 155.7,
+  "lat": -29.4651,
+  "lon": 15.619,
+  "sog": 12.6,
+  "cog": 155.8,
   "nav": 0,
-  "hora": "2026-10-31T23:07:14+00:00",
+  "hora": "2026-11-01T04:54:05+00:00",
   "fuente": "B"
+ },
+ "WILHELMSHAVEN EXPRESS": {
+  "buque": "WILHELMSHAVEN EXPRESS",
+  "mmsi": "211151710",
+  "lat": 1.2754,
+  "lon": 103.7816,
+  "sog": 0,
+  "cog": 13.5,
+  "nav": 5,
+  "hora": "2026-11-01T04:51:27+00:00",
+  "fuente": "C"
+ },
+ "EVER FEAT": {
+  "buque": "EVER FEAT",
+  "mmsi": "636020684",
+  "lat": 22.3811,
+  "lon": 114.5637,
+  "sog": 10.8,
+  "cog": 267.5,
+  "nav": 0,
+  "hora": "2026-11-01T04:51:31+00:00",
+  "fuente": "C"
  }
 }

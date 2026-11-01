@@ -43,5 +43,12 @@
   "nombre_ais": "WILHELMSHAVEN EXPRES",
   "metodo": "aproximado",
   "desde": "2026-10-31T22:11:53.296411+00:00"
+ },
+ "EVER FEAT": {
+  "mmsi": "636020684",
+  "imo": null,
+  "nombre_ais": "EVER FEAT",
+  "metodo": "exacto",
+  "desde": "2026-11-01T04:51:33.672648+00:00"
  }
 }
