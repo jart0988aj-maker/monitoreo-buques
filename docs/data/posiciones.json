@@ -13,13 +13,13 @@
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.8354,
+  "lat": 51.8353,
   "lon": -8.3303,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-01T07:58:33+00:00",
-  "fuente": "A"
+  "hora": "2026-11-01T09:46:33+00:00",
+  "fuente": "B"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
