@@ -24,12 +24,12 @@
  "HUA HANG": {
   "buque": "HUA HANG",
   "mmsi": "538011294",
-  "lat": 50.0082,
-  "lon": -2.7843,
-  "sog": 10.5,
-  "cog": 256.5,
+  "lat": 49.5226,
+  "lon": -4.2262,
+  "sog": 11.6,
+  "cog": 236.9,
   "nav": 0,
-  "hora": "2026-11-01T13:28:02+00:00",
+  "hora": "2026-11-01T18:48:39+00:00",
   "fuente": "B"
  },
  "WAN HAI A06": {
@@ -90,12 +90,23 @@
  "ONE SIMPLICITY": {
   "buque": "ONE SIMPLICITY",
   "mmsi": "563342500",
-  "lat": 22.3169,
-  "lon": 114.0807,
-  "sog": 0.1,
-  "cog": 61,
-  "nav": 0,
-  "hora": "2026-11-01T18:08:13+00:00",
-  "fuente": "C"
+  "lat": 22.3165,
+  "lon": 114.081,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-01T18:47:35+00:00",
+  "fuente": "A"
+ },
+ "MSC CORNELI": {
+  "buque": "MSC CORNELI",
+  "mmsi": "636017514",
+  "lat": 51.9623,
+  "lon": 1.2909,
+  "sog": 0,
+  "cog": 100.8,
+  "nav": 5,
+  "hora": "2026-11-01T18:44:51+00:00",
+  "fuente": "B"
  }
 }
