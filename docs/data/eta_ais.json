@@ -58,5 +58,15 @@
   "imo": 1023114,
   "calado": 12.4,
   "ultimo_visto": "2026-11-01T18:48:52+00:00"
+ },
+ "MSC CORNELI": {
+  "primer_eta_ais": "2026-11-01",
+  "primer_destino": "FELIXSTOWE",
+  "primer_visto": "2026-11-01T20:40:24+00:00",
+  "eta_ais": "2026-11-01",
+  "destino": "FELIXSTOWE",
+  "imo": 9426817,
+  "calado": 13,
+  "ultimo_visto": "2026-11-01T20:40:24+00:00"
  }
 }
