@@ -2,24 +2,24 @@
  "TS MUMBAI": {
   "buque": "TS MUMBAI",
   "mmsi": "538011207",
-  "lat": -26.8511,
-  "lon": 153.151,
-  "sog": 17.2,
-  "cog": 346.7,
+  "lat": -26.6538,
+  "lon": 153.2525,
+  "sog": 15.7,
+  "cog": 54.6,
   "nav": 0,
-  "hora": "2026-11-01T06:56:14+00:00",
+  "hora": "2026-11-01T08:00:28+00:00",
   "fuente": "B"
  },
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.8353,
+  "lat": 51.8354,
   "lon": -8.3303,
-  "sog": 0,
-  "cog": 151.8,
-  "nav": 5,
-  "hora": "2026-11-01T05:46:37+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-01T07:58:33+00:00",
+  "fuente": "A"
  },
  "HUA HANG": {
   "buque": "HUA HANG",

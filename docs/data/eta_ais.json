@@ -3,11 +3,11 @@
   "primer_eta_ais": "2026-10-30",
   "primer_destino": "AUBNE",
   "primer_visto": "2026-10-31T01:57:50+00:00",
-  "eta_ais": "2026-10-30",
-  "destino": "AUBNE",
+  "eta_ais": "2026-11-12",
+  "destino": "TWKHH",
   "imo": 9937543,
-  "calado": 11,
-  "ultimo_visto": "2026-10-31T23:42:16+00:00"
+  "calado": 11.1,
+  "ultimo_visto": "2026-11-01T08:01:46+00:00"
  },
  "WAN HAI A06": {
   "primer_eta_ais": "2026-10-31",
@@ -37,7 +37,7 @@
   "destino": "NLRTM",
   "imo": 9368405,
   "calado": 5.6,
-  "ultimo_visto": "2026-10-31T23:42:16+00:00"
+  "ultimo_visto": "2026-11-01T08:01:46+00:00"
  },
  "HUA HANG": {
   "primer_eta_ais": "2026-11-13",
