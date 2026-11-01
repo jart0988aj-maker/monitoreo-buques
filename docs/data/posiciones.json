@@ -86,5 +86,16 @@
   "nav": 0,
   "hora": "2026-11-01T04:51:31+00:00",
   "fuente": "C"
+ },
+ "ONE SIMPLICITY": {
+  "buque": "ONE SIMPLICITY",
+  "mmsi": "563342500",
+  "lat": 22.3169,
+  "lon": 114.0807,
+  "sog": 0.1,
+  "cog": 61,
+  "nav": 0,
+  "hora": "2026-11-01T18:08:13+00:00",
+  "fuente": "C"
  }
 }

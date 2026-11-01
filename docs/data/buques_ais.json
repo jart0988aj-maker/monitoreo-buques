@@ -50,5 +50,18 @@
   "nombre_ais": "EVER FEAT",
   "metodo": "exacto",
   "desde": "2026-11-01T04:51:33.672648+00:00"
+ },
+ "ONE SIMPLICITY": {
+  "mmsi": "563342500",
+  "imo": null,
+  "nombre_ais": "ONE SIMPLICITY",
+  "metodo": "exacto",
+  "desde": "2026-11-01T18:05:56.889020+00:00"
+ },
+ "MSC CORNELI": {
+  "mmsi": "636017514",
+  "nombre_ais": "MSC CORNELIA V",
+  "metodo": "aproximado",
+  "desde": "2026-11-01T18:09:11.148054+00:00"
  }
 }
