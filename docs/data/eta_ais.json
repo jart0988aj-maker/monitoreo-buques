@@ -13,11 +13,11 @@
   "primer_eta_ais": "2026-10-31",
   "primer_destino": "HK HKG",
   "primer_visto": "2026-10-31T10:41:11+00:00",
-  "eta_ais": "2026-10-31",
-  "destino": "HK HKG",
+  "eta_ais": "2026-11-01",
+  "destino": "CN NGB",
   "imo": 9935129,
-  "calado": 12.2,
-  "ultimo_visto": "2026-11-01T01:04:24+00:00"
+  "calado": 13.5,
+  "ultimo_visto": "2026-11-01T06:59:14+00:00"
  },
  "SPYROS V": {
   "primer_eta_ais": "2026-11-19",
