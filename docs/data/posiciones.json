@@ -15,11 +15,11 @@
   "mmsi": "235106484",
   "lat": 51.8354,
   "lon": -8.3303,
-  "sog": 0,
-  "cog": 151.8,
-  "nav": 5,
-  "hora": "2026-11-02T03:58:43+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-02T07:22:37+00:00",
+  "fuente": "A"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
