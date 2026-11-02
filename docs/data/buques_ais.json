@@ -63,5 +63,12 @@
   "nombre_ais": "MSC CORNELIA V",
   "metodo": "aproximado",
   "desde": "2026-11-01T18:09:11.148054+00:00"
+ },
+ "EVER LOADING": {
+  "mmsi": "235102681",
+  "imo": null,
+  "nombre_ais": "EVER LOADING",
+  "metodo": "exacto",
+  "desde": "2026-11-02T21:23:45.937447+00:00"
  }
 }
