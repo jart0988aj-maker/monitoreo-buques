@@ -53,11 +53,11 @@
   "primer_eta_ais": "2026-11-01",
   "primer_destino": "HKHKG",
   "primer_visto": "2026-11-01T18:48:52+00:00",
-  "eta_ais": "2026-11-01",
-  "destino": "HKHKG",
+  "eta_ais": "2026-11-04",
+  "destino": "CNNGB",
   "imo": 1023114,
-  "calado": 12.4,
-  "ultimo_visto": "2026-11-02T18:30:09+00:00"
+  "calado": 11.9,
+  "ultimo_visto": "2026-11-02T19:32:58+00:00"
  },
  "MSC CORNELI": {
   "primer_eta_ais": "2026-11-01",
