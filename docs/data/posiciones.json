@@ -92,11 +92,11 @@
   "mmsi": "563342500",
   "lat": 22.3367,
   "lon": 114.1162,
-  "sog": 0,
-  "cog": 217.7,
-  "nav": 5,
-  "hora": "2026-11-02T03:57:47+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-02T04:59:35+00:00",
+  "fuente": "A"
  },
  "MSC CORNELI": {
   "buque": "MSC CORNELI",
