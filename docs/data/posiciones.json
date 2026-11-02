@@ -13,12 +13,12 @@
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.8353,
+  "lat": 51.8354,
   "lon": -8.3303,
   "sog": 0,
   "cog": 151.8,
   "nav": 5,
-  "hora": "2026-11-02T14:19:48+00:00",
+  "hora": "2026-11-02T17:31:48+00:00",
   "fuente": "B"
  },
  "HUA HANG": {
@@ -95,18 +95,18 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-02T15:29:35+00:00",
-  "fuente": "B"
+  "hora": "2026-11-02T17:29:35+00:00",
+  "fuente": "A"
  },
  "MSC CORNELI": {
   "buque": "MSC CORNELI",
   "mmsi": "636017514",
   "lat": 51.9624,
-  "lon": 1.2907,
-  "sog": 0,
-  "cog": 341,
-  "nav": 5,
-  "hora": "2026-11-02T14:17:53+00:00",
+  "lon": 1.2909,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-02T17:32:48+00:00",
   "fuente": "B"
  }
 }
