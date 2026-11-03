@@ -90,34 +90,45 @@
  "ONE SIMPLICITY": {
   "buque": "ONE SIMPLICITY",
   "mmsi": "563342500",
-  "lat": 22.3367,
-  "lon": 114.1162,
-  "sog": 0,
-  "cog": 333.4,
-  "nav": 5,
-  "hora": "2026-11-02T22:18:47+00:00",
+  "lat": 22.1115,
+  "lon": 114.5544,
+  "sog": 13.4,
+  "cog": 88.9,
+  "nav": 0,
+  "hora": "2026-11-03T01:42:39+00:00",
   "fuente": "B"
  },
  "MSC CORNELI": {
   "buque": "MSC CORNELI",
   "mmsi": "636017514",
-  "lat": 51.9624,
-  "lon": 1.2907,
-  "sog": 0,
-  "cog": 341,
-  "nav": 5,
-  "hora": "2026-11-03T00:08:56+00:00",
+  "lat": 51.9623,
+  "lon": 1.2909,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-03T01:44:49+00:00",
   "fuente": "B"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",
   "mmsi": "235102681",
-  "lat": 22.3249,
-  "lon": 114.118,
-  "sog": 4,
-  "cog": 53,
+  "lat": 22.3316,
+  "lon": 114.1253,
+  "sog": 0,
+  "cog": 134.2,
+  "nav": 5,
+  "hora": "2026-11-03T01:42:30+00:00",
+  "fuente": "C"
+ },
+ "MSC DANIELA": {
+  "buque": "MSC DANIELA",
+  "mmsi": "370892000",
+  "lat": 1.2777,
+  "lon": 104.0628,
+  "sog": 4.5,
+  "cog": 304,
   "nav": 0,
-  "hora": "2026-11-03T00:11:21+00:00",
-  "fuente": "B"
+  "hora": "2026-11-03T01:44:48+00:00",
+  "fuente": "C"
  }
 }

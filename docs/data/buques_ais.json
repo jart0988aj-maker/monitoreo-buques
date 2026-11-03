@@ -70,5 +70,12 @@
   "nombre_ais": "EVER LOADING",
   "metodo": "exacto",
   "desde": "2026-11-02T21:23:45.937447+00:00"
+ },
+ "MSC DANIELA": {
+  "mmsi": "370892000",
+  "imo": null,
+  "nombre_ais": "MSC DANIELA",
+  "metodo": "exacto",
+  "desde": "2026-11-03T01:44:50.835359+00:00"
  }
 }
