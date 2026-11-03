@@ -1,14 +1,14 @@
 {
- "generado": "2026-11-03T05:57:58+00:00",
- "hoy": "2026-11-02",
+ "generado": "2026-11-03T07:09:01+00:00",
+ "hoy": "2026-11-03",
  "kpis": {
-  "embarques_activos": 296,
-  "buques_activos": 86,
+  "embarques_activos": 295,
+  "buques_activos": 85,
   "buques_en_mapa": 11,
-  "contenedores_transito": 436,
-  "buques_con_retraso": 4,
-  "retraso_mediano": 13.0,
-  "buques_con_riesgo": 17,
+  "contenedores_transito": 469,
+  "buques_con_retraso": 3,
+  "retraso_mediano": 16,
+  "buques_con_riesgo": 19,
   "buques_identificados": 11
  },
  "activos": [
@@ -116,63 +116,6 @@
    }
   },
   {
-   "buque": "WAN HAI A06",
-   "pod": "MANZANILLO",
-   "eta": "2026-11-20",
-   "pol": "YANTIAN",
-   "origenes": [
-    "YANTIAN"
-   ],
-   "naviera": "PIL",
-   "etd": "2026-10-28",
-   "contenedores": 2,
-   "embarques": 2,
-   "imps": [
-    "IMP93459",
-    "IMP94724"
-   ],
-   "buques_iniciales": [],
-   "estado": "en tránsito",
-   "pronostico": "2026-11-30",
-   "retraso_dias": 10,
-   "nivel": "rojo",
-   "fecha_planta": "2026-12-07",
-   "metodo": "Sigue en puerto de origen (AIS)",
-   "confianza": "alta",
-   "transito_normal": 28.5,
-   "peor_caso": "2026-12-02",
-   "fecha_planta_peor": "2026-12-09",
-   "eta_historica": "2026-11-25",
-   "fecha_planta_historica": "2026-12-02",
-   "estado_puerto": null,
-   "esperado_historico": "2026-11-25",
-   "base_historico": "ruta y naviera",
-   "riesgo_dias": 5,
-   "muestra_historico": 12,
-   "mmsi": "563210600",
-   "posicion": {
-    "buque": "WAN HAI A06",
-    "mmsi": "563210600",
-    "lat": 22.3312,
-    "lon": 114.1229,
-    "sog": 0.5,
-    "cog": 261.2,
-    "nav": 0,
-    "hora": "2026-11-01T06:58:38+00:00",
-    "fuente": "C"
-   },
-   "eta_ais": {
-    "primer_eta_ais": "2026-10-31",
-    "primer_destino": "HK HKG",
-    "primer_visto": "2026-10-31T10:41:11+00:00",
-    "eta_ais": "2026-11-01",
-    "destino": "CN NGB",
-    "imo": 9935129,
-    "calado": 13.5,
-    "ultimo_visto": "2026-11-01T06:59:14+00:00"
-   }
-  },
-  {
    "buque": "YM CELEBRITY",
    "pod": "MANZANILLO",
    "eta": "2026-11-09",
@@ -195,7 +138,7 @@
    "fecha_planta": "2026-11-24",
    "metodo": "Posición y velocidad (AIS)",
    "confianza": "alta",
-   "transito_normal": 33,
+   "transito_normal": 33.0,
    "peor_caso": "2026-11-09",
    "fecha_planta_peor": "2026-11-16",
    "eta_historica": "2026-11-09",
@@ -204,17 +147,17 @@
    "esperado_historico": "2026-11-02",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 21,
+   "muestra_historico": 22,
    "mmsi": "235106484",
    "posicion": {
     "buque": "YM CELEBRITY",
     "mmsi": "235106484",
     "lat": 51.8354,
     "lon": -8.3303,
-    "sog": null,
-    "cog": null,
-    "nav": null,
-    "hora": "2026-11-03T03:52:39+00:00",
+    "sog": 0,
+    "cog": 151.8,
+    "nav": 5,
+    "hora": "2026-11-03T07:07:48+00:00",
     "fuente": "B"
    },
    "eta_ais": {
@@ -331,7 +274,7 @@
    "fecha_planta": "2026-11-09",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 38.0,
+   "transito_normal": 38,
    "peor_caso": "2026-11-26",
    "fecha_planta_peor": "2026-12-03",
    "eta_historica": "2026-11-17",
@@ -340,7 +283,7 @@
    "esperado_historico": "2026-11-17",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 15,
-   "muestra_historico": 40,
+   "muestra_historico": 41,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -370,7 +313,7 @@
    "fecha_planta": "2026-11-20",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 38.0,
+   "transito_normal": 38,
    "peor_caso": "2026-12-07",
    "fecha_planta_peor": "2026-12-14",
    "eta_historica": "2026-11-28",
@@ -379,7 +322,7 @@
    "esperado_historico": "2026-11-28",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 15,
-   "muestra_historico": 40,
+   "muestra_historico": 41,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -481,7 +424,7 @@
    "fecha_planta": "2026-12-21",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 42,
+   "transito_normal": 41.5,
    "peor_caso": "2026-12-31",
    "fecha_planta_peor": "2027-01-07",
    "eta_historica": "2026-12-25",
@@ -490,7 +433,7 @@
    "esperado_historico": "2026-12-25",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 11,
-   "muestra_historico": 25,
+   "muestra_historico": 26,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -518,7 +461,7 @@
    "fecha_planta": "2026-11-23",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 42,
+   "transito_normal": 41.5,
    "peor_caso": "2026-12-01",
    "fecha_planta_peor": "2026-12-08",
    "eta_historica": "2026-11-25",
@@ -527,7 +470,7 @@
    "esperado_historico": "2026-11-25",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 9,
-   "muestra_historico": 25,
+   "muestra_historico": 26,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -557,15 +500,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 22.0,
-   "peor_caso": "2026-12-01",
-   "fecha_planta_peor": "2026-12-08",
+   "peor_caso": "2026-12-04",
+   "fecha_planta_peor": "2026-12-11",
    "eta_historica": "2026-11-29",
    "fecha_planta_historica": "2026-12-06",
    "estado_puerto": null,
    "esperado_historico": "2026-11-29",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 9,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -650,7 +593,7 @@
    "fecha_planta": "2026-11-15",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28,
+   "transito_normal": 28.0,
    "peor_caso": "2026-11-19",
    "fecha_planta_peor": "2026-11-26",
    "eta_historica": "2026-11-15",
@@ -659,7 +602,7 @@
    "esperado_historico": "2026-11-15",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 7,
-   "muestra_historico": 113,
+   "muestra_historico": 114,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -702,6 +645,44 @@
    "eta_ais": null
   },
   {
+   "buque": "MSC MAURA",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-05",
+   "pol": "MUNDRA",
+   "origenes": [
+    "MUNDRA"
+   ],
+   "naviera": "MSC",
+   "etd": "2026-09-23",
+   "contenedores": 2,
+   "embarques": 2,
+   "imps": [
+    "IMP85161",
+    "IMP85163"
+   ],
+   "buques_iniciales": [],
+   "estado": "en tránsito",
+   "pronostico": "2026-11-05",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-12",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 49,
+   "peor_caso": "2026-11-23",
+   "fecha_planta_peor": "2026-11-30",
+   "eta_historica": "2026-11-11",
+   "fecha_planta_historica": "2026-11-18",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-11",
+   "base_historico": "origen",
+   "riesgo_dias": 6,
+   "muestra_historico": 23,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
    "buque": "ONE SINCERITY",
    "pod": "MANZANILLO",
    "eta": "2026-11-18",
@@ -737,7 +718,7 @@
    "fecha_planta": "2026-11-25",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28.0,
+   "transito_normal": 28,
    "peor_caso": "2026-12-01",
    "fecha_planta_peor": "2026-12-08",
    "eta_historica": "2026-11-24",
@@ -746,7 +727,7 @@
    "esperado_historico": "2026-11-24",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 6,
-   "muestra_historico": 114,
+   "muestra_historico": 115,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -775,7 +756,7 @@
    "fecha_planta": "2026-12-07",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 38.0,
+   "transito_normal": 38,
    "peor_caso": "2026-12-15",
    "fecha_planta_peor": "2026-12-22",
    "eta_historica": "2026-12-06",
@@ -784,7 +765,44 @@
    "esperado_historico": "2026-12-06",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 6,
-   "muestra_historico": 40,
+   "muestra_historico": 41,
+   "mmsi": null,
+   "posicion": null,
+   "eta_ais": null
+  },
+  {
+   "buque": "X-PRESS CAPELLA",
+   "pod": "MANZANILLO",
+   "eta": "2026-12-07",
+   "pol": "MUNDRA",
+   "origenes": [
+    "MUNDRA"
+   ],
+   "naviera": "EVERGREEN",
+   "etd": "2026-10-25",
+   "contenedores": 1,
+   "embarques": 1,
+   "imps": [
+    "IMP89026"
+   ],
+   "buques_iniciales": [],
+   "estado": "en tránsito",
+   "pronostico": "2026-12-07",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-12-14",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 49,
+   "peor_caso": "2026-12-25",
+   "fecha_planta_peor": "2027-01-01",
+   "eta_historica": "2026-12-13",
+   "fecha_planta_historica": "2026-12-20",
+   "estado_puerto": null,
+   "esperado_historico": "2026-12-13",
+   "base_historico": "origen",
+   "riesgo_dias": 6,
+   "muestra_historico": 23,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -812,7 +830,7 @@
    "fecha_planta": "2026-11-15",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 42,
+   "transito_normal": 41.5,
    "peor_caso": "2026-11-19",
    "fecha_planta_peor": "2026-11-26",
    "eta_historica": "2026-11-13",
@@ -821,7 +839,7 @@
    "esperado_historico": "2026-11-13",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 5,
-   "muestra_historico": 25,
+   "muestra_historico": 26,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -850,18 +868,75 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 22.0,
-   "peor_caso": "2026-11-18",
-   "fecha_planta_peor": "2026-11-25",
+   "peor_caso": "2026-11-21",
+   "fecha_planta_peor": "2026-11-28",
    "eta_historica": "2026-11-16",
    "fecha_planta_historica": "2026-11-23",
    "estado_puerto": null,
    "esperado_historico": "2026-11-16",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 5,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
+  },
+  {
+   "buque": "WAN HAI A06",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-20",
+   "pol": "YANTIAN",
+   "origenes": [
+    "YANTIAN"
+   ],
+   "naviera": "PIL",
+   "etd": "2026-10-28",
+   "contenedores": 2,
+   "embarques": 2,
+   "imps": [
+    "IMP93459",
+    "IMP94724"
+   ],
+   "buques_iniciales": [],
+   "estado": "en tránsito",
+   "pronostico": "2026-11-20",
+   "retraso_dias": 0,
+   "nivel": "verde",
+   "fecha_planta": "2026-11-27",
+   "metodo": "ETA del reporte (sin señal AIS)",
+   "confianza": "sin AIS",
+   "transito_normal": 28.5,
+   "peor_caso": "2026-12-02",
+   "fecha_planta_peor": "2026-12-09",
+   "eta_historica": "2026-11-25",
+   "fecha_planta_historica": "2026-12-02",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-25",
+   "base_historico": "ruta y naviera",
+   "riesgo_dias": 5,
+   "muestra_historico": 12,
+   "mmsi": "563210600",
+   "posicion": {
+    "buque": "WAN HAI A06",
+    "mmsi": "563210600",
+    "lat": 22.3312,
+    "lon": 114.1229,
+    "sog": 0.5,
+    "cog": 261.2,
+    "nav": 0,
+    "hora": "2026-11-01T06:58:38+00:00",
+    "fuente": "C"
+   },
+   "eta_ais": {
+    "primer_eta_ais": "2026-10-31",
+    "primer_destino": "HK HKG",
+    "primer_visto": "2026-10-31T10:41:11+00:00",
+    "eta_ais": "2026-11-01",
+    "destino": "CN NGB",
+    "imo": 9935129,
+    "calado": 13.5,
+    "ultimo_visto": "2026-11-01T06:59:14+00:00"
+   }
   },
   {
    "buque": "MONTEVIDEO EXPRESS",
@@ -894,7 +969,7 @@
    "fecha_planta": "2026-12-07",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28.0,
+   "transito_normal": 28,
    "peor_caso": "2026-12-12",
    "fecha_planta_peor": "2026-12-19",
    "eta_historica": "2026-12-05",
@@ -903,45 +978,7 @@
    "esperado_historico": "2026-12-05",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 5,
-   "muestra_historico": 114,
-   "mmsi": null,
-   "posicion": null,
-   "eta_ais": null
-  },
-  {
-   "buque": "MSC MAURA",
-   "pod": "MANZANILLO",
-   "eta": "2026-11-05",
-   "pol": "MUNDRA",
-   "origenes": [
-    "MUNDRA"
-   ],
-   "naviera": "MSC",
-   "etd": "2026-09-23",
-   "contenedores": 2,
-   "embarques": 2,
-   "imps": [
-    "IMP85161",
-    "IMP85163"
-   ],
-   "buques_iniciales": [],
-   "estado": "en tránsito",
-   "pronostico": "2026-11-05",
-   "retraso_dias": 0,
-   "nivel": "verde",
-   "fecha_planta": "2026-11-12",
-   "metodo": "ETA del reporte (sin señal AIS)",
-   "confianza": "sin AIS",
-   "transito_normal": 47,
-   "peor_caso": "2026-11-23",
-   "fecha_planta_peor": "2026-11-30",
-   "eta_historica": "2026-11-09",
-   "fecha_planta_historica": "2026-11-16",
-   "estado_puerto": null,
-   "esperado_historico": "2026-11-09",
-   "base_historico": "origen",
-   "riesgo_dias": 4,
-   "muestra_historico": 21,
+   "muestra_historico": 115,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -972,7 +1009,7 @@
    "fecha_planta": "2026-11-17",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28,
+   "transito_normal": 28.0,
    "peor_caso": "2026-11-21",
    "fecha_planta_peor": "2026-11-28",
    "eta_historica": "2026-11-14",
@@ -981,7 +1018,7 @@
    "esperado_historico": "2026-11-14",
    "base_historico": "origen",
    "riesgo_dias": 4,
-   "muestra_historico": 377,
+   "muestra_historico": 384,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1072,15 +1109,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 22.0,
-   "peor_caso": "2026-11-22",
-   "fecha_planta_peor": "2026-11-29",
+   "peor_caso": "2026-11-25",
+   "fecha_planta_peor": "2026-12-02",
    "eta_historica": "2026-11-20",
    "fecha_planta_historica": "2026-11-27",
    "estado_puerto": null,
    "esperado_historico": "2026-11-20",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 4,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1148,7 +1185,7 @@
    "fecha_planta": "2026-12-01",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 37,
+   "transito_normal": 37.0,
    "peor_caso": "2026-12-08",
    "fecha_planta_peor": "2026-12-15",
    "eta_historica": "2026-11-28",
@@ -1157,7 +1194,7 @@
    "esperado_historico": "2026-11-28",
    "base_historico": "origen",
    "riesgo_dias": 4,
-   "muestra_historico": 49,
+   "muestra_historico": 50,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1203,43 +1240,6 @@
    "eta_ais": null
   },
   {
-   "buque": "X-PRESS CAPELLA",
-   "pod": "MANZANILLO",
-   "eta": "2026-12-07",
-   "pol": "MUNDRA",
-   "origenes": [
-    "MUNDRA"
-   ],
-   "naviera": "EVERGREEN",
-   "etd": "2026-10-25",
-   "contenedores": 1,
-   "embarques": 1,
-   "imps": [
-    "IMP89026"
-   ],
-   "buques_iniciales": [],
-   "estado": "en tránsito",
-   "pronostico": "2026-12-07",
-   "retraso_dias": 0,
-   "nivel": "verde",
-   "fecha_planta": "2026-12-14",
-   "metodo": "ETA del reporte (sin señal AIS)",
-   "confianza": "sin AIS",
-   "transito_normal": 47,
-   "peor_caso": "2026-12-25",
-   "fecha_planta_peor": "2027-01-01",
-   "eta_historica": "2026-12-11",
-   "fecha_planta_historica": "2026-12-18",
-   "estado_puerto": null,
-   "esperado_historico": "2026-12-11",
-   "base_historico": "origen",
-   "riesgo_dias": 4,
-   "muestra_historico": 21,
-   "mmsi": null,
-   "posicion": null,
-   "eta_ais": null
-  },
-  {
    "buque": "ONE SPHERE",
    "pod": "MANZANILLO",
    "eta": "2026-12-09",
@@ -1262,7 +1262,7 @@
    "fecha_planta": "2026-12-16",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28,
+   "transito_normal": 28.0,
    "peor_caso": "2026-12-17",
    "fecha_planta_peor": "2026-12-24",
    "eta_historica": "2026-12-13",
@@ -1271,7 +1271,7 @@
    "esperado_historico": "2026-12-13",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 4,
-   "muestra_historico": 113,
+   "muestra_historico": 114,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1303,15 +1303,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 18.0,
-   "peor_caso": "2026-11-11",
-   "fecha_planta_peor": "2026-11-18",
+   "peor_caso": "2026-11-10",
+   "fecha_planta_peor": "2026-11-17",
    "eta_historica": "2026-11-05",
    "fecha_planta_historica": "2026-11-12",
    "estado_puerto": null,
    "esperado_historico": "2026-11-05",
    "base_historico": "origen",
    "riesgo_dias": 3,
-   "muestra_historico": 76,
+   "muestra_historico": 78,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1340,15 +1340,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 18.0,
-   "peor_caso": "2026-11-12",
-   "fecha_planta_peor": "2026-11-19",
+   "peor_caso": "2026-11-11",
+   "fecha_planta_peor": "2026-11-18",
    "eta_historica": "2026-11-06",
    "fecha_planta_historica": "2026-11-13",
    "estado_puerto": null,
    "esperado_historico": "2026-11-06",
    "base_historico": "origen",
    "riesgo_dias": 3,
-   "muestra_historico": 76,
+   "muestra_historico": 78,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1469,7 +1469,7 @@
    "fecha_planta": "2026-12-02",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28.0,
+   "transito_normal": 28,
    "peor_caso": "2026-12-05",
    "fecha_planta_peor": "2026-12-12",
    "eta_historica": "2026-11-28",
@@ -1478,7 +1478,7 @@
    "esperado_historico": "2026-11-28",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 3,
-   "muestra_historico": 114,
+   "muestra_historico": 115,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1506,7 +1506,7 @@
    "fecha_planta": "2026-11-23",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 38.0,
+   "transito_normal": 38,
    "peor_caso": "2026-11-27",
    "fecha_planta_peor": "2026-12-04",
    "eta_historica": "2026-11-18",
@@ -1515,7 +1515,7 @@
    "esperado_historico": "2026-11-18",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 2,
-   "muestra_historico": 40,
+   "muestra_historico": 41,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1597,7 +1597,7 @@
    "buques_iniciales": [
     "EVER FEAT V"
    ],
-   "estado": "por zarpar",
+   "estado": "en tránsito",
    "pronostico": "2026-11-23",
    "retraso_dias": 0,
    "nivel": "verde",
@@ -1605,15 +1605,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 22.0,
-   "peor_caso": "2026-11-27",
-   "fecha_planta_peor": "2026-12-04",
+   "peor_caso": "2026-11-30",
+   "fecha_planta_peor": "2026-12-07",
    "eta_historica": "2026-11-25",
    "fecha_planta_historica": "2026-12-02",
    "estado_puerto": null,
    "esperado_historico": "2026-11-25",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 2,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": "636020684",
    "posicion": {
     "buque": "EVER FEAT",
@@ -1658,7 +1658,7 @@
    "fecha_planta": "2026-11-07",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28.0,
+   "transito_normal": 28,
    "peor_caso": "2026-11-08",
    "fecha_planta_peor": "2026-11-15",
    "eta_historica": "2026-11-01",
@@ -1667,7 +1667,7 @@
    "esperado_historico": "2026-11-01",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 1,
-   "muestra_historico": 114,
+   "muestra_historico": 115,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1696,7 +1696,7 @@
    "fecha_planta": "2026-11-09",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 42,
+   "transito_normal": 41.5,
    "peor_caso": "2026-11-09",
    "fecha_planta_peor": "2026-11-16",
    "eta_historica": "2026-11-03",
@@ -1705,7 +1705,7 @@
    "esperado_historico": "2026-11-03",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 1,
-   "muestra_historico": 25,
+   "muestra_historico": 26,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1801,15 +1801,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 22.0,
-   "peor_caso": "2026-11-13",
-   "fecha_planta_peor": "2026-11-20",
+   "peor_caso": "2026-11-16",
+   "fecha_planta_peor": "2026-11-23",
    "eta_historica": "2026-11-11",
    "fecha_planta_historica": "2026-11-18",
    "estado_puerto": null,
    "esperado_historico": "2026-11-11",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 1,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1837,7 +1837,7 @@
    "fecha_planta": "2026-11-18",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28,
+   "transito_normal": 28.0,
    "peor_caso": "2026-11-19",
    "fecha_planta_peor": "2026-11-26",
    "eta_historica": "2026-11-12",
@@ -1846,7 +1846,7 @@
    "esperado_historico": "2026-11-12",
    "base_historico": "origen",
    "riesgo_dias": 1,
-   "muestra_historico": 377,
+   "muestra_historico": 384,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -1906,7 +1906,7 @@
     "IMP90873"
    ],
    "buques_iniciales": [],
-   "estado": "por zarpar",
+   "estado": "en tránsito",
    "pronostico": "2026-11-24",
    "retraso_dias": 0,
    "nivel": "verde",
@@ -1923,43 +1923,6 @@
    "base_historico": "ruta y naviera",
    "riesgo_dias": 1,
    "muestra_historico": 14,
-   "mmsi": null,
-   "posicion": null,
-   "eta_ais": null
-  },
-  {
-   "buque": "COSTA RICA EXPRESS",
-   "pod": "MANZANILLO",
-   "eta": "2026-10-30",
-   "pol": "NHAVA SHEVA",
-   "origenes": [
-    "NHAVA SHEVA"
-   ],
-   "naviera": "ONE",
-   "etd": "2026-09-04",
-   "contenedores": 1,
-   "embarques": 1,
-   "imps": [
-    "IMP87525"
-   ],
-   "buques_iniciales": [],
-   "estado": "en tránsito",
-   "pronostico": "2026-10-30",
-   "retraso_dias": 0,
-   "nivel": "verde",
-   "fecha_planta": "2026-11-06",
-   "metodo": "ETA del reporte (sin señal AIS)",
-   "confianza": "sin AIS",
-   "transito_normal": 52,
-   "peor_caso": "2026-11-03",
-   "fecha_planta_peor": "2026-11-10",
-   "eta_historica": "2026-10-30",
-   "fecha_planta_historica": "2026-11-06",
-   "estado_puerto": null,
-   "esperado_historico": "2026-10-26",
-   "base_historico": "ruta y naviera",
-   "riesgo_dias": 0,
-   "muestra_historico": 31,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2064,7 +2027,7 @@
    "esperado_historico": "2026-10-27",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2100,7 +2063,7 @@
    "fecha_planta": "2026-11-09",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 26.0,
+   "transito_normal": 26,
    "peor_caso": "2026-11-06",
    "fecha_planta_peor": "2026-11-13",
    "eta_historica": "2026-11-02",
@@ -2109,7 +2072,7 @@
    "esperado_historico": "2026-10-27",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 112,
+   "muestra_historico": 117,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2138,16 +2101,16 @@
    "fecha_planta": "2026-11-09",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 47,
+   "transito_normal": 49,
    "peor_caso": "2026-11-10",
    "fecha_planta_peor": "2026-11-17",
    "eta_historica": "2026-11-02",
    "fecha_planta_historica": "2026-11-09",
    "estado_puerto": null,
-   "esperado_historico": "2026-10-27",
+   "esperado_historico": "2026-10-29",
    "base_historico": "origen",
    "riesgo_dias": 0,
-   "muestra_historico": 21,
+   "muestra_historico": 23,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2215,7 +2178,7 @@
    "fecha_planta": "2026-11-09",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28,
+   "transito_normal": 28.0,
    "peor_caso": "2026-11-02",
    "fecha_planta_peor": "2026-11-09",
    "eta_historica": "2026-11-02",
@@ -2224,7 +2187,7 @@
    "esperado_historico": "2026-10-26",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 113,
+   "muestra_historico": 114,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2252,7 +2215,7 @@
    "fecha_planta": "2026-11-09",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 33,
+   "transito_normal": 33.0,
    "peor_caso": "2026-11-02",
    "fecha_planta_peor": "2026-11-09",
    "eta_historica": "2026-11-02",
@@ -2261,7 +2224,7 @@
    "esperado_historico": "2026-11-01",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 21,
+   "muestra_historico": 22,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2328,7 +2291,7 @@
    "fecha_planta": "2026-11-10",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 28.0,
+   "transito_normal": 28,
    "peor_caso": "2026-11-03",
    "fecha_planta_peor": "2026-11-10",
    "eta_historica": "2026-11-03",
@@ -2337,7 +2300,7 @@
    "esperado_historico": "2026-10-19",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 114,
+   "muestra_historico": 115,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2537,7 +2500,7 @@
    "fecha_planta": "2026-11-15",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 42,
+   "transito_normal": 41.5,
    "peor_caso": "2026-11-14",
    "fecha_planta_peor": "2026-11-21",
    "eta_historica": "2026-11-08",
@@ -2546,7 +2509,7 @@
    "esperado_historico": "2026-11-08",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 25,
+   "muestra_historico": 26,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2612,7 +2575,7 @@
    "fecha_planta": "2026-11-16",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 33,
+   "transito_normal": 33.0,
    "peor_caso": "2026-11-09",
    "fecha_planta_peor": "2026-11-16",
    "eta_historica": "2026-11-09",
@@ -2621,7 +2584,7 @@
    "esperado_historico": "2026-10-30",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 21,
+   "muestra_historico": 22,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2649,7 +2612,7 @@
    "fecha_planta": "2026-11-16",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 33,
+   "transito_normal": 33.0,
    "peor_caso": "2026-11-09",
    "fecha_planta_peor": "2026-11-16",
    "eta_historica": "2026-11-09",
@@ -2658,7 +2621,7 @@
    "esperado_historico": "2026-11-03",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 21,
+   "muestra_historico": 22,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -2694,15 +2657,15 @@
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
    "transito_normal": 22.0,
-   "peor_caso": "2026-11-12",
-   "fecha_planta_peor": "2026-11-19",
+   "peor_caso": "2026-11-15",
+   "fecha_planta_peor": "2026-11-22",
    "eta_historica": "2026-11-10",
    "fecha_planta_historica": "2026-11-17",
    "estado_puerto": null,
    "esperado_historico": "2026-11-10",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -3105,7 +3068,7 @@
     "IMP92615"
    ],
    "buques_iniciales": [],
-   "estado": "por zarpar",
+   "estado": "en tránsito",
    "pronostico": "2026-11-28",
    "retraso_dias": 0,
    "nivel": "verde",
@@ -3158,7 +3121,7 @@
    "esperado_historico": "2026-11-21",
    "base_historico": "origen",
    "riesgo_dias": 0,
-   "muestra_historico": 759,
+   "muestra_historico": 781,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -3186,7 +3149,7 @@
    "fecha_planta": "2026-12-07",
    "metodo": "ETA del reporte (sin señal AIS)",
    "confianza": "sin AIS",
-   "transito_normal": 18,
+   "transito_normal": 18.0,
    "peor_caso": "2026-12-05",
    "fecha_planta_peor": "2026-12-12",
    "eta_historica": "2026-11-30",
@@ -3195,7 +3158,7 @@
    "esperado_historico": "2026-11-30",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 27,
+   "muestra_historico": 30,
    "mmsi": null,
    "posicion": null,
    "eta_ais": null
@@ -3292,7 +3255,7 @@
     "IMP92617"
    ],
    "buques_iniciales": [],
-   "estado": "por zarpar",
+   "estado": "en tránsito",
    "pronostico": "2026-12-09",
    "retraso_dias": 0,
    "nivel": "verde",
@@ -3562,7 +3525,7 @@
     "IMP98012"
    ],
    "buques_iniciales": [],
-   "estado": "por zarpar",
+   "estado": "en tránsito",
    "pronostico": "2026-11-27",
    "retraso_dias": -2,
    "nivel": "verde",
@@ -3691,26 +3654,26 @@
    "metodo": "Posición y velocidad (AIS)",
    "confianza": "media",
    "transito_normal": 22.0,
-   "peor_caso": "2026-12-02",
-   "fecha_planta_peor": "2026-12-09",
+   "peor_caso": "2026-12-05",
+   "fecha_planta_peor": "2026-12-12",
    "eta_historica": "2026-11-30",
    "fecha_planta_historica": "2026-12-07",
    "estado_puerto": null,
    "esperado_historico": "2026-11-30",
    "base_historico": "ruta y naviera",
    "riesgo_dias": 0,
-   "muestra_historico": 436,
+   "muestra_historico": 458,
    "mmsi": "235102681",
    "posicion": {
     "buque": "EVER LOADING",
     "mmsi": "235102681",
     "lat": 22.3316,
     "lon": 114.1253,
-    "sog": 0.1,
-    "cog": 235.9,
+    "sog": 0,
+    "cog": 243.5,
     "nav": 5,
-    "hora": "2026-11-03T05:54:31+00:00",
-    "fuente": "B"
+    "hora": "2026-11-03T07:06:30+00:00",
+    "fuente": "C"
    },
    "eta_ais": {
     "primer_eta_ais": "2026-11-02",
@@ -3727,11 +3690,11 @@
  "congestion": [
   {
    "puerto": "YANTIAN",
-   "fondeados": 15,
-   "atracados": 7,
+   "fondeados": 13,
+   "atracados": 4,
    "promedio_7d": 11.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 22.57,
    "lon": 114.27
   },
@@ -3740,8 +3703,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 19.06,
    "lon": -104.3
   },
@@ -3750,8 +3713,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 17.93,
    "lon": -102.18
   },
@@ -3760,8 +3723,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 30.63,
    "lon": 122.07
   },
@@ -3770,8 +3733,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 29.93,
    "lon": 121.88
   },
@@ -3780,8 +3743,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 36.02,
    "lon": 120.2
   },
@@ -3790,8 +3753,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 34.74,
    "lon": 119.45
   },
@@ -3800,8 +3763,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 35.08,
    "lon": 128.83
   },
@@ -3810,8 +3773,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 25.15,
    "lon": 121.75
   },
@@ -3820,8 +3783,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 22.56,
    "lon": 120.3
   },
@@ -3830,8 +3793,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 10.45,
    "lon": 107.05
   },
@@ -3840,8 +3803,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 20.75,
    "lon": 106.85
   },
@@ -3850,8 +3813,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.9,
-   "fecha": "2026-11-03T05:57:58+00:00",
-   "lecturas": 82,
+   "fecha": "2026-11-03T07:09:01+00:00",
+   "lecturas": 83,
    "lat": 1.26,
    "lon": 103.8
   }
@@ -3859,14 +3822,14 @@
  "estadisticas": {
   "origen": {
    "SHANGHAI>MANZANILLO": {
-    "n": 759,
+    "n": 781,
     "mediana": 22,
     "p10": 19.0,
     "p90": 31.0
    },
    "HO CHI MINH>MANZANILLO": {
-    "n": 90,
-    "mediana": 36.0,
+    "n": 91,
+    "mediana": 36,
     "p10": 26.0,
     "p90": 40.0
    },
@@ -3883,14 +3846,14 @@
     "p90": 9.0
    },
    "NINGBO>MANZANILLO": {
-    "n": 96,
-    "mediana": 23.5,
+    "n": 99,
+    "mediana": 23,
     "p10": 17.0,
-    "p90": 29.5
+    "p90": 29.2
    },
    "YANTIAN>MANZANILLO": {
-    "n": 377,
-    "mediana": 28,
+    "n": 384,
+    "mediana": 28.0,
     "p10": 26.0,
     "p90": 35.0
    },
@@ -3913,8 +3876,8 @@
     "p90": 27.0
    },
    "HAIPHONG>MANZANILLO": {
-    "n": 49,
-    "mediana": 37,
+    "n": 50,
+    "mediana": 37.0,
     "p10": 32.0,
     "p90": 47.0
    },
@@ -3925,16 +3888,16 @@
     "p90": 31.4
    },
    "SIHANOUKVILLE>MANZANILLO": {
-    "n": 5,
-    "mediana": 43,
-    "p10": 34.2,
-    "p90": 51.2
+    "n": 6,
+    "mediana": 43.5,
+    "p10": 35.0,
+    "p90": 51.5
    },
    "BUSAN>MANZANILLO": {
-    "n": 76,
+    "n": 78,
     "mediana": 18.0,
     "p10": 14.0,
-    "p90": 23.5
+    "p90": 23.3
    },
    "LIANYUNGANG>MANZANILLO": {
     "n": 57,
@@ -3943,16 +3906,16 @@
     "p90": 43.0
    },
    "MANILA>MANZANILLO": {
-    "n": 35,
-    "mediana": 38,
-    "p10": 27.4,
-    "p90": 46.2
+    "n": 36,
+    "mediana": 38.5,
+    "p10": 27.5,
+    "p90": 46.0
    },
    "MUNDRA>MANZANILLO": {
-    "n": 21,
-    "mediana": 47,
-    "p10": 38.0,
-    "p90": 61.0
+    "n": 23,
+    "mediana": 49,
+    "p10": 38.6,
+    "p90": 60.8
    },
    "SINGAPORE>MANZANILLO": {
     "n": 26,
@@ -3993,10 +3956,10 @@
   },
   "ruta_naviera": {
    "SHANGHAI>MANZANILLO>EVERGREEN": {
-    "n": 436,
+    "n": 458,
     "mediana": 22.0,
     "p10": 19.0,
-    "p90": 24.0
+    "p90": 27.0
    },
    "SHANGHAI>MANZANILLO>HAPAG LLOYD": {
     "n": 74,
@@ -4035,8 +3998,8 @@
     "p90": 24.0
    },
    "YANTIAN>MANZANILLO>HAPAG LLOYD": {
-    "n": 113,
-    "mediana": 28,
+    "n": 114,
+    "mediana": 28.0,
     "p10": 27.0,
     "p90": 32.0
    },
@@ -4047,10 +4010,10 @@
     "p90": 60.0
    },
    "YANTIAN>MANZANILLO>EVERGREEN": {
-    "n": 112,
-    "mediana": 26.0,
+    "n": 117,
+    "mediana": 26,
     "p10": 25.0,
-    "p90": 35.9
+    "p90": 36.0
    },
    "PIPAVAV>MANZANILLO>ONE": {
     "n": 16,
@@ -4083,10 +4046,10 @@
     "p90": 28.7
    },
    "BUSAN>MANZANILLO>HAPAG LLOYD": {
-    "n": 37,
-    "mediana": 16,
+    "n": 38,
+    "mediana": 16.0,
     "p10": 14.0,
-    "p90": 22.8
+    "p90": 22.6
    },
    "KEELUNG>MANZANILLO>ONE": {
     "n": 31,
@@ -4113,8 +4076,8 @@
     "p90": 42.5
    },
    "HAIPHONG>MANZANILLO>EVERGREEN": {
-    "n": 40,
-    "mediana": 38.0,
+    "n": 41,
+    "mediana": 38,
     "p10": 32.0,
     "p90": 47.0
    },
@@ -4185,8 +4148,8 @@
     "p90": 18.6
    },
    "YANTIAN>MANZANILLO>ONE": {
-    "n": 114,
-    "mediana": 28.0,
+    "n": 115,
+    "mediana": 28,
     "p10": 26.0,
     "p90": 35.0
    },
@@ -4197,10 +4160,10 @@
     "p90": 28.5
    },
    "NINGBO>MANZANILLO>EVERGREEN": {
-    "n": 27,
-    "mediana": 18,
-    "p10": 16.6,
-    "p90": 23.4
+    "n": 30,
+    "mediana": 18.0,
+    "p10": 15.9,
+    "p90": 23.1
    },
    "QINGDAO>MANZANILLO>MAERSK": {
     "n": 3,
@@ -4239,10 +4202,10 @@
     "p90": 39.7
    },
    "MANILA>MANZANILLO>EVERGREEN": {
-    "n": 25,
-    "mediana": 42,
+    "n": 26,
+    "mediana": 41.5,
     "p10": 32.0,
-    "p90": 48.2
+    "p90": 48.0
    },
    "LIANYUNGANG>MANZANILLO>MSC": {
     "n": 7,
@@ -4263,8 +4226,8 @@
     "p90": 28.0
    },
    "HO CHI MINH>MANZANILLO>EVERGREEN": {
-    "n": 21,
-    "mediana": 33,
+    "n": 22,
+    "mediana": 33.0,
     "p10": 29.0,
     "p90": 34.0
    },
@@ -4309,6 +4272,12 @@
     "mediana": 40,
     "p10": 27.4,
     "p90": 44.6
+   },
+   "MUNDRA>MANZANILLO>EVERGREEN": {
+    "n": 4,
+    "mediana": 48.5,
+    "p10": 41.9,
+    "p90": 53.0
    },
    "HO CHI MINH>MANZANILLO>YANG MING": {
     "n": 3,
@@ -4373,13 +4342,13 @@
   },
   "naviera": {
    "EVERGREEN": {
-    "n": 805,
+    "n": 841,
     "mediana": 22,
-    "p10": 19.0,
+    "p10": 20.0,
     "p90": 36.0
    },
    "HAPAG LLOYD": {
-    "n": 313,
+    "n": 315,
     "mediana": 27,
     "p10": 18.0,
     "p90": 36.0
@@ -4391,8 +4360,8 @@
     "p90": 36.0
    },
    "ONE": {
-    "n": 518,
-    "mediana": 28.0,
+    "n": 519,
+    "mediana": 28,
     "p10": 20.0,
     "p90": 47.0
    },
@@ -4403,10 +4372,10 @@
     "p90": 35.0
    },
    "CMA CGM": {
-    "n": 8,
-    "mediana": 25.5,
-    "p10": 18.4,
-    "p90": 30.6
+    "n": 9,
+    "mediana": 25,
+    "p10": 16.8,
+    "p90": 30.4
    },
    "HMM": {
     "n": 43,
@@ -5149,20 +5118,20 @@
     "p90": 42.1
    },
    "SHANGHAI|2026-09": {
-    "n": 105,
-    "mediana": 26,
+    "n": 106,
+    "mediana": 26.0,
     "p10": 18.0,
     "p90": 29.0
    },
    "HAIPHONG|2026-09": {
-    "n": 4,
-    "mediana": 43.0,
-    "p10": 38.9,
-    "p90": 46.4
+    "n": 5,
+    "mediana": 41,
+    "p10": 38.0,
+    "p90": 46.2
    },
    "YANTIAN|2026-09": {
-    "n": 48,
-    "mediana": 32.0,
+    "n": 51,
+    "mediana": 32,
     "p10": 26.0,
     "p90": 37.0
    },
@@ -5185,16 +5154,22 @@
     "p90": 32.6
    },
    "MANILA|2026-09": {
-    "n": 3,
-    "mediana": 44,
-    "p10": 43.2,
-    "p90": 44.8
+    "n": 4,
+    "mediana": 43.5,
+    "p10": 41.6,
+    "p90": 44.7
    },
    "HO CHI MINH|2026-09": {
-    "n": 10,
-    "mediana": 30.0,
-    "p10": 28.9,
-    "p90": 36.4
+    "n": 11,
+    "mediana": 30,
+    "p10": 29.0,
+    "p90": 36.0
+   },
+   "MUNDRA|2026-09": {
+    "n": 4,
+    "mediana": 50.0,
+    "p10": 42.8,
+    "p90": 53.0
    },
    "SANTOS|2026-09": {
     "n": 3,
@@ -5202,11 +5177,17 @@
     "p10": 18.6,
     "p90": 26.6
    },
+   "YANTIAN|2026-10": {
+    "n": 5,
+    "mediana": 32,
+    "p10": 30.4,
+    "p90": 32.0
+   },
    "SHANGHAI|2026-10": {
-    "n": 17,
-    "mediana": 23,
-    "p10": 22.0,
-    "p90": 26.4
+    "n": 38,
+    "mediana": 23.5,
+    "p10": 20.0,
+    "p90": 28.3
    },
    "QINGDAO|2026-10": {
     "n": 7,
@@ -5214,14 +5195,20 @@
     "p10": 12.0,
     "p90": 28.0
    },
+   "BUSAN|2026-10": {
+    "n": 4,
+    "mediana": 18.0,
+    "p10": 16.3,
+    "p90": 19.0
+   },
    "NINGBO|2026-10": {
-    "n": 3,
-    "mediana": 25,
-    "p10": 24.2,
+    "n": 6,
+    "mediana": 23.5,
+    "p10": 12.5,
     "p90": 25.0
    }
   },
-  "total_historico": 1924
+  "total_historico": 1964
  },
  "puertos": {
   "MANZANILLO": {
@@ -5278,59 +5265,59 @@
   }
  },
  "ultima_corrida": {
-  "inicio": "2026-11-03T05:53:57+00:00",
-  "fin": "2026-11-03T05:57:58+00:00",
+  "inicio": "2026-11-03T07:05:00+00:00",
+  "fin": "2026-11-03T07:09:01+00:00",
   "duracion_s": 240,
   "mensajes": {
-   "A": 5734,
+   "A": 5516,
    "B": 3,
-   "C": 180
+   "C": 178
   },
   "buques_objetivo": 89,
   "con_mmsi": 12,
   "posiciones_nuevas": 2,
   "errores": [],
   "cobertura": {
-   "50,0": 2262,
-   "50,10": 502,
-   "40,0": 452,
-   "50,-10": 400,
-   "40,-130": 342,
-   "60,20": 243,
-   "30,20": 182,
-   "60,10": 148,
-   "30,-10": 109,
-   "20,-90": 88,
-   "40,-10": 85,
-   "40,-80": 83,
-   "30,0": 67,
-   "60,0": 65,
-   "20,-100": 58,
-   "30,-120": 47,
-   "40,10": 47,
-   "30,-80": 39,
-   "-30,-50": 38,
-   "30,30": 37,
-   "20,-20": 35,
-   "20,110": 34,
-   "30,-130": 31,
-   "30,130": 31,
-   "-30,30": 29,
-   "-40,10": 23,
-   "-40,-70": 23,
+   "50,0": 2128,
+   "50,10": 509,
+   "40,0": 464,
+   "50,-10": 347,
+   "40,-130": 290,
+   "60,20": 263,
+   "30,20": 168,
+   "30,-10": 167,
+   "60,10": 132,
+   "40,-10": 92,
+   "20,-90": 77,
+   "40,-80": 70,
+   "20,-100": 64,
+   "30,0": 62,
+   "40,10": 58,
+   "60,0": 50,
+   "30,-80": 50,
+   "30,-120": 39,
+   "30,-130": 39,
+   "20,110": 38,
+   "30,30": 33,
+   "20,-20": 30,
+   "-30,30": 30,
+   "-40,10": 28,
+   "30,130": 24,
+   "-30,-50": 20,
    "-10,110": 20,
-   "-30,150": 20,
-   "-40,150": 15,
-   "30,-100": 13,
-   "50,20": 13,
-   "0,0": 12,
-   "30,-90": 12,
+   "-30,150": 19,
+   "40,20": 16,
+   "50,20": 16,
+   "-40,-70": 14,
+   "30,-90": 13,
+   "30,-100": 10,
    "-10,100": 10,
-   "40,20": 10,
-   "40,140": 9,
-   "30,10": 7,
+   "-40,140": 8,
+   "40,140": 8,
+   "-40,150": 7,
+   "0,100": 7,
    "0,-80": 7,
-   "0,100": 6
+   "30,10": 7
   }
  }
 }
