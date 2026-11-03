@@ -103,21 +103,21 @@
   "mmsi": "636017514",
   "lat": 51.9623,
   "lon": 1.2909,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-03T18:53:33+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 286.8,
+  "nav": 5,
+  "hora": "2026-11-03T21:45:03+00:00",
+  "fuente": "B"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",
   "mmsi": "235102681",
   "lat": 22.3316,
   "lon": 114.1253,
-  "sog": 0.1,
-  "cog": 162,
+  "sog": 0,
+  "cog": 235,
   "nav": 5,
-  "hora": "2026-11-03T18:54:28+00:00",
+  "hora": "2026-11-03T21:48:28+00:00",
   "fuente": "B"
  },
  "MSC DANIELA": {
