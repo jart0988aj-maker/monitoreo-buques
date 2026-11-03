@@ -18,7 +18,7 @@
   "sog": 0,
   "cog": 151.8,
   "nav": 5,
-  "hora": "2026-11-03T07:07:48+00:00",
+  "hora": "2026-11-03T09:28:49+00:00",
   "fuente": "B"
  },
  "HUA HANG": {
@@ -101,13 +101,13 @@
  "MSC CORNELI": {
   "buque": "MSC CORNELI",
   "mmsi": "636017514",
-  "lat": 51.9623,
-  "lon": 1.291,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-03T05:56:49+00:00",
-  "fuente": "A"
+  "lat": 51.9624,
+  "lon": 1.2909,
+  "sog": 0,
+  "cog": 286.8,
+  "nav": 5,
+  "hora": "2026-11-03T09:29:55+00:00",
+  "fuente": "B"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",
