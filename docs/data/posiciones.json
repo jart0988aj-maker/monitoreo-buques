@@ -106,7 +106,7 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-03T04:56:49+00:00",
+  "hora": "2026-11-03T05:56:49+00:00",
   "fuente": "A"
  },
  "EVER LOADING": {
@@ -115,10 +115,10 @@
   "lat": 22.3316,
   "lon": 114.1253,
   "sog": 0.1,
-  "cog": 188.7,
+  "cog": 235.9,
   "nav": 5,
-  "hora": "2026-11-03T03:54:30+00:00",
-  "fuente": "C"
+  "hora": "2026-11-03T05:54:31+00:00",
+  "fuente": "B"
  },
  "MSC DANIELA": {
   "buque": "MSC DANIELA",
