@@ -13,12 +13,12 @@
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "235106484",
-  "lat": 51.624,
-  "lon": -8.0388,
-  "sog": 9.2,
-  "cog": 134.7,
+  "lat": 51.3871,
+  "lon": -7.6679,
+  "sog": 9,
+  "cog": 135.4,
   "nav": 0,
-  "hora": "2026-11-03T13:46:06+00:00",
+  "hora": "2026-11-03T15:53:56+00:00",
   "fuente": "B"
  },
  "HUA HANG": {
@@ -103,11 +103,11 @@
   "mmsi": "636017514",
   "lat": 51.9623,
   "lon": 1.2909,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-03T12:26:50+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 286.8,
+  "nav": 5,
+  "hora": "2026-11-03T15:53:57+00:00",
+  "fuente": "B"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",
@@ -135,11 +135,22 @@
   "buque": "EVER CONFORM",
   "mmsi": "352001178",
   "lat": 37.4381,
-  "lon": 126.5969,
+  "lon": 126.5968,
   "sog": 0,
   "cog": 84.4,
   "nav": 5,
-  "hora": "2026-11-03T13:45:27+00:00",
+  "hora": "2026-11-03T15:51:25+00:00",
   "fuente": "B"
+ },
+ "CISNES": {
+  "buque": "CISNES",
+  "mmsi": "636092799",
+  "lat": 33.6009,
+  "lon": -118.2916,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-03T15:54:22+00:00",
+  "fuente": "A"
  }
 }

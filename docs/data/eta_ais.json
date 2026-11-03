@@ -88,5 +88,15 @@
   "imo": 9913846,
   "calado": 7.5,
   "ultimo_visto": "2026-11-03T12:27:49+00:00"
+ },
+ "CISNES": {
+  "primer_eta_ais": "2026-11-03",
+  "primer_destino": "USLAX",
+  "primer_visto": "2026-11-03T15:55:24+00:00",
+  "eta_ais": "2026-11-03",
+  "destino": "USLAX",
+  "imo": 9687576,
+  "calado": 12.5,
+  "ultimo_visto": "2026-11-03T15:55:24+00:00"
  }
 }

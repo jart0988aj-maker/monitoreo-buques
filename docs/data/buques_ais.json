@@ -84,5 +84,12 @@
   "nombre_ais": "EVER CONFORM",
   "metodo": "exacto",
   "desde": "2026-11-03T12:25:34.573527+00:00"
+ },
+ "CISNES": {
+  "mmsi": "636092799",
+  "imo": 9687576,
+  "nombre_ais": "CISNES",
+  "metodo": "exacto",
+  "desde": "2026-11-03T15:54:25.047443+00:00"
  }
 }
