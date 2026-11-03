@@ -7,10 +7,11 @@
   "desde": "2026-10-31T01:53:47.405372+00:00"
  },
  "YM CELEBRITY": {
-  "mmsi": "235106484",
-  "nombre_ais": "CELEBRITY",
-  "metodo": "aproximado",
-  "desde": "2026-10-31T04:46:37.875618+00:00"
+  "mmsi": "563259400",
+  "imo": 9864502,
+  "nombre_ais": "YM CELEBRITY",
+  "metodo": "exacto",
+  "desde": "2026-11-03T23:40:38.778374+00:00"
  },
  "HUA HANG": {
   "mmsi": "538011294",

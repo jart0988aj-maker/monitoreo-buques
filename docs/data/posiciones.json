@@ -12,14 +12,14 @@
  },
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
-  "mmsi": "235106484",
-  "lat": 51.3871,
-  "lon": -7.6679,
-  "sog": 9,
-  "cog": 135.4,
-  "nav": 0,
-  "hora": "2026-11-03T15:53:56+00:00",
-  "fuente": "B"
+  "mmsi": "563259400",
+  "lat": 22.3203,
+  "lon": 114.1118,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-03T23:40:34+00:00",
+  "fuente": "A"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
@@ -115,9 +115,9 @@
   "lat": 22.3316,
   "lon": 114.1253,
   "sog": 0.1,
-  "cog": 191.7,
+  "cog": 156.6,
   "nav": 5,
-  "hora": "2026-11-03T22:45:29+00:00",
+  "hora": "2026-11-03T23:42:27+00:00",
   "fuente": "C"
  },
  "MSC DANIELA": {
@@ -145,12 +145,12 @@
  "CISNES": {
   "buque": "CISNES",
   "mmsi": "636092799",
-  "lat": 33.7322,
-  "lon": -118.2477,
-  "sog": 0,
-  "cog": 129,
-  "nav": 5,
-  "hora": "2026-11-03T18:54:23+00:00",
-  "fuente": "B"
+  "lat": 33.7323,
+  "lon": -118.2476,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-03T23:42:29+00:00",
+  "fuente": "A"
  }
 }
