@@ -67,7 +67,7 @@
   "destino": "FELIXSTOWE",
   "imo": 9426817,
   "calado": 13,
-  "ultimo_visto": "2026-11-03T05:57:58+00:00"
+  "ultimo_visto": "2026-11-03T12:27:49+00:00"
  },
  "EVER LOADING": {
   "primer_eta_ais": "2026-11-02",
@@ -78,5 +78,15 @@
   "imo": 9629081,
   "calado": 11.4,
   "ultimo_visto": "2026-11-03T11:31:00+00:00"
+ },
+ "EVER CONFORM": {
+  "primer_eta_ais": "2026-11-05",
+  "primer_destino": "KRINC  >> CNQDG",
+  "primer_visto": "2026-11-03T12:27:49+00:00",
+  "eta_ais": "2026-11-05",
+  "destino": "KRINC  >> CNQDG",
+  "imo": 9913846,
+  "calado": 7.5,
+  "ultimo_visto": "2026-11-03T12:27:49+00:00"
  }
 }
