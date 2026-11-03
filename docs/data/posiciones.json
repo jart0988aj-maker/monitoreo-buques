@@ -18,8 +18,8 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-03T00:10:37+00:00",
-  "fuente": "A"
+  "hora": "2026-11-03T02:52:40+00:00",
+  "fuente": "B"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
@@ -114,11 +114,11 @@
   "mmsi": "235102681",
   "lat": 22.3316,
   "lon": 114.1253,
-  "sog": 0,
-  "cog": 134.2,
-  "nav": 5,
-  "hora": "2026-11-03T01:42:30+00:00",
-  "fuente": "C"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-03T02:52:21+00:00",
+  "fuente": "A"
  },
  "MSC DANIELA": {
   "buque": "MSC DANIELA",
