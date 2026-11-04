@@ -15,11 +15,11 @@
   "mmsi": "563259400",
   "lat": 22.3286,
   "lon": 114.1278,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-04T05:59:03+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 237.6,
+  "nav": 5,
+  "hora": "2026-11-04T07:13:34+00:00",
+  "fuente": "B"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
@@ -103,11 +103,11 @@
   "mmsi": "636017514",
   "lat": 51.9623,
   "lon": 1.2909,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-04T04:58:11+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 286.8,
+  "nav": 5,
+  "hora": "2026-11-04T07:12:03+00:00",
+  "fuente": "B"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",
@@ -150,7 +150,7 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-04T05:00:29+00:00",
+  "hora": "2026-11-04T07:12:29+00:00",
   "fuente": "A"
  }
 }
