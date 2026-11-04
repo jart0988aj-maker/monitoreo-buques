@@ -156,12 +156,12 @@
  "ONE SAPPHIRE": {
   "buque": "ONE SAPPHIRE",
   "mmsi": "563262300",
-  "lat": 22.3208,
-  "lon": 114.1126,
-  "sog": 5.3,
-  "cog": 58.4,
-  "nav": 0,
-  "hora": "2026-11-04T14:18:58+00:00",
-  "fuente": "B"
+  "lat": 22.3375,
+  "lon": 114.1156,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-04T16:31:12+00:00",
+  "fuente": "A"
  }
 }
