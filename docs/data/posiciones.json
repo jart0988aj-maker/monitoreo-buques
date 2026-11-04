@@ -103,11 +103,11 @@
   "mmsi": "636017514",
   "lat": 51.9623,
   "lon": 1.2909,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-04T08:34:12+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 286.8,
+  "nav": 5,
+  "hora": "2026-11-04T09:33:08+00:00",
+  "fuente": "B"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",
@@ -150,7 +150,7 @@
   "sog": 0,
   "cog": 129,
   "nav": 5,
-  "hora": "2026-11-04T08:36:19+00:00",
+  "hora": "2026-11-04T09:30:25+00:00",
   "fuente": "B"
  },
  "ONE SAPPHIRE": {
