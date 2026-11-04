@@ -37,7 +37,7 @@
   "destino": "TW KHH>HK HKG",
   "imo": 9864502,
   "calado": 9.9,
-  "ultimo_visto": "2026-11-04T06:01:40+00:00"
+  "ultimo_visto": "2026-11-04T08:38:07+00:00"
  },
  "HUA HANG": {
   "primer_eta_ais": "2026-11-13",
@@ -67,7 +67,7 @@
   "destino": "ITSAL",
   "imo": 9426817,
   "calado": 9.8,
-  "ultimo_visto": "2026-11-04T05:00:39+00:00"
+  "ultimo_visto": "2026-11-04T08:38:07+00:00"
  },
  "EVER LOADING": {
   "primer_eta_ais": "2026-11-02",
@@ -97,6 +97,6 @@
   "destino": "USLAX",
   "imo": 9687576,
   "calado": 12.5,
-  "ultimo_visto": "2026-11-04T07:14:51+00:00"
+  "ultimo_visto": "2026-11-04T08:38:07+00:00"
  }
 }

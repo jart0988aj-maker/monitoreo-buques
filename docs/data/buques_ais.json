@@ -92,5 +92,12 @@
   "nombre_ais": "CISNES",
   "metodo": "exacto",
   "desde": "2026-11-03T15:54:25.047443+00:00"
+ },
+ "ONE SAPPHIRE": {
+  "mmsi": "563262300",
+  "imo": null,
+  "nombre_ais": "ONE SAPPHIRE",
+  "metodo": "exacto",
+  "desde": "2026-11-04T08:36:01.747966+00:00"
  }
 }
