@@ -33,11 +33,11 @@
   "primer_eta_ais": "2026-10-31",
   "primer_destino": "NLRTM",
   "primer_visto": "2026-10-31T15:12:30+00:00",
-  "eta_ais": "2026-11-03",
-  "destino": "TW KHH>HK HKG",
+  "eta_ais": "2026-11-07",
+  "destino": "HK HKG>VN CLI",
   "imo": 9864502,
-  "calado": 9.9,
-  "ultimo_visto": "2026-11-04T08:38:07+00:00"
+  "calado": 10.3,
+  "ultimo_visto": "2026-11-04T12:00:27+00:00"
  },
  "HUA HANG": {
   "primer_eta_ais": "2026-11-13",
