@@ -37,7 +37,7 @@
   "destino": "TW KHH>HK HKG",
   "imo": 9864502,
   "calado": 9.9,
-  "ultimo_visto": "2026-11-04T02:53:51+00:00"
+  "ultimo_visto": "2026-11-04T06:01:40+00:00"
  },
  "HUA HANG": {
   "primer_eta_ais": "2026-11-13",
@@ -73,11 +73,11 @@
   "primer_eta_ais": "2026-11-02",
   "primer_destino": "CLVAP>HKHKG",
   "primer_visto": "2026-11-03T00:12:50+00:00",
-  "eta_ais": "2026-11-02",
-  "destino": "CLVAP>HKHKG",
+  "eta_ais": "2026-11-04",
+  "destino": "HKHKG>CNYTN",
   "imo": 9629081,
-  "calado": 11.4,
-  "ultimo_visto": "2026-11-04T05:00:39+00:00"
+  "calado": 11.7,
+  "ultimo_visto": "2026-11-04T06:01:40+00:00"
  },
  "EVER CONFORM": {
   "primer_eta_ais": "2026-11-05",

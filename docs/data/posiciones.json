@@ -15,11 +15,11 @@
   "mmsi": "563259400",
   "lat": 22.3286,
   "lon": 114.1278,
-  "sog": 0,
-  "cog": 141.6,
-  "nav": 5,
-  "hora": "2026-11-04T03:52:34+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-04T05:59:03+00:00",
+  "fuente": "A"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
@@ -112,13 +112,13 @@
  "EVER LOADING": {
   "buque": "EVER LOADING",
   "mmsi": "235102681",
-  "lat": 22.3316,
-  "lon": 114.1253,
-  "sog": 0.1,
-  "cog": 184.5,
-  "nav": 5,
-  "hora": "2026-11-04T05:00:30+00:00",
-  "fuente": "C"
+  "lat": 22.3306,
+  "lon": 114.1207,
+  "sog": 3.5,
+  "cog": 209.2,
+  "nav": 0,
+  "hora": "2026-11-04T05:58:17+00:00",
+  "fuente": "B"
  },
  "MSC DANIELA": {
   "buque": "MSC DANIELA",
