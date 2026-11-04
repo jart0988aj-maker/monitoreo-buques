@@ -13,13 +13,13 @@
  "YM CELEBRITY": {
   "buque": "YM CELEBRITY",
   "mmsi": "563259400",
-  "lat": 22.3203,
-  "lon": 114.1118,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-03T23:40:34+00:00",
-  "fuente": "A"
+  "lat": 22.3286,
+  "lon": 114.1278,
+  "sog": 0,
+  "cog": 283.6,
+  "nav": 5,
+  "hora": "2026-11-04T01:58:33+00:00",
+  "fuente": "B"
  },
  "HUA HANG": {
   "buque": "HUA HANG",
@@ -147,10 +147,10 @@
   "mmsi": "636092799",
   "lat": 33.7323,
   "lon": -118.2477,
-  "sog": 0,
-  "cog": 129,
-  "nav": 5,
-  "hora": "2026-11-04T01:00:21+00:00",
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-04T02:00:29+00:00",
   "fuente": "B"
  }
 }
