@@ -67,7 +67,7 @@
   "destino": "ITSAL",
   "imo": 9426817,
   "calado": 9.8,
-  "ultimo_visto": "2026-11-04T02:53:51+00:00"
+  "ultimo_visto": "2026-11-04T05:00:39+00:00"
  },
  "EVER LOADING": {
   "primer_eta_ais": "2026-11-02",
@@ -77,7 +77,7 @@
   "destino": "CLVAP>HKHKG",
   "imo": 9629081,
   "calado": 11.4,
-  "ultimo_visto": "2026-11-04T02:53:51+00:00"
+  "ultimo_visto": "2026-11-04T05:00:39+00:00"
  },
  "EVER CONFORM": {
   "primer_eta_ais": "2026-11-05",
@@ -97,6 +97,6 @@
   "destino": "USLAX",
   "imo": 9687576,
   "calado": 12.5,
-  "ultimo_visto": "2026-11-04T02:02:16+00:00"
+  "ultimo_visto": "2026-11-04T05:00:39+00:00"
  }
 }
