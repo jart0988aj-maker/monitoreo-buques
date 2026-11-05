@@ -99,5 +99,11 @@
   "nombre_ais": "ONE SAPPHIRE",
   "metodo": "exacto",
   "desde": "2026-11-04T08:36:01.747966+00:00"
+ },
+ "MSC MAYA": {
+  "mmsi": "636015233",
+  "nombre_ais": "MSC MANYA",
+  "metodo": "aproximado",
+  "desde": "2026-11-05T03:59:04.001099+00:00"
  }
 }
