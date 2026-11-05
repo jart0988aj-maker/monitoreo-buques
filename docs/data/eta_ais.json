@@ -107,6 +107,16 @@
   "destino": "TWKEL",
   "imo": 9976707,
   "calado": 13.2,
-  "ultimo_visto": "2026-11-05T14:28:48+00:00"
+  "ultimo_visto": "2026-11-05T18:57:42+00:00"
+ },
+ "BAL ATHENA": {
+  "primer_eta_ais": "2026-11-05",
+  "primer_destino": "VNSGN > HKHKG",
+  "primer_visto": "2026-11-05T18:57:42+00:00",
+  "eta_ais": "2026-11-05",
+  "destino": "VNSGN > HKHKG",
+  "imo": 1075909,
+  "calado": 13.5,
+  "ultimo_visto": "2026-11-05T18:57:42+00:00"
  }
 }
