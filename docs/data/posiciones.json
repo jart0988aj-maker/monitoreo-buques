@@ -156,12 +156,23 @@
  "ONE SAPPHIRE": {
   "buque": "ONE SAPPHIRE",
   "mmsi": "563262300",
-  "lat": 22.3375,
-  "lon": 114.1157,
-  "sog": 0,
-  "cog": 338.7,
-  "nav": 5,
-  "hora": "2026-11-05T12:00:05+00:00",
+  "lat": 22.3376,
+  "lon": 114.1156,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-05T14:25:12+00:00",
   "fuente": "B"
+ },
+ "BAL ATHENA": {
+  "buque": "BAL ATHENA",
+  "mmsi": "563336600",
+  "lat": 22.1436,
+  "lon": 114.2462,
+  "sog": 8.1,
+  "cog": 300.8,
+  "nav": 0,
+  "hora": "2026-11-05T14:27:17+00:00",
+  "fuente": "C"
  }
 }

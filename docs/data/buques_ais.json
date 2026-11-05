@@ -105,5 +105,12 @@
   "nombre_ais": "MSC MANYA",
   "metodo": "aproximado",
   "desde": "2026-11-05T03:59:04.001099+00:00"
+ },
+ "BAL ATHENA": {
+  "mmsi": "563336600",
+  "imo": null,
+  "nombre_ais": "BAL ATHENA",
+  "metodo": "exacto",
+  "desde": "2026-11-05T14:25:39.658965+00:00"
  }
 }
