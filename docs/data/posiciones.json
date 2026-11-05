@@ -79,13 +79,13 @@
  "EVER FEAT": {
   "buque": "EVER FEAT",
   "mmsi": "636020684",
-  "lat": 22.3811,
-  "lon": 114.5637,
-  "sog": 10.8,
-  "cog": 267.5,
+  "lat": 25.7195,
+  "lon": 121.1183,
+  "sog": 11.6,
+  "cog": 32.3,
   "nav": 0,
-  "hora": "2026-11-01T04:51:31+00:00",
-  "fuente": "C"
+  "hora": "2026-11-05T08:37:56+00:00",
+  "fuente": "B"
  },
  "ONE SIMPLICITY": {
   "buque": "ONE SIMPLICITY",
@@ -145,12 +145,12 @@
  "CISNES": {
   "buque": "CISNES",
   "mmsi": "636092799",
-  "lat": 33.7323,
+  "lat": 33.7324,
   "lon": -118.2477,
   "sog": 0,
   "cog": 129,
   "nav": 5,
-  "hora": "2026-11-05T02:57:28+00:00",
+  "hora": "2026-11-05T08:38:29+00:00",
   "fuente": "B"
  },
  "ONE SAPPHIRE": {
