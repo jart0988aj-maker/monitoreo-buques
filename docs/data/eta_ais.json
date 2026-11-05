@@ -118,5 +118,15 @@
   "imo": 1075909,
   "calado": 13.5,
   "ultimo_visto": "2026-11-05T21:50:22+00:00"
+ },
+ "MSC MAYA": {
+  "primer_eta_ais": "2026-11-11",
+  "primer_destino": "THLCH",
+  "primer_visto": "2026-11-05T23:48:24+00:00",
+  "eta_ais": "2026-11-11",
+  "destino": "THLCH",
+  "imo": 9275397,
+  "calado": 10.1,
+  "ultimo_visto": "2026-11-05T23:48:24+00:00"
  }
 }
