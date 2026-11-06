@@ -189,12 +189,12 @@
  "MSC ISTANBUL": {
   "buque": "MSC ISTANBUL",
   "mmsi": "636017537",
-  "lat": 1.0902,
-  "lon": 103.7267,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-06T07:50:17+00:00",
-  "fuente": "A"
+  "lat": 1.2037,
+  "lon": 103.9037,
+  "sog": 11.3,
+  "cog": 68.7,
+  "nav": 0,
+  "hora": "2026-11-06T08:57:23+00:00",
+  "fuente": "C"
  }
 }
