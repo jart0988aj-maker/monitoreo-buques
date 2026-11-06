@@ -145,12 +145,12 @@
  "CISNES": {
   "buque": "CISNES",
   "mmsi": "636092799",
-  "lat": 33.7322,
+  "lat": 33.7323,
   "lon": -118.2476,
-  "sog": 0,
-  "cog": 129,
-  "nav": 5,
-  "hora": "2026-11-06T02:12:33+00:00",
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-06T03:24:33+00:00",
   "fuente": "B"
  },
  "ONE SAPPHIRE": {
@@ -168,11 +168,11 @@
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
   "lat": 22.3475,
-  "lon": 114.1173,
+  "lon": 114.1172,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-06T02:12:19+00:00",
+  "hora": "2026-11-06T03:24:19+00:00",
   "fuente": "A"
  },
  "MSC MAYA": {
