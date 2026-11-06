@@ -126,5 +126,12 @@
   "nombre_ais": "CMA CGM NORMA",
   "metodo": "exacto",
   "desde": "2026-11-06T11:55:41.424065+00:00"
+ },
+ "RACINE": {
+  "mmsi": "248431000",
+  "imo": null,
+  "nombre_ais": "RACINE",
+  "metodo": "exacto",
+  "desde": "2026-11-06T22:19:55.097469+00:00"
  }
 }

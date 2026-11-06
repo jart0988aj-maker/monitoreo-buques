@@ -147,11 +147,11 @@
   "mmsi": "636092799",
   "lat": 33.7323,
   "lon": -118.2476,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-06T21:18:35+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 261.8,
+  "nav": 5,
+  "hora": "2026-11-06T22:18:37+00:00",
+  "fuente": "B"
  },
  "ONE SAPPHIRE": {
   "buque": "ONE SAPPHIRE",
@@ -207,5 +207,16 @@
   "nav": null,
   "hora": "2026-11-06T11:55:38+00:00",
   "fuente": "A"
+ },
+ "RACINE": {
+  "buque": "RACINE",
+  "mmsi": "248431000",
+  "lat": 22.1408,
+  "lon": 114.418,
+  "sog": 8.4,
+  "cog": 266,
+  "nav": 0,
+  "hora": "2026-11-06T22:19:52+00:00",
+  "fuente": "C"
  }
 }
