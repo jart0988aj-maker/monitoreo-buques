@@ -146,11 +146,11 @@
   "buque": "CISNES",
   "mmsi": "636092799",
   "lat": 33.7323,
-  "lon": -118.2477,
-  "sog": 0,
-  "cog": 209.9,
-  "nav": 5,
-  "hora": "2026-11-06T14:18:38+00:00",
+  "lon": -118.2476,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-06T15:18:34+00:00",
   "fuente": "B"
  },
  "ONE SAPPHIRE": {
