@@ -97,7 +97,7 @@
   "destino": "USLAX",
   "imo": 9687576,
   "calado": 12.5,
-  "ultimo_visto": "2026-11-06T03:27:33+00:00"
+  "ultimo_visto": "2026-11-06T11:56:41+00:00"
  },
  "ONE SAPPHIRE": {
   "primer_eta_ais": "2026-11-04",
@@ -113,11 +113,11 @@
   "primer_eta_ais": "2026-11-05",
   "primer_destino": "VNSGN > HKHKG",
   "primer_visto": "2026-11-05T18:57:42+00:00",
-  "eta_ais": "2026-11-05",
+  "eta_ais": "2026-11-06",
   "destino": "VNSGN > HKHKG",
   "imo": 1075909,
-  "calado": 13.5,
-  "ultimo_visto": "2026-11-06T03:27:33+00:00"
+  "calado": 11.3,
+  "ultimo_visto": "2026-11-06T11:56:41+00:00"
  },
  "MSC MAYA": {
   "primer_eta_ais": "2026-11-11",
@@ -138,5 +138,15 @@
   "imo": 9606326,
   "calado": 10.5,
   "ultimo_visto": "2026-11-06T07:53:36+00:00"
+ },
+ "CMA CGM NORMA": {
+  "primer_eta_ais": "2026-11-06",
+  "primer_destino": "MXESE",
+  "primer_visto": "2026-11-06T11:56:41+00:00",
+  "eta_ais": "2026-11-06",
+  "destino": "MXESE",
+  "imo": 9299812,
+  "calado": 14,
+  "ultimo_visto": "2026-11-06T11:56:41+00:00"
  }
 }

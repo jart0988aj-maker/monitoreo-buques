@@ -119,5 +119,12 @@
   "nombre_ais": "MSC ISTANBUL",
   "metodo": "exacto",
   "desde": "2026-11-06T07:50:23.531815+00:00"
+ },
+ "CMA CGM NORMA": {
+  "mmsi": "215879000",
+  "imo": 9299812,
+  "nombre_ais": "CMA CGM NORMA",
+  "metodo": "exacto",
+  "desde": "2026-11-06T11:55:41.424065+00:00"
  }
 }

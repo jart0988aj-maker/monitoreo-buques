@@ -145,12 +145,12 @@
  "CISNES": {
   "buque": "CISNES",
   "mmsi": "636092799",
-  "lat": 33.7323,
-  "lon": -118.2476,
+  "lat": 33.7324,
+  "lon": -118.2475,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-06T03:24:33+00:00",
+  "hora": "2026-11-06T11:54:33+00:00",
   "fuente": "B"
  },
  "ONE SAPPHIRE": {
@@ -168,12 +168,12 @@
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
   "lat": 22.3475,
-  "lon": 114.1173,
-  "sog": 0,
-  "cog": 251.3,
-  "nav": 5,
-  "hora": "2026-11-06T07:52:28+00:00",
-  "fuente": "C"
+  "lon": 114.1172,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-06T11:54:19+00:00",
+  "fuente": "A"
  },
  "MSC MAYA": {
   "buque": "MSC MAYA",
@@ -196,5 +196,16 @@
   "nav": 0,
   "hora": "2026-11-06T11:04:18+00:00",
   "fuente": "B"
+ },
+ "CMA CGM NORMA": {
+  "buque": "CMA CGM NORMA",
+  "mmsi": "215879000",
+  "lat": 31.8597,
+  "lon": -117.7678,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-06T11:55:38+00:00",
+  "fuente": "A"
  }
 }
