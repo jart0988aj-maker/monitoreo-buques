@@ -150,7 +150,7 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-06T16:27:40+00:00",
+  "hora": "2026-11-06T18:24:35+00:00",
   "fuente": "B"
  },
  "ONE SAPPHIRE": {
@@ -167,12 +167,12 @@
  "BAL ATHENA": {
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
-  "lat": 22.3476,
-  "lon": 114.1173,
-  "sog": 0,
-  "cog": 108.3,
-  "nav": 5,
-  "hora": "2026-11-06T17:28:28+00:00",
+  "lat": 22.3475,
+  "lon": 114.1172,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-06T18:24:19+00:00",
   "fuente": "B"
  },
  "MSC MAYA": {
@@ -189,13 +189,13 @@
  "MSC ISTANBUL": {
   "buque": "MSC ISTANBUL",
   "mmsi": "636017537",
-  "lat": 1.2776,
-  "lon": 104.0618,
-  "sog": 10.2,
-  "cog": 259.3,
-  "nav": 0,
-  "hora": "2026-11-06T11:04:18+00:00",
-  "fuente": "B"
+  "lat": 1.2921,
+  "lon": 104.065,
+  "sog": 0,
+  "cog": 222.6,
+  "nav": 1,
+  "hora": "2026-11-06T18:24:30+00:00",
+  "fuente": "C"
  },
  "CMA CGM NORMA": {
   "buque": "CMA CGM NORMA",
