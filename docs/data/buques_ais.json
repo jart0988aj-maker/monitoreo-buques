@@ -112,5 +112,12 @@
   "nombre_ais": "BAL ATHENA",
   "metodo": "exacto",
   "desde": "2026-11-05T14:25:39.658965+00:00"
+ },
+ "MSC ISTANBUL": {
+  "mmsi": "636017537",
+  "imo": 9606326,
+  "nombre_ais": "MSC ISTANBUL",
+  "metodo": "exacto",
+  "desde": "2026-11-06T07:50:23.531815+00:00"
  }
 }

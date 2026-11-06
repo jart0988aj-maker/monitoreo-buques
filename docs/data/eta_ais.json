@@ -128,5 +128,15 @@
   "imo": 9275397,
   "calado": 10.1,
   "ultimo_visto": "2026-11-05T23:48:24+00:00"
+ },
+ "MSC ISTANBUL": {
+  "primer_eta_ais": "2026-11-06",
+  "primer_destino": "SIN (PJSB)",
+  "primer_visto": "2026-11-06T07:53:36+00:00",
+  "eta_ais": "2026-11-06",
+  "destino": "SIN (PJSB)",
+  "imo": 9606326,
+  "calado": 10.5,
+  "ultimo_visto": "2026-11-06T07:53:36+00:00"
  }
 }
