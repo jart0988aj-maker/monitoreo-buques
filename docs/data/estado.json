@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-06T23:18:44+00:00",
+ "generado": "2026-11-07T00:13:26+00:00",
  "hoy": "2026-11-06",
  "kpis": {
   "embarques_activos": 256,
@@ -7,58 +7,11 @@
   "buques_en_mapa": 19,
   "contenedores_transito": 414,
   "buques_con_retraso": 4,
-  "retraso_mediano": 7.0,
+  "retraso_mediano": 6.5,
   "buques_con_riesgo": 22,
   "buques_identificados": 19
  },
  "activos": [
-  {
-   "buque": "RACINE",
-   "pod": "MANZANILLO",
-   "eta": "2026-11-23",
-   "pol": "NHAVA SHEVA",
-   "origenes": [
-    "NHAVA SHEVA"
-   ],
-   "naviera": "RCL",
-   "etd": "2026-10-01",
-   "contenedores": 1,
-   "embarques": 1,
-   "imps": [
-    "IMP87527"
-   ],
-   "buques_iniciales": [],
-   "estado": "en tránsito",
-   "pronostico": "2026-12-06",
-   "retraso_dias": 13,
-   "nivel": "rojo",
-   "fecha_planta": "2026-12-13",
-   "metodo": "Posición y velocidad (AIS)",
-   "confianza": "media",
-   "transito_normal": 51.5,
-   "peor_caso": "2026-11-30",
-   "fecha_planta_peor": "2026-12-07",
-   "eta_historica": "2026-11-23",
-   "fecha_planta_historica": "2026-11-30",
-   "estado_puerto": null,
-   "esperado_historico": "2026-11-22",
-   "base_historico": "origen",
-   "riesgo_dias": 0,
-   "muestra_historico": 34,
-   "mmsi": "248431000",
-   "posicion": {
-    "buque": "RACINE",
-    "mmsi": "248431000",
-    "lat": 22.1408,
-    "lon": 114.418,
-    "sog": 8.4,
-    "cog": 266,
-    "nav": 0,
-    "hora": "2026-11-06T22:19:52+00:00",
-    "fuente": "C"
-   },
-   "eta_ais": null
-  },
   {
    "buque": "MSC ISTANBUL",
    "pod": "MANZANILLO",
@@ -241,6 +194,53 @@
     "calado": 10.1,
     "ultimo_visto": "2026-11-05T23:48:24+00:00"
    }
+  },
+  {
+   "buque": "RACINE",
+   "pod": "MANZANILLO",
+   "eta": "2026-11-23",
+   "pol": "NHAVA SHEVA",
+   "origenes": [
+    "NHAVA SHEVA"
+   ],
+   "naviera": "RCL",
+   "etd": "2026-10-01",
+   "contenedores": 1,
+   "embarques": 1,
+   "imps": [
+    "IMP87527"
+   ],
+   "buques_iniciales": [],
+   "estado": "en tránsito",
+   "pronostico": "2026-11-29",
+   "retraso_dias": 6,
+   "nivel": "rojo",
+   "fecha_planta": "2026-12-06",
+   "metodo": "Posición y velocidad (AIS)",
+   "confianza": "media",
+   "transito_normal": 51.5,
+   "peor_caso": "2026-11-30",
+   "fecha_planta_peor": "2026-12-07",
+   "eta_historica": "2026-11-23",
+   "fecha_planta_historica": "2026-11-30",
+   "estado_puerto": null,
+   "esperado_historico": "2026-11-22",
+   "base_historico": "origen",
+   "riesgo_dias": 0,
+   "muestra_historico": 34,
+   "mmsi": "248431000",
+   "posicion": {
+    "buque": "RACINE",
+    "mmsi": "248431000",
+    "lat": 22.2469,
+    "lon": 114.1265,
+    "sog": 16.1,
+    "cog": 314,
+    "nav": 0,
+    "hora": "2026-11-07T00:11:52+00:00",
+    "fuente": "B"
+   },
+   "eta_ais": null
   },
   {
    "buque": "ONE SAPPHIRE",
@@ -3533,11 +3533,11 @@
     "buque": "CISNES",
     "mmsi": "636092799",
     "lat": 33.7323,
-    "lon": -118.2477,
+    "lon": -118.2476,
     "sog": 0,
     "cog": 261.8,
     "nav": 5,
-    "hora": "2026-11-06T23:15:42+00:00",
+    "hora": "2026-11-07T00:12:42+00:00",
     "fuente": "B"
    },
    "eta_ais": {
@@ -3548,7 +3548,7 @@
     "destino": "USLAX",
     "imo": 9687576,
     "calado": 12.5,
-    "ultimo_visto": "2026-11-06T23:18:44+00:00"
+    "ultimo_visto": "2026-11-07T00:13:26+00:00"
    }
   },
   {
@@ -3593,7 +3593,7 @@
     "sog": null,
     "cog": null,
     "nav": null,
-    "hora": "2026-11-06T18:24:19+00:00",
+    "hora": "2026-11-07T00:12:19+00:00",
     "fuente": "B"
    },
    "eta_ais": {
@@ -3604,28 +3604,28 @@
     "destino": "VNSGN > HKHKG",
     "imo": 1075909,
     "calado": 11.3,
-    "ultimo_visto": "2026-11-06T18:25:01+00:00"
+    "ultimo_visto": "2026-11-07T00:13:26+00:00"
    }
   }
  ],
  "congestion": [
   {
    "puerto": "YANTIAN",
-   "fondeados": 15,
-   "atracados": 4,
+   "fondeados": 16,
+   "atracados": 6,
    "promedio_7d": 13.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 22.57,
    "lon": 114.27
   },
   {
    "puerto": "SINGAPORE",
-   "fondeados": 8,
+   "fondeados": 3,
    "atracados": 0,
    "promedio_7d": 1.2,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 1.26,
    "lon": 103.8
   },
@@ -3634,8 +3634,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 19.06,
    "lon": -104.3
   },
@@ -3644,8 +3644,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 17.93,
    "lon": -102.18
   },
@@ -3654,8 +3654,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 30.63,
    "lon": 122.07
   },
@@ -3664,8 +3664,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 29.93,
    "lon": 121.88
   },
@@ -3674,8 +3674,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 36.02,
    "lon": 120.2
   },
@@ -3684,8 +3684,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 34.74,
    "lon": 119.45
   },
@@ -3694,8 +3694,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 35.08,
    "lon": 128.83
   },
@@ -3704,8 +3704,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 25.15,
    "lon": 121.75
   },
@@ -3714,8 +3714,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 22.56,
    "lon": 120.3
   },
@@ -3724,8 +3724,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 10.45,
    "lon": 107.05
   },
@@ -3734,8 +3734,8 @@
    "fondeados": 0,
    "atracados": 0,
    "promedio_7d": 0.0,
-   "fecha": "2026-11-06T23:18:44+00:00",
-   "lecturas": 165,
+   "fecha": "2026-11-07T00:13:26+00:00",
+   "lecturas": 166,
    "lat": 20.75,
    "lon": 106.85
   }
@@ -5192,59 +5192,59 @@
   }
  },
  "ultima_corrida": {
-  "inicio": "2026-11-06T23:14:43+00:00",
-  "fin": "2026-11-06T23:18:44+00:00",
+  "inicio": "2026-11-07T00:09:25+00:00",
+  "fin": "2026-11-07T00:13:26+00:00",
   "duracion_s": 240,
   "mensajes": {
-   "A": 5508,
-   "B": 4,
-   "C": 412
+   "A": 5518,
+   "B": 5,
+   "C": 476
   },
-  "buques_objetivo": 85,
+  "buques_objetivo": 84,
   "con_mmsi": 19,
-  "posiciones_nuevas": 2,
+  "posiciones_nuevas": 3,
   "errores": [],
   "cobertura": {
-   "50,0": 2199,
-   "50,10": 733,
-   "40,0": 394,
-   "40,-130": 300,
-   "60,20": 208,
+   "50,0": 2375,
+   "50,10": 710,
+   "40,0": 417,
+   "40,-130": 290,
    "50,-10": 184,
-   "30,20": 170,
-   "50,20": 162,
-   "40,10": 104,
-   "40,-10": 83,
-   "40,-80": 77,
-   "20,-90": 72,
-   "30,-10": 64,
-   "30,-120": 63,
-   "30,0": 60,
-   "0,100": 53,
-   "20,-100": 43,
-   "-30,150": 39,
-   "60,10": 39,
-   "30,-80": 33,
-   "20,110": 32,
-   "60,0": 32,
-   "30,130": 31,
-   "30,30": 30,
-   "-40,10": 28,
-   "-30,30": 27,
-   "30,-130": 26,
+   "60,20": 172,
+   "30,20": 158,
+   "40,10": 103,
+   "40,-10": 94,
+   "20,-90": 92,
+   "50,20": 73,
+   "30,-10": 70,
+   "30,0": 69,
+   "40,-80": 67,
+   "30,-120": 52,
+   "0,100": 51,
+   "30,-80": 41,
+   "-30,150": 35,
+   "20,-100": 34,
+   "60,10": 30,
+   "30,130": 30,
+   "20,110": 30,
+   "-30,30": 30,
+   "30,30": 28,
    "-30,-50": 26,
-   "-40,150": 18,
+   "-40,10": 25,
+   "60,0": 19,
+   "-10,110": 19,
+   "30,-130": 16,
    "30,-90": 14,
-   "-10,110": 13,
-   "40,20": 12,
-   "-10,100": 11,
-   "-40,110": 8,
-   "20,-20": 6,
-   "-50,170": 6,
+   "-40,150": 13,
+   "-40,-70": 13,
+   "40,20": 11,
+   "20,-160": 11,
+   "-10,100": 10,
+   "30,-100": 9,
+   "-40,110": 7,
+   "-40,140": 7,
    "0,-80": 6,
-   "40,-70": 6,
-   "30,140": 5,
-   "30,-100": 5
+   "40,140": 6
   }
  }
 }
