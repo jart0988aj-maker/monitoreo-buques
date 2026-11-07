@@ -148,5 +148,15 @@
   "imo": 9299812,
   "calado": 14,
   "ultimo_visto": "2026-11-06T11:56:41+00:00"
+ },
+ "EVER LUCID": {
+  "primer_eta_ais": "2026-11-13",
+  "primer_destino": "MYPKG > CNSHA",
+  "primer_visto": "2026-11-07T08:44:01+00:00",
+  "eta_ais": "2026-11-13",
+  "destino": "MYPKG > CNSHA",
+  "imo": 9629055,
+  "calado": 9.8,
+  "ultimo_visto": "2026-11-07T08:44:01+00:00"
  }
 }
