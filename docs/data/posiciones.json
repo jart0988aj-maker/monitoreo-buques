@@ -240,5 +240,16 @@
   "nav": null,
   "hora": "2026-11-07T19:38:16+00:00",
   "fuente": "B"
+ },
+ "EVER CERTAIN": {
+  "buque": "EVER CERTAIN",
+  "mmsi": "636021136",
+  "lat": 25.1689,
+  "lon": 121.3185,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-08T02:22:12+00:00",
+  "fuente": "A"
  }
 }

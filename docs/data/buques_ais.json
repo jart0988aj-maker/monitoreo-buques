@@ -147,5 +147,12 @@
   "nombre_ais": "MONTEVIDEO EXPRESS",
   "metodo": "exacto",
   "desde": "2026-11-07T08:42:20.415802+00:00"
+ },
+ "EVER CERTAIN": {
+  "mmsi": "636021136",
+  "imo": 9903255,
+  "nombre_ais": "EVER CERTAIN",
+  "metodo": "exacto",
+  "desde": "2026-11-08T02:22:15.608296+00:00"
  }
 }
