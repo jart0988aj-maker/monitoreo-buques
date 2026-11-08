@@ -234,12 +234,12 @@
   "buque": "MONTEVIDEO EXPRESS",
   "mmsi": "211112000",
   "lat": 22.3374,
-  "lon": 114.1158,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-07T19:38:16+00:00",
-  "fuente": "B"
+  "lon": 114.1159,
+  "sog": 0,
+  "cog": 256,
+  "nav": 5,
+  "hora": "2026-11-08T20:45:33+00:00",
+  "fuente": "C"
  },
  "EVER CERTAIN": {
   "buque": "EVER CERTAIN",
