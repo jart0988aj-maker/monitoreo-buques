@@ -178,5 +178,15 @@
   "imo": 9903255,
   "calado": 8.6,
   "ultimo_visto": "2026-11-08T02:24:25+00:00"
+ },
+ "MAERSK ALFIRK": {
+  "primer_eta_ais": "2026-11-09",
+  "primer_destino": "CNYTN>USLAX",
+  "primer_visto": "2026-11-09T07:56:57+00:00",
+  "eta_ais": "2026-11-09",
+  "destino": "CNYTN>USLAX",
+  "imo": 9342516,
+  "calado": 14.2,
+  "ultimo_visto": "2026-11-09T07:56:57+00:00"
  }
 }

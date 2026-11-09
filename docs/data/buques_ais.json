@@ -154,5 +154,12 @@
   "nombre_ais": "EVER CERTAIN",
   "metodo": "exacto",
   "desde": "2026-11-08T02:22:15.608296+00:00"
+ },
+ "MAERSK ALFIRK": {
+  "mmsi": "565747000",
+  "imo": 9342516,
+  "nombre_ais": "MAERSK ALFIRK",
+  "metodo": "exacto",
+  "desde": "2026-11-09T07:53:09.962550+00:00"
  }
 }

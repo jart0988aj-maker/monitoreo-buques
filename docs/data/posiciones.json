@@ -251,5 +251,16 @@
   "nav": null,
   "hora": "2026-11-08T02:22:12+00:00",
   "fuente": "A"
+ },
+ "MAERSK ALFIRK": {
+  "buque": "MAERSK ALFIRK",
+  "mmsi": "565747000",
+  "lat": 33.787,
+  "lon": -118.7556,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-09T07:53:07+00:00",
+  "fuente": "A"
  }
 }
