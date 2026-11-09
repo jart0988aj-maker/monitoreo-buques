@@ -24,12 +24,12 @@
  "HUA HANG": {
   "buque": "HUA HANG",
   "mmsi": "538011294",
-  "lat": 49.0212,
-  "lon": -5.4835,
-  "sog": 11.4,
-  "cog": 240.3,
-  "nav": 5,
-  "hora": "2026-11-02T00:05:41+00:00",
+  "lat": 36.5316,
+  "lon": 14.0853,
+  "sog": 11.6,
+  "cog": 105.4,
+  "nav": 0,
+  "hora": "2026-11-09T00:48:58+00:00",
   "fuente": "B"
  },
  "WAN HAI A06": {
@@ -134,24 +134,24 @@
  "EVER CONFORM": {
   "buque": "EVER CONFORM",
   "mmsi": "352001178",
-  "lat": 37.4381,
-  "lon": 126.5968,
-  "sog": 0,
-  "cog": 84.4,
-  "nav": 5,
-  "hora": "2026-11-03T18:54:28+00:00",
+  "lat": 25.1597,
+  "lon": 120.9605,
+  "sog": 17,
+  "cog": 250.9,
+  "nav": 0,
+  "hora": "2026-11-09T00:48:25+00:00",
   "fuente": "B"
  },
  "CISNES": {
   "buque": "CISNES",
   "mmsi": "636092799",
   "lat": 33.7323,
-  "lon": -118.2476,
+  "lon": -118.2477,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-08T16:18:38+00:00",
-  "fuente": "B"
+  "hora": "2026-11-09T00:48:38+00:00",
+  "fuente": "A"
  },
  "ONE SAPPHIRE": {
   "buque": "ONE SAPPHIRE",
