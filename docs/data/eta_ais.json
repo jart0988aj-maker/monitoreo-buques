@@ -163,11 +163,11 @@
   "primer_eta_ais": "2026-11-07",
   "primer_destino": "CLVAP>HKHKG",
   "primer_visto": "2026-11-07T19:40:31+00:00",
-  "eta_ais": "2026-11-07",
-  "destino": "CLVAP>HKHKG",
+  "eta_ais": "2026-11-10",
+  "destino": "HKHKG > TWKEL",
   "imo": 9520041,
   "calado": 12.9,
-  "ultimo_visto": "2026-11-07T19:40:31+00:00"
+  "ultimo_visto": "2026-11-09T18:45:42+00:00"
  },
  "EVER CERTAIN": {
   "primer_eta_ais": "2026-11-08",
