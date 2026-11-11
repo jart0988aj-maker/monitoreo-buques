@@ -187,6 +187,16 @@
   "destino": "CNYTN>USLAX",
   "imo": 9342516,
   "calado": 14.2,
-  "ultimo_visto": "2026-11-10T23:14:26+00:00"
+  "ultimo_visto": "2026-11-11T03:01:50+00:00"
+ },
+ "NAVIOS AMARILLO": {
+  "primer_eta_ais": "2026-11-07",
+  "primer_destino": "BRSNT",
+  "primer_visto": "2026-11-11T03:01:50+00:00",
+  "eta_ais": "2026-11-07",
+  "destino": "BRSNT",
+  "imo": 9324849,
+  "calado": 11,
+  "ultimo_visto": "2026-11-11T03:01:50+00:00"
  }
 }

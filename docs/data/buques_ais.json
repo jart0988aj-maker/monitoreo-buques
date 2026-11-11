@@ -161,5 +161,12 @@
   "nombre_ais": "MAERSK ALFIRK",
   "metodo": "exacto",
   "desde": "2026-11-09T07:53:09.962550+00:00"
+ },
+ "NAVIOS AMARILLO": {
+  "mmsi": "538002733",
+  "imo": 9324849,
+  "nombre_ais": "NAVIOS AMARILLO",
+  "metodo": "exacto",
+  "desde": "2026-11-11T02:59:25.506766+00:00"
  }
 }
