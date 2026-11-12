@@ -101,13 +101,13 @@
  "MSC CORNELI": {
   "buque": "MSC CORNELI",
   "mmsi": "636017514",
-  "lat": 50.3824,
-  "lon": -0.5888,
-  "sog": 19.7,
-  "cog": 255.7,
-  "nav": 0,
-  "hora": "2026-11-04T20:27:48+00:00",
-  "fuente": "B"
+  "lat": 43.5758,
+  "lon": 10.3062,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-12T22:52:39+00:00",
+  "fuente": "A"
  },
  "EVER LOADING": {
   "buque": "EVER LOADING",

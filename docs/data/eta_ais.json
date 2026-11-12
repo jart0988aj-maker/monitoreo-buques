@@ -63,11 +63,11 @@
   "primer_eta_ais": "2026-11-01",
   "primer_destino": "FELIXSTOWE",
   "primer_visto": "2026-11-01T20:40:24+00:00",
-  "eta_ais": "2026-11-09",
-  "destino": "ITSAL",
+  "eta_ais": "2026-11-12",
+  "destino": "ITLIV",
   "imo": 9426817,
-  "calado": 9.8,
-  "ultimo_visto": "2026-11-04T08:38:07+00:00"
+  "calado": 9.6,
+  "ultimo_visto": "2026-11-12T22:54:51+00:00"
  },
  "EVER LOADING": {
   "primer_eta_ais": "2026-11-02",
