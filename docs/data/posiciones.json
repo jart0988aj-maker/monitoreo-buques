@@ -273,5 +273,27 @@
   "nav": 0,
   "hora": "2026-11-11T18:39:36+00:00",
   "fuente": "B"
+ },
+ "EVER OUTDO": {
+  "buque": "EVER OUTDO",
+  "mmsi": "636021669",
+  "lat": 22.3383,
+  "lon": 114.1242,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-13T18:43:52+00:00",
+  "fuente": "A"
+ },
+ "EVER FOCUS": {
+  "buque": "EVER FOCUS",
+  "mmsi": "374158000",
+  "lat": 33.7259,
+  "lon": -118.2599,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-13T18:45:26+00:00",
+  "fuente": "A"
  }
 }

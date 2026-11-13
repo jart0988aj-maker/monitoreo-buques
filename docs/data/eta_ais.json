@@ -198,5 +198,25 @@
   "imo": 9324849,
   "calado": 11,
   "ultimo_visto": "2026-11-11T03:01:50+00:00"
+ },
+ "EVER OUTDO": {
+  "primer_eta_ais": "2026-11-13",
+  "primer_destino": "HONG KONG",
+  "primer_visto": "2026-11-13T18:46:44+00:00",
+  "eta_ais": "2026-11-13",
+  "destino": "HONG KONG",
+  "imo": 9913884,
+  "calado": 8.7,
+  "ultimo_visto": "2026-11-13T18:46:44+00:00"
+ },
+ "EVER FOCUS": {
+  "primer_eta_ais": "2026-11-13",
+  "primer_destino": "CN NGB=>US LAX",
+  "primer_visto": "2026-11-13T18:46:44+00:00",
+  "eta_ais": "2026-11-13",
+  "destino": "CN NGB=>US LAX",
+  "imo": 9850537,
+  "calado": 14.6,
+  "ultimo_visto": "2026-11-13T18:46:44+00:00"
  }
 }

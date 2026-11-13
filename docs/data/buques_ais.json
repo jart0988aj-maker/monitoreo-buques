@@ -168,5 +168,19 @@
   "nombre_ais": "NAVIOS AMARILLO",
   "metodo": "exacto",
   "desde": "2026-11-11T02:59:25.506766+00:00"
+ },
+ "EVER OUTDO": {
+  "mmsi": "636021669",
+  "imo": 9913884,
+  "nombre_ais": "EVER OUTDO",
+  "metodo": "exacto",
+  "desde": "2026-11-13T18:43:54.710490+00:00"
+ },
+ "EVER FOCUS": {
+  "mmsi": "374158000",
+  "imo": 9850537,
+  "nombre_ais": "EVER FOCUS",
+  "metodo": "exacto",
+  "desde": "2026-11-13T18:45:29.159041+00:00"
  }
 }
