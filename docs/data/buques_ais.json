@@ -182,5 +182,12 @@
   "nombre_ais": "EVER FOCUS",
   "metodo": "exacto",
   "desde": "2026-11-13T18:45:29.159041+00:00"
+ },
+ "EVER VERSE": {
+  "mmsi": "563259300",
+  "imo": null,
+  "nombre_ais": "EVER VERSE",
+  "metodo": "exacto",
+  "desde": "2026-11-14T14:06:18.027286+00:00"
  }
 }

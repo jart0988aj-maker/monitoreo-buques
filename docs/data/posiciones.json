@@ -260,7 +260,7 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-14T06:59:06+00:00",
+  "hora": "2026-11-14T14:04:41+00:00",
   "fuente": "A"
  },
  "NAVIOS AMARILLO": {
@@ -295,5 +295,16 @@
   "nav": 5,
   "hora": "2026-11-14T06:59:59+00:00",
   "fuente": "B"
+ },
+ "EVER VERSE": {
+  "buque": "EVER VERSE",
+  "mmsi": "563259300",
+  "lat": 1.3957,
+  "lon": 103.9737,
+  "sog": 11.3,
+  "cog": 69.8,
+  "nav": 0,
+  "hora": "2026-11-14T14:06:15+00:00",
+  "fuente": "C"
  }
 }
