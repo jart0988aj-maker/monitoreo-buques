@@ -46,12 +46,12 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": 50.4087,
-  "lon": 0.4608,
-  "sog": 10.1,
-  "cog": 73.8,
+  "lat": 50.7393,
+  "lon": 1.3555,
+  "sog": 10.4,
+  "cog": 15.6,
   "nav": 0,
-  "hora": "2026-11-14T19:07:22+00:00",
+  "hora": "2026-11-14T22:59:41+00:00",
   "fuente": "B"
  },
  "SPYROS V": {
@@ -260,7 +260,7 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-14T14:04:41+00:00",
+  "hora": "2026-11-14T22:58:41+00:00",
   "fuente": "A"
  },
  "NAVIOS AMARILLO": {
@@ -290,11 +290,11 @@
   "mmsi": "374158000",
   "lat": 33.7259,
   "lon": -118.2599,
-  "sog": 0,
-  "cog": 76.3,
-  "nav": 5,
-  "hora": "2026-11-14T06:59:59+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-14T22:57:26+00:00",
+  "fuente": "A"
  },
  "EVER VERSE": {
   "buque": "EVER VERSE",
