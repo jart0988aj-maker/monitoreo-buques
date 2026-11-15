@@ -189,5 +189,12 @@
   "nombre_ais": "EVER VERSE",
   "metodo": "exacto",
   "desde": "2026-11-14T14:06:18.027286+00:00"
+ },
+ "EVER FORTUNE": {
+  "mmsi": "563160100",
+  "imo": null,
+  "nombre_ais": "EVER FORTUNE",
+  "metodo": "exacto",
+  "desde": "2026-11-15T02:34:54.282699+00:00"
  }
 }
