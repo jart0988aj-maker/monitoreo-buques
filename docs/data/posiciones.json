@@ -256,12 +256,12 @@
   "buque": "MAERSK ALFIRK",
   "mmsi": "565747000",
   "lat": 33.7323,
-  "lon": -118.2472,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-14T22:58:41+00:00",
-  "fuente": "A"
+  "lon": -118.2473,
+  "sog": 0,
+  "cog": 209.7,
+  "nav": 5,
+  "hora": "2026-11-15T09:55:18+00:00",
+  "fuente": "B"
  },
  "NAVIOS AMARILLO": {
   "buque": "NAVIOS AMARILLO",
@@ -290,11 +290,11 @@
   "mmsi": "374158000",
   "lat": 33.7259,
   "lon": -118.2599,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-14T22:57:26+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 271.2,
+  "nav": 5,
+  "hora": "2026-11-15T09:53:59+00:00",
+  "fuente": "B"
  },
  "EVER VERSE": {
   "buque": "EVER VERSE",
