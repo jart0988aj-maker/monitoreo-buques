@@ -101,12 +101,12 @@
  "MSC CORNELI": {
   "buque": "MSC CORNELI",
   "mmsi": "636017514",
-  "lat": 43.5758,
-  "lon": 10.3062,
+  "lat": 44.4046,
+  "lon": 8.8824,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-13T11:28:41+00:00",
+  "hora": "2026-11-15T16:59:25+00:00",
   "fuente": "A"
  },
  "EVER LOADING": {
@@ -255,12 +255,12 @@
  "MAERSK ALFIRK": {
   "buque": "MAERSK ALFIRK",
   "mmsi": "565747000",
-  "lat": 33.7323,
-  "lon": -118.2473,
-  "sog": 0,
-  "cog": 209.7,
-  "nav": 5,
-  "hora": "2026-11-15T09:55:18+00:00",
+  "lat": 33.7565,
+  "lon": -118.6439,
+  "sog": 8.5,
+  "cog": 243.7,
+  "nav": 0,
+  "hora": "2026-11-15T16:59:45+00:00",
   "fuente": "B"
  },
  "NAVIOS AMARILLO": {
@@ -288,12 +288,12 @@
  "EVER FOCUS": {
   "buque": "EVER FOCUS",
   "mmsi": "374158000",
-  "lat": 33.7259,
-  "lon": -118.2599,
-  "sog": 0,
-  "cog": 271.2,
+  "lat": 33.726,
+  "lon": -118.2598,
+  "sog": 0.1,
+  "cog": 137.6,
   "nav": 5,
-  "hora": "2026-11-15T09:53:59+00:00",
+  "hora": "2026-11-15T16:59:59+00:00",
   "fuente": "B"
  },
  "EVER VERSE": {
