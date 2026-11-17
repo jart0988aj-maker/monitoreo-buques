@@ -290,11 +290,11 @@
   "mmsi": "374158000",
   "lat": 33.726,
   "lon": -118.2599,
-  "sog": 0.1,
-  "cog": 357.1,
-  "nav": 5,
-  "hora": "2026-11-16T09:29:59+00:00",
-  "fuente": "B"
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-17T11:45:26+00:00",
+  "fuente": "A"
  },
  "EVER VERSE": {
   "buque": "EVER VERSE",

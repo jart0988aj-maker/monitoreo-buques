@@ -213,10 +213,10 @@
   "primer_eta_ais": "2026-11-13",
   "primer_destino": "CN NGB=>US LAX",
   "primer_visto": "2026-11-13T18:46:44+00:00",
-  "eta_ais": "2026-11-13",
-  "destino": "CN NGB=>US LAX",
+  "eta_ais": "2026-11-20",
+  "destino": "US LAX=>US OAK",
   "imo": 9850537,
-  "calado": 14.6,
-  "ultimo_visto": "2026-11-14T23:00:21+00:00"
+  "calado": 11.8,
+  "ultimo_visto": "2026-11-17T11:45:41+00:00"
  }
 }
