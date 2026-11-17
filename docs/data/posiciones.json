@@ -134,13 +134,13 @@
  "EVER CONFORM": {
   "buque": "EVER CONFORM",
   "mmsi": "352001178",
-  "lat": 25.1597,
-  "lon": 120.9605,
-  "sog": 17,
-  "cog": 250.9,
-  "nav": 0,
-  "hora": "2026-11-09T00:48:25+00:00",
-  "fuente": "B"
+  "lat": 25.1649,
+  "lon": 121.3923,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-17T20:49:38+00:00",
+  "fuente": "A"
  },
  "CISNES": {
   "buque": "CISNES",
@@ -317,5 +317,16 @@
   "nav": 5,
   "hora": "2026-11-15T02:34:51+00:00",
   "fuente": "C"
+ },
+ "CAUQUENES": {
+  "buque": "CAUQUENES",
+  "mmsi": "636092786",
+  "lat": 33.692,
+  "lon": -118.539,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-17T20:49:09+00:00",
+  "fuente": "A"
  }
 }
