@@ -288,12 +288,12 @@
  "EVER FOCUS": {
   "buque": "EVER FOCUS",
   "mmsi": "374158000",
-  "lat": 33.726,
-  "lon": -118.2599,
+  "lat": 33.7258,
+  "lon": -118.2597,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-17T11:45:26+00:00",
+  "hora": "2026-11-18T11:33:26+00:00",
   "fuente": "A"
  },
  "EVER VERSE": {
@@ -321,12 +321,12 @@
  "CAUQUENES": {
   "buque": "CAUQUENES",
   "mmsi": "636092786",
-  "lat": 33.692,
-  "lon": -118.539,
+  "lat": 33.7323,
+  "lon": -118.2477,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-17T20:49:09+00:00",
+  "hora": "2026-11-18T11:31:09+00:00",
   "fuente": "A"
  }
 }
