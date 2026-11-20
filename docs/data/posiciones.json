@@ -46,13 +46,13 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": 51.4212,
-  "lon": 3.5412,
+  "lat": 51.2817,
+  "lon": 4.2534,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-20T17:13:52+00:00",
-  "fuente": "B"
+  "hora": "2026-11-20T23:19:53+00:00",
+  "fuente": "A"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
@@ -288,12 +288,12 @@
  "EVER FOCUS": {
   "buque": "EVER FOCUS",
   "mmsi": "374158000",
-  "lat": 33.7258,
-  "lon": -118.2597,
+  "lat": 37.8073,
+  "lon": -122.3402,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-18T11:33:26+00:00",
+  "hora": "2026-11-20T23:21:26+00:00",
   "fuente": "A"
  },
  "EVER VERSE": {
@@ -332,13 +332,13 @@
  "ONE SPHERE": {
   "buque": "ONE SPHERE",
   "mmsi": "563251900",
-  "lat": 22.2051,
-  "lon": 114.4136,
-  "sog": 1.5,
-  "cog": 222.6,
-  "nav": 0,
-  "hora": "2026-11-20T08:26:40+00:00",
-  "fuente": "C"
+  "lat": 22.3332,
+  "lon": 114.117,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-20T23:18:29+00:00",
+  "fuente": "A"
  },
  "MSC BEIRA IV": {
   "buque": "MSC BEIRA IV",

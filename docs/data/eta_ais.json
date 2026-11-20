@@ -216,8 +216,8 @@
   "eta_ais": "2026-11-20",
   "destino": "US LAX=>US OAK",
   "imo": 9850537,
-  "calado": 11.8,
-  "ultimo_visto": "2026-11-18T11:33:33+00:00"
+  "calado": 11.6,
+  "ultimo_visto": "2026-11-20T23:22:43+00:00"
  },
  "CAUQUENES": {
   "primer_eta_ais": "2026-11-17",
@@ -237,6 +237,16 @@
   "destino": "BEANR",
   "imo": 9619426,
   "calado": 11.9,
-  "ultimo_visto": "2026-11-20T17:16:22+00:00"
+  "ultimo_visto": "2026-11-20T23:22:43+00:00"
+ },
+ "ONE SPHERE": {
+  "primer_eta_ais": "2026-11-20",
+  "primer_destino": "HKHKG",
+  "primer_visto": "2026-11-20T23:22:43+00:00",
+  "eta_ais": "2026-11-20",
+  "destino": "HKHKG",
+  "imo": 9975624,
+  "calado": 14.5,
+  "ultimo_visto": "2026-11-20T23:22:43+00:00"
  }
 }
