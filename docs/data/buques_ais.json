@@ -203,5 +203,12 @@
   "nombre_ais": "CAUQUENES",
   "metodo": "exacto",
   "desde": "2026-11-17T20:49:12.767221+00:00"
+ },
+ "ONE SPHERE": {
+  "mmsi": "563251900",
+  "imo": null,
+  "nombre_ais": "ONE SPHERE",
+  "metodo": "exacto",
+  "desde": "2026-11-20T08:25:35.115331+00:00"
  }
 }
