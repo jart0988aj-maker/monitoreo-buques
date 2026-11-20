@@ -57,13 +57,13 @@
  "SPYROS V": {
   "buque": "SPYROS V",
   "mmsi": "215726000",
-  "lat": -29.4651,
-  "lon": 15.619,
-  "sog": 12.6,
-  "cog": 155.8,
-  "nav": 0,
-  "hora": "2026-11-01T04:54:05+00:00",
-  "fuente": "B"
+  "lat": 1.1811,
+  "lon": 103.8304,
+  "sog": 10.1,
+  "cog": 68.5,
+  "nav": 4,
+  "hora": "2026-11-20T00:54:27+00:00",
+  "fuente": "C"
  },
  "WILHELMSHAVEN EXPRESS": {
   "buque": "WILHELMSHAVEN EXPRESS",
