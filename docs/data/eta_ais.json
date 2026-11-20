@@ -227,6 +227,16 @@
   "destino": "USLAX",
   "imo": 9687552,
   "calado": 13.6,
-  "ultimo_visto": "2026-11-20T08:28:47+00:00"
+  "ultimo_visto": "2026-11-20T17:16:22+00:00"
+ },
+ "MSC ALTAIR": {
+  "primer_eta_ais": "2026-11-19",
+  "primer_destino": "BEANR",
+  "primer_visto": "2026-11-20T17:16:22+00:00",
+  "eta_ais": "2026-11-19",
+  "destino": "BEANR",
+  "imo": 9619426,
+  "calado": 11.9,
+  "ultimo_visto": "2026-11-20T17:16:22+00:00"
  }
 }
