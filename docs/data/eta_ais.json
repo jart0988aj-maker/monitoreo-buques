@@ -248,5 +248,15 @@
   "imo": 9975624,
   "calado": 14.5,
   "ultimo_visto": "2026-11-20T23:22:43+00:00"
+ },
+ "XIN ZHAN JIANG": {
+  "primer_eta_ais": null,
+  "primer_destino": "CA VAN",
+  "primer_visto": "2026-11-21T04:18:15+00:00",
+  "eta_ais": null,
+  "destino": "CA VAN",
+  "imo": 9378814,
+  "calado": 12.2,
+  "ultimo_visto": "2026-11-21T04:18:15+00:00"
  }
 }

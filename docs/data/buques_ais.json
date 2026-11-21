@@ -217,5 +217,12 @@
   "nombre_ais": "MSC BEIRA IV",
   "metodo": "exacto",
   "desde": "2026-11-20T17:13:45.068444+00:00"
+ },
+ "XIN ZHAN JIANG": {
+  "mmsi": "413150000",
+  "imo": 9378814,
+  "nombre_ais": "XIN ZHAN JIANG",
+  "metodo": "exacto",
+  "desde": "2026-11-21T04:18:07.230144+00:00"
  }
 }

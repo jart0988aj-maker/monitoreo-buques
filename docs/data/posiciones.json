@@ -350,5 +350,16 @@
   "nav": 0,
   "hora": "2026-11-20T17:15:53+00:00",
   "fuente": "C"
+ },
+ "XIN ZHAN JIANG": {
+  "buque": "XIN ZHAN JIANG",
+  "mmsi": "413150000",
+  "lat": 49.2902,
+  "lon": -123.0994,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-21T04:18:04+00:00",
+  "fuente": "A"
  }
 }
