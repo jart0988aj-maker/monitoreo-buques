@@ -217,7 +217,7 @@
   "destino": "US LAX=>US OAK",
   "imo": 9850537,
   "calado": 11.6,
-  "ultimo_visto": "2026-11-20T23:22:43+00:00"
+  "ultimo_visto": "2026-11-21T13:01:15+00:00"
  },
  "CAUQUENES": {
   "primer_eta_ais": "2026-11-17",
@@ -253,10 +253,10 @@
   "primer_eta_ais": null,
   "primer_destino": "CA VAN",
   "primer_visto": "2026-11-21T04:18:15+00:00",
-  "eta_ais": null,
+  "eta_ais": "2026-11-20",
   "destino": "CA VAN",
   "imo": 9378814,
   "calado": 12.2,
-  "ultimo_visto": "2026-11-21T04:18:15+00:00"
+  "ultimo_visto": "2026-11-21T13:01:15+00:00"
  }
 }

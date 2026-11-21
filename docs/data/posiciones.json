@@ -47,12 +47,12 @@
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
   "lat": 51.2817,
-  "lon": 4.2534,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-20T23:19:53+00:00",
-  "fuente": "A"
+  "lon": 4.2533,
+  "sog": 0.1,
+  "cog": 0.2,
+  "nav": 5,
+  "hora": "2026-11-21T13:01:06+00:00",
+  "fuente": "B"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
@@ -289,11 +289,11 @@
   "buque": "EVER FOCUS",
   "mmsi": "374158000",
   "lat": 37.8073,
-  "lon": -122.3402,
+  "lon": -122.3401,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-20T23:21:26+00:00",
+  "hora": "2026-11-21T12:57:26+00:00",
   "fuente": "A"
  },
  "EVER VERSE": {
@@ -321,12 +321,12 @@
  "CAUQUENES": {
   "buque": "CAUQUENES",
   "mmsi": "636092786",
-  "lat": 33.7323,
+  "lat": 33.7321,
   "lon": -118.2478,
   "sog": 0,
   "cog": 245.9,
   "nav": 5,
-  "hora": "2026-11-20T17:15:59+00:00",
+  "hora": "2026-11-21T13:01:05+00:00",
   "fuente": "B"
  },
  "ONE SPHERE": {
@@ -359,7 +359,7 @@
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-21T04:18:04+00:00",
+  "hora": "2026-11-21T13:00:03+00:00",
   "fuente": "A"
  }
 }
