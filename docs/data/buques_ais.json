@@ -224,5 +224,12 @@
   "nombre_ais": "XIN ZHAN JIANG",
   "metodo": "exacto",
   "desde": "2026-11-21T04:18:07.230144+00:00"
+ },
+ "MSC REEF": {
+  "mmsi": "636017577",
+  "imo": null,
+  "nombre_ais": "MSC REEF",
+  "metodo": "exacto",
+  "desde": "2026-11-22T21:44:15.981194+00:00"
  }
 }

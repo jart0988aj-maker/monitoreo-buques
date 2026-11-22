@@ -354,12 +354,23 @@
  "XIN ZHAN JIANG": {
   "buque": "XIN ZHAN JIANG",
   "mmsi": "413150000",
-  "lat": 49.2902,
+  "lat": 49.2901,
   "lon": -123.0994,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-22T07:24:03+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 322.1,
+  "nav": 5,
+  "hora": "2026-11-22T21:45:00+00:00",
+  "fuente": "B"
+ },
+ "MSC REEF": {
+  "buque": "MSC REEF",
+  "mmsi": "636017577",
+  "lat": 1.1949,
+  "lon": 103.6509,
+  "sog": 3.6,
+  "cog": 15.5,
+  "nav": 0,
+  "hora": "2026-11-22T21:44:13+00:00",
+  "fuente": "C"
  }
 }
