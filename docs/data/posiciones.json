@@ -46,13 +46,13 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": 51.2817,
-  "lon": 4.2533,
-  "sog": 0.1,
-  "cog": 0.2,
-  "nav": 5,
-  "hora": "2026-11-21T13:01:06+00:00",
-  "fuente": "B"
+  "lat": 51.4425,
+  "lon": 3.6568,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-22T15:37:51+00:00",
+  "fuente": "A"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
@@ -323,11 +323,11 @@
   "mmsi": "636092786",
   "lat": 33.7323,
   "lon": -118.2478,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-22T00:19:16+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 303,
+  "nav": 5,
+  "hora": "2026-11-22T15:40:10+00:00",
+  "fuente": "B"
  },
  "ONE SPHERE": {
   "buque": "ONE SPHERE",

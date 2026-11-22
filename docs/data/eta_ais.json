@@ -233,11 +233,11 @@
   "primer_eta_ais": "2026-11-19",
   "primer_destino": "BEANR",
   "primer_visto": "2026-11-20T17:16:22+00:00",
-  "eta_ais": "2026-11-19",
-  "destino": "BEANR",
+  "eta_ais": "2026-11-23",
+  "destino": "DEBRV",
   "imo": 9619426,
-  "calado": 11.9,
-  "ultimo_visto": "2026-11-20T23:22:43+00:00"
+  "calado": 11.3,
+  "ultimo_visto": "2026-11-22T15:41:19+00:00"
  },
  "ONE SPHERE": {
   "primer_eta_ais": "2026-11-20",
