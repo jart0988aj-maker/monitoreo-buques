@@ -167,12 +167,12 @@
  "BAL ATHENA": {
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
-  "lat": 22.3475,
-  "lon": 114.1172,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-07T00:12:19+00:00",
+  "lat": 34.2662,
+  "lon": -120.2481,
+  "sog": 8.6,
+  "cog": 105,
+  "nav": 0,
+  "hora": "2026-11-23T22:54:17+00:00",
   "fuente": "B"
  },
  "MSC MAYA": {
@@ -356,11 +356,11 @@
   "mmsi": "413150000",
   "lat": 49.2902,
   "lon": -123.0994,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-23T11:12:04+00:00",
-  "fuente": "A"
+  "sog": 0,
+  "cog": 188.3,
+  "nav": 5,
+  "hora": "2026-11-23T22:54:00+00:00",
+  "fuente": "B"
  },
  "MSC REEF": {
   "buque": "MSC REEF",
