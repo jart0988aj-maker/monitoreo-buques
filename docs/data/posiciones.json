@@ -321,12 +321,12 @@
  "CAUQUENES": {
   "buque": "CAUQUENES",
   "mmsi": "636092786",
-  "lat": 33.7323,
-  "lon": -118.2478,
+  "lat": 33.7324,
+  "lon": -118.2479,
   "sog": 0,
-  "cog": 303,
+  "cog": 219.7,
   "nav": 5,
-  "hora": "2026-11-22T15:40:10+00:00",
+  "hora": "2026-11-23T02:34:10+00:00",
   "fuente": "B"
  },
  "ONE SPHERE": {
@@ -354,13 +354,13 @@
  "XIN ZHAN JIANG": {
   "buque": "XIN ZHAN JIANG",
   "mmsi": "413150000",
-  "lat": 49.2901,
-  "lon": -123.0994,
-  "sog": 0,
-  "cog": 322.1,
-  "nav": 5,
-  "hora": "2026-11-22T21:45:00+00:00",
-  "fuente": "B"
+  "lat": 49.2902,
+  "lon": -123.0995,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-23T02:36:03+00:00",
+  "fuente": "A"
  },
  "MSC REEF": {
   "buque": "MSC REEF",
