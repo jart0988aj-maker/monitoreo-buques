@@ -253,10 +253,10 @@
   "primer_eta_ais": null,
   "primer_destino": "CA VAN",
   "primer_visto": "2026-11-21T04:18:15+00:00",
-  "eta_ais": "2026-11-20",
+  "eta_ais": null,
   "destino": "CA VAN",
   "imo": 9378814,
   "calado": 12.2,
-  "ultimo_visto": "2026-11-23T02:36:53+00:00"
+  "ultimo_visto": "2026-11-23T11:14:48+00:00"
  }
 }

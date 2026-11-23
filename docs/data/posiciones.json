@@ -46,13 +46,13 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": 51.4425,
-  "lon": 3.6568,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-22T15:37:51+00:00",
-  "fuente": "A"
+  "lat": 54.1505,
+  "lon": 6.8536,
+  "sog": 10.8,
+  "cog": 89.1,
+  "nav": 0,
+  "hora": "2026-11-23T11:13:18+00:00",
+  "fuente": "B"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
@@ -321,12 +321,12 @@
  "CAUQUENES": {
   "buque": "CAUQUENES",
   "mmsi": "636092786",
-  "lat": 33.7324,
-  "lon": -118.2479,
+  "lat": 33.7323,
+  "lon": -118.2477,
   "sog": 0,
   "cog": 219.7,
   "nav": 5,
-  "hora": "2026-11-23T02:34:10+00:00",
+  "hora": "2026-11-23T11:13:16+00:00",
   "fuente": "B"
  },
  "ONE SPHERE": {
@@ -355,11 +355,11 @@
   "buque": "XIN ZHAN JIANG",
   "mmsi": "413150000",
   "lat": 49.2902,
-  "lon": -123.0995,
+  "lon": -123.0994,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-23T02:36:03+00:00",
+  "hora": "2026-11-23T11:12:04+00:00",
   "fuente": "A"
  },
  "MSC REEF": {
