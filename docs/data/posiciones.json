@@ -46,13 +46,13 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015664",
-  "lat": 54.1505,
-  "lon": 6.8536,
-  "sog": 10.8,
-  "cog": 89.1,
-  "nav": 0,
-  "hora": "2026-11-23T11:13:18+00:00",
-  "fuente": "B"
+  "lat": 53.5805,
+  "lon": 8.533,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-24T06:58:15+00:00",
+  "fuente": "A"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
@@ -167,12 +167,12 @@
  "BAL ATHENA": {
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
-  "lat": 34.2662,
-  "lon": -120.2481,
-  "sog": 8.6,
-  "cog": 105,
+  "lat": 33.9037,
+  "lon": -119.0019,
+  "sog": 8,
+  "cog": 118.3,
   "nav": 0,
-  "hora": "2026-11-23T22:54:17+00:00",
+  "hora": "2026-11-24T06:55:27+00:00",
   "fuente": "B"
  },
  "MSC MAYA": {
@@ -310,13 +310,13 @@
  "EVER FORTUNE": {
   "buque": "EVER FORTUNE",
   "mmsi": "563160100",
-  "lat": 22.3341,
-  "lon": 114.1244,
-  "sog": 0,
-  "cog": 146.4,
-  "nav": 5,
-  "hora": "2026-11-15T02:34:51+00:00",
-  "fuente": "C"
+  "lat": 33.119,
+  "lon": 135.9377,
+  "sog": 21.4,
+  "cog": 60.9,
+  "nav": 0,
+  "hora": "2026-11-24T06:58:09+00:00",
+  "fuente": "B"
  },
  "CAUQUENES": {
   "buque": "CAUQUENES",

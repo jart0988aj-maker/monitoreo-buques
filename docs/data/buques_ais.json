@@ -27,10 +27,11 @@
   "desde": "2026-10-31T10:37:35.494907+00:00"
  },
  "MSC ALTAIR": {
-  "mmsi": "636015664",
-  "nombre_ais": "MSC ALTAMIRA",
-  "metodo": "aproximado",
-  "desde": "2026-10-31T13:28:51.628429+00:00"
+  "mmsi": "636015604",
+  "imo": 9465277,
+  "nombre_ais": "MSC ALTAIR",
+  "metodo": "exacto",
+  "desde": "2026-11-24T06:57:24.433856+00:00"
  },
  "SPYROS V": {
   "mmsi": "215726000",
