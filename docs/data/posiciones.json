@@ -45,14 +45,14 @@
  },
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
-  "mmsi": "636015664",
-  "lat": 53.5805,
-  "lon": 8.533,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-24T06:58:15+00:00",
-  "fuente": "A"
+  "mmsi": "636015604",
+  "lat": 41.3092,
+  "lon": 2.1492,
+  "sog": 0,
+  "cog": 295.8,
+  "nav": 5,
+  "hora": "2026-11-25T12:40:12+00:00",
+  "fuente": "B"
  },
  "SPYROS V": {
   "buque": "SPYROS V",
@@ -168,11 +168,11 @@
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
   "lat": 33.7324,
-  "lon": -118.2477,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-25T03:00:19+00:00",
+  "lon": -118.2476,
+  "sog": 0,
+  "cog": 145.1,
+  "nav": 5,
+  "hora": "2026-11-25T12:39:14+00:00",
   "fuente": "B"
  },
  "MSC MAYA": {
