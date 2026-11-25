@@ -167,12 +167,12 @@
  "BAL ATHENA": {
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
-  "lat": 33.9037,
-  "lon": -119.0019,
-  "sog": 8,
-  "cog": 118.3,
-  "nav": 0,
-  "hora": "2026-11-24T06:55:27+00:00",
+  "lat": 33.7324,
+  "lon": -118.2477,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-25T03:00:19+00:00",
   "fuente": "B"
  },
  "MSC MAYA": {
@@ -372,5 +372,16 @@
   "nav": 0,
   "hora": "2026-11-22T21:44:13+00:00",
   "fuente": "C"
+ },
+ "MSC IDANIA": {
+  "buque": "MSC IDANIA",
+  "mmsi": "636023021",
+  "lat": 9.3756,
+  "lon": -79.8909,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-25T03:00:06+00:00",
+  "fuente": "A"
  }
 }

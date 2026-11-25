@@ -232,5 +232,12 @@
   "nombre_ais": "MSC REEF",
   "metodo": "exacto",
   "desde": "2026-11-22T21:44:15.981194+00:00"
+ },
+ "MSC IDANIA": {
+  "mmsi": "636023021",
+  "imo": 9962562,
+  "nombre_ais": "MSC IDANIA",
+  "metodo": "exacto",
+  "desde": "2026-11-25T03:00:09.680516+00:00"
  }
 }
