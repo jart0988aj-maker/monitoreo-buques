@@ -46,12 +46,12 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015604",
-  "lat": 41.3092,
-  "lon": 2.1492,
-  "sog": 0,
-  "cog": 295.8,
-  "nav": 5,
-  "hora": "2026-11-25T12:40:12+00:00",
+  "lat": 41.3547,
+  "lon": 2.5303,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-26T14:21:47+00:00",
   "fuente": "B"
  },
  "SPYROS V": {
