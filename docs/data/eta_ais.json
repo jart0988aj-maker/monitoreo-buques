@@ -113,11 +113,11 @@
   "primer_eta_ais": "2026-11-05",
   "primer_destino": "VNSGN > HKHKG",
   "primer_visto": "2026-11-05T18:57:42+00:00",
-  "eta_ais": "2026-11-24",
-  "destino": "CNYTN > USLSA",
+  "eta_ais": "2026-12-16",
+  "destino": "USLSA > CNYTN",
   "imo": 1075909,
   "calado": 15.3,
-  "ultimo_visto": "2026-11-25T03:03:38+00:00"
+  "ultimo_visto": "2026-11-26T23:18:56+00:00"
  },
  "MSC MAYA": {
   "primer_eta_ais": "2026-11-11",
@@ -253,11 +253,11 @@
   "primer_eta_ais": null,
   "primer_destino": "CA VAN",
   "primer_visto": "2026-11-21T04:18:15+00:00",
-  "eta_ais": null,
+  "eta_ais": "2026-11-20",
   "destino": "CA VAN",
   "imo": 9378814,
   "calado": 12.2,
-  "ultimo_visto": "2026-11-23T11:14:48+00:00"
+  "ultimo_visto": "2026-11-26T23:18:56+00:00"
  },
  "MSC IDANIA": {
   "primer_eta_ais": null,
