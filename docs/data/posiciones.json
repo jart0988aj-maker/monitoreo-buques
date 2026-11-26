@@ -299,13 +299,13 @@
  "EVER VERSE": {
   "buque": "EVER VERSE",
   "mmsi": "563259300",
-  "lat": 1.3957,
-  "lon": 103.9737,
-  "sog": 11.3,
-  "cog": 69.8,
+  "lat": 25.0171,
+  "lon": 120.7876,
+  "sog": 16.5,
+  "cog": 30.4,
   "nav": 0,
-  "hora": "2026-11-14T14:06:15+00:00",
-  "fuente": "C"
+  "hora": "2026-11-26T04:20:49+00:00",
+  "fuente": "B"
  },
  "EVER FORTUNE": {
   "buque": "EVER FORTUNE",
