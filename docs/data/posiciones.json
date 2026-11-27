@@ -167,12 +167,12 @@
  "BAL ATHENA": {
   "buque": "BAL ATHENA",
   "mmsi": "563336600",
-  "lat": 33.7324,
-  "lon": -118.2476,
+  "lat": 33.7323,
+  "lon": -118.2477,
   "sog": null,
   "cog": null,
   "nav": null,
-  "hora": "2026-11-26T23:18:19+00:00",
+  "hora": "2026-11-27T23:42:19+00:00",
   "fuente": "B"
  },
  "MSC MAYA": {
@@ -354,13 +354,13 @@
  "XIN ZHAN JIANG": {
   "buque": "XIN ZHAN JIANG",
   "mmsi": "413150000",
-  "lat": 49.2902,
-  "lon": -123.0994,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-26T23:18:03+00:00",
-  "fuente": "A"
+  "lat": 48.2007,
+  "lon": -123.047,
+  "sog": 20.1,
+  "cog": 93.4,
+  "nav": 0,
+  "hora": "2026-11-27T23:42:51+00:00",
+  "fuente": "B"
  },
  "MSC REEF": {
   "buque": "MSC REEF",
