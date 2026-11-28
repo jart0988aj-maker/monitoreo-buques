@@ -46,12 +46,12 @@
  "MSC ALTAIR": {
   "buque": "MSC ALTAIR",
   "mmsi": "636015604",
-  "lat": 41.3547,
-  "lon": 2.5303,
-  "sog": null,
-  "cog": null,
-  "nav": null,
-  "hora": "2026-11-26T14:21:47+00:00",
+  "lat": 44.2404,
+  "lon": 8.6333,
+  "sog": 1.7,
+  "cog": 57.8,
+  "nav": 0,
+  "hora": "2026-11-28T07:35:20+00:00",
   "fuente": "B"
  },
  "SPYROS V": {
@@ -354,12 +354,12 @@
  "XIN ZHAN JIANG": {
   "buque": "XIN ZHAN JIANG",
   "mmsi": "413150000",
-  "lat": 48.2007,
-  "lon": -123.047,
-  "sog": 20.1,
-  "cog": 93.4,
-  "nav": 0,
-  "hora": "2026-11-27T23:42:51+00:00",
+  "lat": 47.5832,
+  "lon": -122.3459,
+  "sog": 0,
+  "cog": 186.7,
+  "nav": 5,
+  "hora": "2026-11-28T07:37:06+00:00",
   "fuente": "B"
  },
  "MSC REEF": {
@@ -382,6 +382,17 @@
   "cog": null,
   "nav": null,
   "hora": "2026-11-25T03:00:06+00:00",
+  "fuente": "A"
+ },
+ "ONE COMPETENCE": {
+  "buque": "ONE COMPETENCE",
+  "mmsi": "431315000",
+  "lat": 30.2567,
+  "lon": -116.5926,
+  "sog": null,
+  "cog": null,
+  "nav": null,
+  "hora": "2026-11-28T07:38:29+00:00",
   "fuente": "A"
  }
 }

@@ -239,5 +239,12 @@
   "nombre_ais": "MSC IDANIA",
   "metodo": "exacto",
   "desde": "2026-11-25T03:00:09.680516+00:00"
+ },
+ "ONE COMPETENCE": {
+  "mmsi": "431315000",
+  "imo": 9339662,
+  "nombre_ais": "ONE COMPETENCE",
+  "metodo": "exacto",
+  "desde": "2026-11-28T07:38:32.905742+00:00"
  }
 }

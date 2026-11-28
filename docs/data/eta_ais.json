@@ -253,11 +253,11 @@
   "primer_eta_ais": null,
   "primer_destino": "CA VAN",
   "primer_visto": "2026-11-21T04:18:15+00:00",
-  "eta_ais": "2026-11-20",
-  "destino": "CA VAN",
+  "eta_ais": "2026-11-27",
+  "destino": "US SEA",
   "imo": 9378814,
-  "calado": 12.2,
-  "ultimo_visto": "2026-11-26T23:18:56+00:00"
+  "calado": 11.8,
+  "ultimo_visto": "2026-11-28T07:38:41+00:00"
  },
  "MSC IDANIA": {
   "primer_eta_ais": null,
@@ -268,5 +268,15 @@
   "imo": 9962562,
   "calado": 14.5,
   "ultimo_visto": "2026-11-25T03:03:38+00:00"
+ },
+ "ONE COMPETENCE": {
+  "primer_eta_ais": "2026-12-02",
+  "primer_destino": "MXLZC",
+  "primer_visto": "2026-11-28T07:38:41+00:00",
+  "eta_ais": "2026-12-02",
+  "destino": "MXLZC",
+  "imo": 9339662,
+  "calado": 13.7,
+  "ultimo_visto": "2026-11-28T07:38:41+00:00"
  }
 }
